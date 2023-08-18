@@ -1,3 +1,4 @@
+import Home from "./components/Pages/home/Home"
 import Navbar from "./components/shared/Navbar"
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <div>
         <Navbar />
+        <Home />
       </div> 
     </>
   )

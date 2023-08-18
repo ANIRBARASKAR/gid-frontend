@@ -5,8 +5,8 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [submenuOpen, setSubmenuOpen] = useState(false);
     return (
-        <nav className="z-[11] sticky top-0 p-2 bg-gradient-to-r from-accent to-secondary md:bg-gradient-to-l md:from-accent md:to-secondary ">
-            <div className="max-w-[1440px] mx-auto p-1 relative">
+        <nav className="z-[11] sticky top-0 p-4 shadow-xl">
+            <div className="container mx-auto p-1 relative">
                 <div className="md:flex md:justify-between md:items-center ">
                     {/* first part */}
                     <div className="flex items-center">
@@ -23,7 +23,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     {/* second part */}
-                    <ul className="hidden lg:flex font-semibold space-x-6">
+                    <ul className="hidden lg:flex font-semibold space-x-10">
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
                             <span>
                                 Home
