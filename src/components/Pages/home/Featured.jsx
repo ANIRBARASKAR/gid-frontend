@@ -10,7 +10,7 @@ const Featured = () => {
                 </div>
             </div>
             {/* CARDS */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-14 gap-x-4 mt-16">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-4 mt-16">
                 <div className="mx-auto">
                     <img className="relative w-[124px] h-[119px] md:h-[239px] md:w-[249px]" src="https://i.ibb.co/1rzHNCb/Image.png" alt="" />
                     <button className="bg-[#FFF9F0] shadow-xl px-2 rounded-md absolute ml-[80px] md:ml-[150px] mt-[-40px] text-sm">Trip / camp</button>

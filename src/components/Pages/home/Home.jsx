@@ -1,3 +1,4 @@
+import Blogs from "./Blogs";
 import Brands from "./Brands";
 import Featured from "./Featured";
 import Hero from "./Hero";
@@ -13,6 +14,7 @@ const Home = () => {
             <OurSolution />
             <Brands />
             <Featured />
+            <Blogs />
         </div>
     );
 };
