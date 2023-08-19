@@ -22,11 +22,11 @@ const Brands = () => {
     };
     return (
         <div className="bg-[#ECECEC] py-8 mt-12">
-            <div className='container mx-auto mt-5'>
+            <div className='container md:mx-auto mt-5 px-4'>
                 <div className="flex justify-center">
                     <div className="flex items-center gap-2">
                         <div className="w-12 h-1 bg-[#001356] mt-5"></div>
-                        <h4 className='font-semibold text-center pt-4 text-[30px] text-[#001356]'>TRUSTED BY OVER 1000+ BRANDS AND ENTERPRISES</h4>
+                        <h4 className='font-semibold text-center pt-4 text-base md:text-[30px] text-[#001356]'>TRUSTED BY OVER 1000+ BRANDS AND ENTERPRISES</h4>
                         <div className="w-12 h-1 bg-[#001356] mt-5"></div>
                     </div>
                 </div>
