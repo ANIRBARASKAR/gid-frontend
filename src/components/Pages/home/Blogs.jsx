@@ -3,8 +3,10 @@ import { BsBoxArrowInDown } from 'react-icons/bs';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import PropTypes from 'prop-types';
 
 const Blogs = () => {
+    // Arrow handling funciton Start
     function Arrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -15,6 +17,14 @@ const Blogs = () => {
             />
         );
     }
+    Arrow.propTypes = {
+        className: PropTypes.string,
+        style: PropTypes.object,
+        onClick: PropTypes.func,
+    };
+    // Arrow handling funciton end
+
+    // Slider setting======Strat
     const settings = {
         infinite: false,
         speed: 500,
@@ -50,7 +60,9 @@ const Blogs = () => {
             }
         ]
     };
+    // Slider setting======End
     return (
+        // HEADING********
         <div className="container mx-auto mt-24">
             <img className="mx-auto relative" src="https://i.ibb.co/27qPxtj/Rectangle-1784-1.png" alt="" />
             <p className="absolute ml-[350px] md:[ml-100px] lg:ml-[700px] text-white mt-[-50px]">ADVERTISE 2</p>
@@ -65,189 +77,189 @@ const Blogs = () => {
 
             {/* MAIN CONTENT */}
             <div className="mt-8">
-            <Slider {...settings}>
-                    
-                        <div className="shadow-2xl">
-                            <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
-                            <div className="">
-                                <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
-                                <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                                <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
-                                <hr />
-                                <div className="mt-2">
-                                    <div className="flex items-center gap-4">
-                                        <div className="flex items-center gap-2">
-                                            <FaHeart className="text-red-600" />
-                                            <small>39</small>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <BsBoxArrowInDown />
-                                            <small>72</small>
-                                        </div>
-                                        <div>
-                                            <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
-                                        </div>
+                <Slider {...settings}>
+
+                    <div className="shadow-2xl">
+                        <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
+                        <div className="">
+                            <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                            <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                            <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
+                            <hr />
+                            <div className="mt-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex items-center gap-2">
+                                        <FaHeart className="text-red-600" />
+                                        <small>39</small>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <BsBoxArrowInDown />
+                                        <small>72</small>
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                    
-                        <div className="shadow-2xl">
-                            <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
-                            <div className="px-2">
-                                <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
-                                <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                                <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
-                                <hr />
-                                <div className="mt-2">
-                                    <div className="flex items-center gap-4">
-                                        <div className="flex items-center gap-2">
-                                            <FaHeart className="text-red-600" />
-                                            <small>39</small>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <BsBoxArrowInDown />
-                                            <small>72</small>
-                                        </div>
-                                        <div>
-                                            <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
-                                        </div>
+                    </div>
+
+
+                    <div className="shadow-2xl">
+                        <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
+                        <div className="px-2">
+                            <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                            <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                            <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
+                            <hr />
+                            <div className="mt-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex items-center gap-2">
+                                        <FaHeart className="text-red-600" />
+                                        <small>39</small>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <BsBoxArrowInDown />
+                                        <small>72</small>
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                    
-                        <div className="shadow-2xl">
-                            <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
-                            <div className="px-2">
-                                <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
-                                <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                                <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
-                                <hr />
-                                <div className="mt-2">
-                                    <div className="flex items-center gap-4">
-                                        <div className="flex items-center gap-2">
-                                            <FaHeart className="text-red-600" />
-                                            <small>39</small>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <BsBoxArrowInDown />
-                                            <small>72</small>
-                                        </div>
-                                        <div>
-                                            <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
-                                        </div>
+                    </div>
+
+
+                    <div className="shadow-2xl">
+                        <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
+                        <div className="px-2">
+                            <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                            <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                            <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
+                            <hr />
+                            <div className="mt-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex items-center gap-2">
+                                        <FaHeart className="text-red-600" />
+                                        <small>39</small>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <BsBoxArrowInDown />
+                                        <small>72</small>
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                    
-                        <div className="shadow-2xl">
-                            <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
-                            <div className="px-2">
-                                <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
-                                <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                                <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
-                                <hr />
-                                <div className="mt-2">
-                                    <div className="flex items-center gap-4">
-                                        <div className="flex items-center gap-2">
-                                            <FaHeart className="text-red-600" />
-                                            <small>39</small>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <BsBoxArrowInDown />
-                                            <small>72</small>
-                                        </div>
-                                        <div>
-                                            <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
-                                        </div>
+                    </div>
+
+
+                    <div className="shadow-2xl">
+                        <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
+                        <div className="px-2">
+                            <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                            <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                            <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
+                            <hr />
+                            <div className="mt-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex items-center gap-2">
+                                        <FaHeart className="text-red-600" />
+                                        <small>39</small>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <BsBoxArrowInDown />
+                                        <small>72</small>
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                    
-                        <div className="shadow-2xl">
-                            <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
-                            <div className="px-2">
-                                <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
-                                <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                                <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
-                                <hr />
-                                <div className="mt-2">
-                                    <div className="flex items-center gap-4">
-                                        <div className="flex items-center gap-2">
-                                            <FaHeart className="text-red-600" />
-                                            <small>39</small>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <BsBoxArrowInDown />
-                                            <small>72</small>
-                                        </div>
-                                        <div>
-                                            <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
-                                        </div>
+                    </div>
+
+
+                    <div className="shadow-2xl">
+                        <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
+                        <div className="px-2">
+                            <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                            <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                            <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
+                            <hr />
+                            <div className="mt-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex items-center gap-2">
+                                        <FaHeart className="text-red-600" />
+                                        <small>39</small>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <BsBoxArrowInDown />
+                                        <small>72</small>
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                    
-                        <div className="shadow-2xl">
-                            <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
-                            <div className="px-2">
-                                <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
-                                <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                                <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
-                                <hr />
-                                <div className="mt-2">
-                                    <div className="flex items-center gap-4">
-                                        <div className="flex items-center gap-2">
-                                            <FaHeart className="text-red-600" />
-                                            <small>39</small>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <BsBoxArrowInDown />
-                                            <small>72</small>
-                                        </div>
-                                        <div>
-                                            <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
-                                        </div>
+                    </div>
+
+
+                    <div className="shadow-2xl">
+                        <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
+                        <div className="px-2">
+                            <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                            <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                            <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
+                            <hr />
+                            <div className="mt-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex items-center gap-2">
+                                        <FaHeart className="text-red-600" />
+                                        <small>39</small>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <BsBoxArrowInDown />
+                                        <small>72</small>
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                    
-                        <div className="shadow-2xl">
-                            <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
-                            <div className="px-2">
-                                <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
-                                <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                                <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
-                                <hr />
-                                <div className="mt-2">
-                                    <div className="flex items-center gap-4">
-                                        <div className="flex items-center gap-2">
-                                            <FaHeart className="text-red-600" />
-                                            <small>39</small>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <BsBoxArrowInDown />
-                                            <small>72</small>
-                                        </div>
-                                        <div>
-                                            <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
-                                        </div>
+                    </div>
+
+
+                    <div className="shadow-2xl">
+                        <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
+                        <div className="px-2">
+                            <h4 className="text-[10px] md:text-base font-medium px-1">John Lewis to make final journey across Edmund Pettus Bridge in procession</h4>
+                            <p className="text-[8px] md:text-sm px-2">The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                            <p className="mt-4 text-[6px] md:text-sm mb-4"><span className="font-bold">2 hours ago</span> By Lucy Hiddleston  |  4min read</p>
+                            <hr />
+                            <div className="mt-2">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex items-center gap-2">
+                                        <FaHeart className="text-red-600" />
+                                        <small>39</small>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <BsBoxArrowInDown />
+                                        <small>72</small>
+                                    </div>
+                                    <div>
+                                        <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
+                    </div>
+
                 </Slider>;
             </div>
         </div>

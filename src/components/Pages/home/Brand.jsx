@@ -1,8 +1,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import PropTypes from 'prop-types';
 
 const Brand = () => {
+    // Arrow handling funciton strat
     function Arrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -13,7 +15,14 @@ const Brand = () => {
             />
         );
     }
+    Arrow.propTypes = {
+        className: PropTypes.string,
+        style: PropTypes.object,
+        onClick: PropTypes.func,
+    };
+    // Arrow handling funciton end
     
+    // Slider setting======Strat
     const settings = {
         infinite: false,
         speed: 500,
@@ -49,7 +58,9 @@ const Brand = () => {
             }
         ]
     };
+    // Slider setting======End
     return (
+        // HEADING*************
         <div className="bg-[#ECECEC] pt-8 pb-16 mt-20">
             <div className='container md:mx-auto mt-5 px-4'>
                 <div className="flex justify-center">
@@ -59,6 +70,7 @@ const Brand = () => {
                         <div className="w-12 h-1 bg-[#001356] mt-5"></div>
                     </div>
                 </div>
+                {/* MAIN CONTENT */}
                 <div className="mt-16">
                     <Slider {...settings}>
                         <div className='mx-auto'>
