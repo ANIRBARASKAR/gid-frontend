@@ -78,7 +78,6 @@ const Blogs = () => {
             {/* MAIN CONTENT */}
             <div className="mt-8">
                 <Slider {...settings}>
-
                     <div className="shadow-2xl">
                         <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />
                         <div className="">

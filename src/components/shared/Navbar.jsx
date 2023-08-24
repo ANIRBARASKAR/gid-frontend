@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import { RiMenu2Fill } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [submenuOpen, setSubmenuOpen] = useState(false);
@@ -36,7 +37,8 @@ const Navbar = () => {
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
                             <span>
-                                AboutUs
+                                <NavLink to={"/about"}>AboutUs</NavLink>
+                                
                             </span>
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
