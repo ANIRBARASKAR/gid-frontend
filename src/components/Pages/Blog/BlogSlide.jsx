@@ -1,21 +1,17 @@
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import Swiper core and required modules
 import { Navigation, Pagination, A11y } from 'swiper/modules';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const Slide = () => {
+const BlogSlide = () => {
     return (
-        <div className='container mx-auto p-5'>
+        <div className='container mx-auto p-5 mt-4'>
             <Swiper
                 modules={[Navigation, Pagination, A11y]}
                 spaceBetween={50}
                 slidesPerView={1}
-                // navigation
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
@@ -61,4 +57,4 @@ const Slide = () => {
     );
 };
 
-export default Slide;
+export default BlogSlide;

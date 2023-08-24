@@ -27,7 +27,7 @@ const Navbar = () => {
                     <ul className="hidden lg:flex font-semibold space-x-10">
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
                             <span>
-                                Home
+                               <NavLink to={"/home"}>Home</NavLink>
                             </span>
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
@@ -38,12 +38,11 @@ const Navbar = () => {
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
                             <span>
                                 <NavLink to={"/about"}>AboutUs</NavLink>
-                                
                             </span>
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
                             <span>
-                                Blogs
+                                <NavLink to={"/blog"}>Blogs</NavLink>
                             </span>
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
