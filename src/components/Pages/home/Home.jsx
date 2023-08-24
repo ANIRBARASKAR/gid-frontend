@@ -1,8 +1,7 @@
-import Blogs from "./Blogs";
-// import Brands from "./Brands";
 import Brand from "./Brand";
 import Featured from "./Featured";
 import Hero from "./Hero";
+import HomeBlog from "./HomeBlog";
 import OurSolution from "./OurSolution";
 import Slide from "./Slide";
 import Testimonial from "./Testimonial";
@@ -15,10 +14,9 @@ const Home = () => {
             <Slide />
             <OurSolution />
             <Brand />
-            {/* <Brands /> */}
             <Featured />
             <Testimonial />
-            <Blogs />
+            <HomeBlog />
         </div>
     );
 };

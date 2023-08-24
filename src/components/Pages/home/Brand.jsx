@@ -61,7 +61,7 @@ const Brand = () => {
     // Slider setting======End
     return (
         // HEADING*************
-        <div className="bg-[#ECECEC] pt-8 pb-16 mt-20">
+        <div className="bg-[#ECECEC] pt-8 pb-16 mt-20 px-6 md:px-0">
             <div className='container md:mx-auto mt-5 px-4'>
                 <div className="flex justify-center">
                     <div className="flex items-center gap-2">

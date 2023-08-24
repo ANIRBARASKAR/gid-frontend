@@ -61,7 +61,7 @@ const Testimonial = () => {
     // Slider setting======End
     return (
         // HEADING********
-        <div className="container mx-auto mt-24 bg-[#ECECEC] py-8">
+        <div className="container mx-auto mt-24 bg-[#ECECEC] py-8 px-6 md:px-0">
             <div className="flex justify-center mt-12">
                 <div className="flex items-center gap-2">
                     <div className="w-10 h-1 bg-[#001356]"></div>
