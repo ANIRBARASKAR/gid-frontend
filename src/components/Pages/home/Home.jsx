@@ -5,6 +5,7 @@ import Featured from "./Featured";
 import Hero from "./Hero";
 import OurSolution from "./OurSolution";
 import Slide from "./Slide";
+import Testimonial from "./Testimonial";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <Brand />
             {/* <Brands /> */}
             <Featured />
+            <Testimonial />
             <Blogs />
         </div>
     );
