@@ -10,7 +10,7 @@ const Welcome = () => {
                     <div>
                         <h3 className="font-semibold text-[28px] text-[#37393F]">Lorem ipsum</h3>
                         <p className="text-base text-[#7D7D7D lg:mr-64">Leverage agile frameworks to provide a robust synopsis for high level overviews. thinking to further the overall value proposition. </p>
-                        <div className='bg-[#37393F] h-1 w-16 mt-5'></div>
+                        <div className='bg-[#37393F] h-[2px] w-16 mt-5'></div>
                     </div>
                 </div>
                 <div>

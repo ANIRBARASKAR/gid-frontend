@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Team from "./Team";
 import Welcome from "./Welcome";
 
 const About = () => {
@@ -6,6 +7,7 @@ const About = () => {
         <>
             <Banner />
             <Welcome />
+            <Team />
         </>
     );
 };
