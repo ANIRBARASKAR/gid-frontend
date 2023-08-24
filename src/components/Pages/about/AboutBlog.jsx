@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import { FaHeart } from 'react-icons/fa';
 import { BsBoxArrowInDown } from 'react-icons/bs';
 
-const HomeBlog = () => {
+const AboutBlog = () => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -24,7 +24,7 @@ const HomeBlog = () => {
         }
     };
     return (
-        <div className="container mx-auto mt-16">
+        <div className="container mx-auto mt-20">
             <img className="mx-auto relative" src="https://i.ibb.co/27qPxtj/Rectangle-1784-1.png" alt="" />
             <p className="absolute ml-[350px] md:[ml-100px] lg:ml-[700px] text-white mt-[-50px]">ADVERTISE 2</p>
 
@@ -173,4 +173,4 @@ const HomeBlog = () => {
     );
 };
 
-export default HomeBlog;
+export default AboutBlog;

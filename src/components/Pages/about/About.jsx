@@ -1,3 +1,4 @@
+import AboutBlog from "./AboutBlog";
 import Banner from "./Banner";
 import Team from "./Team";
 import Welcome from "./Welcome";
@@ -8,6 +9,7 @@ const About = () => {
             <Banner />
             <Welcome />
             <Team />
+            <AboutBlog />
         </>
     );
 };
