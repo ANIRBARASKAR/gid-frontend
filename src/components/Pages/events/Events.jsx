@@ -1,4 +1,5 @@
 import Competition from "./Competition";
+import CulturalEvent from "./CulturalEvent";
 import EventHeader from "./EventHeader";
 import Festival from "./Festival";
 import Seminar from "./Seminar";
@@ -10,6 +11,7 @@ const Events = () => {
             <Competition />
             <Festival />
             <Seminar />
+            <CulturalEvent />
         </div>
     );
 };
