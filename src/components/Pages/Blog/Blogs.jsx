@@ -1,6 +1,7 @@
 import { FaHeart } from 'react-icons/fa';
 import { BsBoxArrowInDown } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
+import AdvertiseTwo from '../../reusable/AdvertiseTwo';
 
 const Blogs = () => {
     const [data, setData] = useState([]);
@@ -14,9 +15,7 @@ const Blogs = () => {
 
     return (
         <div className="container mx-auto mt-16">
-            <img className="mx-auto relative" src="https://i.ibb.co/27qPxtj/Rectangle-1784-1.png" alt="" />
-            <p className="absolute ml-[350px] md:[ml-100px] lg:ml-[700px] text-white mt-[-50px]">ADVERTISE 2</p>
-
+            <AdvertiseTwo />
             <div className="flex justify-center mt-12">
                 <div className="flex items-center gap-2">
                     <div className="w-8 h-[2px] bg-gray-400"></div>

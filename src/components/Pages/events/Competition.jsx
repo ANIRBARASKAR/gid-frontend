@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FiBookmark } from 'react-icons/fi';
+import EventTitle from '../../reusable/EventTitle';
 
 const Competition = () => {
     const [data, setData] = useState([]);
@@ -12,10 +13,7 @@ const Competition = () => {
     }, []);
     return (
         <div className="container mx-auto mt-8 px-2 md:px-0">
-            <div className="flex items-center gap-4">
-                <p className="text-[#001356] text-4xl">Competition</p>
-                <div className="w-96 h-[2px] bg-[#001356] mt-3"></div>
-            </div>
+            <EventTitle title="Competition" />
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {data.map(item => (
@@ -40,6 +38,9 @@ const Competition = () => {
                     </>
                 ))}
 
+            </div>
+            <div className='flex justify-center mt-8'>
+                <button className="bg-[#001356] px-6 py-2 text-white rounded-lg">Learn More</button>
             </div>
         </div>
     );

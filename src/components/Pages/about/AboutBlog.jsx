@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FaHeart } from 'react-icons/fa';
 import { BsBoxArrowInDown } from 'react-icons/bs';
+import AdvertiseTwo from "../../reusable/AdvertiseTwo";
 
 const AboutBlog = () => {
     const responsive = {
@@ -25,9 +26,7 @@ const AboutBlog = () => {
     };
     return (
         <div className="container mx-auto mt-20">
-            <img className="mx-auto relative" src="https://i.ibb.co/27qPxtj/Rectangle-1784-1.png" alt="" />
-            <p className="absolute ml-[350px] md:[ml-100px] lg:ml-[700px] text-white mt-[-50px]">ADVERTISE 2</p>
-
+            <AdvertiseTwo />
             <div className="flex justify-center mt-12">
                 <div className="flex items-center gap-2">
                     <div className="w-8 h-[2px] bg-gray-400"></div>
