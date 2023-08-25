@@ -4,7 +4,7 @@ import { BiSearch } from 'react-icons/bi';
 const EventHeader = () => {
     return (
         <div className='bg-[#334278] mt-8 py-4'>
-            <div className="container mx-auto">
+            <div className="container mx-auto px-2 md:px-0">
                 <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4'>
                     {/* ===========1 */}
                     <div className='mx-auto'>

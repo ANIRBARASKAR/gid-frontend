@@ -11,9 +11,9 @@ const Competition = () => {
             .catch(error => console.error('Error fetching data:', error));
     }, []);
     return (
-        <div className="container mx-auto mt-8">
+        <div className="container mx-auto mt-8 px-2 md:px-0">
             <div className="flex items-center gap-4">
-                <p className="text-[#001356] text-3xl">Competition</p>
+                <p className="text-[#001356] text-4xl">Competition</p>
                 <div className="w-96 h-[2px] bg-[#001356] mt-3"></div>
             </div>
 
