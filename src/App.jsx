@@ -4,6 +4,7 @@ import Footer from "./components/shared/Footer"
 import Navbar from "./components/shared/Navbar"
 import About from "./components/Pages/about/About"
 import Blog from "./components/Pages/Blog/Blog"
+import Events from "./components/Pages/events/Events"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/event" element={<Events />} />
         </Routes>
         <Footer />
       </div>

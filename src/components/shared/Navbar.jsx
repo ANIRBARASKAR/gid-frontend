@@ -32,7 +32,7 @@ const Navbar = () => {
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
                             <span>
-                                Events
+                                <NavLink to={"/event"}>Events</NavLink>
                             </span>
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
