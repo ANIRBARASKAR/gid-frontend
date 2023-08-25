@@ -1,11 +1,11 @@
-// import Competition from "./Competition";
+import Competition from "./Competition";
 import EventHeader from "./EventHeader";
 
 const Events = () => {
     return (
         <div>
             <EventHeader />
-            {/* <Competition /> */}
+            <Competition />
         </div>
     );
 };
