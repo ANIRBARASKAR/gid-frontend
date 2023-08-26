@@ -1,3 +1,4 @@
+import NonTechnicalEvent from "./NonTechnicalEvent";
 import RegistrationOpen from "./RegistrationOpen";
 import TechnicalEvents from "./TechnicalEvents";
 import Trainning from "./Trainning";
@@ -8,6 +9,7 @@ const MultipleEvents = () => {
             <RegistrationOpen />
             <Trainning />
             <TechnicalEvents />
+            <NonTechnicalEvent />
         </div>
     );
 };
