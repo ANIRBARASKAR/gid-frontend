@@ -1,4 +1,5 @@
 import RegistrationOpen from "./RegistrationOpen";
+import TechnicalEvents from "./TechnicalEvents";
 import Trainning from "./Trainning";
 
 const MultipleEvents = () => {
@@ -6,6 +7,7 @@ const MultipleEvents = () => {
         <div>
             <RegistrationOpen />
             <Trainning />
+            <TechnicalEvents />
         </div>
     );
 };

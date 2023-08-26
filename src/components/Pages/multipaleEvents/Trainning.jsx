@@ -1,7 +1,6 @@
-
 const Trainning = () => {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto mt-8">
             <div className="md:flex justify-between items-center">
                 <div className="flex items-center gap-4">
                     <div>
