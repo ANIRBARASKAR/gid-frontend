@@ -36,7 +36,7 @@ const HomeBlog = () => {
                 </div>
             </div>
             <div className="bg-white my-8">
-                <Carousel responsive={responsive}>
+                <Carousel className="" responsive={responsive}>
                     <div className="mx-8 pb-8">
                         <div className="shadow-xl py-4">
                             <img className="md:w-full" src="https://i.ibb.co/7X2Hgyg/image-46.png" alt="" />

@@ -43,3 +43,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     /* box-shadow: 3px 3px 5px 6px red; */
 }
 /* =========== */
+
+.react-multiple-carousel__arrow{
+    background-color: #001356;
+}
+
+.react-multiple-carousel__arrow--right {
+    
+}
