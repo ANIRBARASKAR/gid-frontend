@@ -7,6 +7,7 @@ import Blog from "./components/Pages/Blog/Blog"
 import Events from "./components/Pages/events/Events"
 import EventPageTwo from "./components/Pages/eventPageTwo/EventPageTwo"
 import MultipleEvents from "./components/Pages/multipaleEvents/MultipleEvents"
+import EventDetailsHeader from "./components/Pages/eventDetails/EventDetailsHeader"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/event" element={<Events />} />
           <Route path="/eventTwo" element={<EventPageTwo />} />
           <Route path="/multiple-event" element={<MultipleEvents />} />
+          <Route path="/multiple-details" element={<EventDetailsHeader />} />
         </Routes>
         <Footer />
       </div>

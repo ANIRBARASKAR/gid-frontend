@@ -51,3 +51,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .react-multiple-carousel__arrow--right {
     
 }
+
+.react-multi-carousel-list{
+    position: unset !important;
+  }
