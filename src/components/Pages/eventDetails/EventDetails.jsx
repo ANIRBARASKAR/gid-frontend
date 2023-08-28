@@ -1,6 +1,8 @@
 import CourseDetails from "./CourseDetails";
 import EventDetailsHeader from "./EventDetailsHeader";
 import GuideLines from "./GuideLines";
+import Ratings from "./Ratings";
+import Reviews from "./Reviews";
 import Reward from "./Reward";
 
 const EventDetails = () => {
@@ -12,6 +14,8 @@ const EventDetails = () => {
                     <CourseDetails />
                     <GuideLines />
                     <Reward />
+                    <Ratings />
+                    <Reviews />
                 </div>
                 <div className="col-span-1">
                 

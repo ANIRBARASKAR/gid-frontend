@@ -1,5 +1,3 @@
-
-
 const Reward = () => {
     return (
         <div className="container mx-auto mt-16">
@@ -15,6 +13,11 @@ const Reward = () => {
                         <p className="font-semibold text-sm text-[#001356]">Winner Name</p>
                     </div>
                 </div>
+            </div>
+            {/* ADVERTISE TWO */}
+            <div className="mt-8">
+                <img className="relative" src="https://i.ibb.co/27qPxtj/Rectangle-1784-1.png" alt="" />
+                <p className="absolute ml-[100px] md:[ml-100px] lg:ml-[300px] text-white mt-[-32px] md:mt-[-50px]">ADVERTISE 2</p>
             </div>
         </div>
     );
