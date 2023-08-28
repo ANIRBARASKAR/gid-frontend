@@ -1,6 +1,7 @@
 import CourseDetails from "./CourseDetails";
 import EventDetailsHeader from "./EventDetailsHeader";
 import GuideLines from "./GuideLines";
+import Reward from "./Reward";
 
 const EventDetails = () => {
     return (
@@ -10,6 +11,7 @@ const EventDetails = () => {
                 <div className="col-span-3">
                     <CourseDetails />
                     <GuideLines />
+                    <Reward />
                 </div>
                 <div className="col-span-1">
                 
