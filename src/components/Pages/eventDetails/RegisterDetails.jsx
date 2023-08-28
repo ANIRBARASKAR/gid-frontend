@@ -27,8 +27,7 @@ const RegisterDetails = () => {
                     </div>
                 </div>
             </div>
-
-            <div className='bg-[#F5F5F5] px-4 py-8 mt-12'>
+            <div className='bg-[#F5F5F5] px-4 py-8 mt-12 rounded-lg'>
                 <div className='text-[#001356] grid grid-cols-2 gap-16 rounded-lg'>
                     <div>
                         <AiOutlineCalendar className='mx-auto' size={30} />
