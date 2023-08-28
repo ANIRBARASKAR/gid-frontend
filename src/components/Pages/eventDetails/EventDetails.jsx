@@ -1,6 +1,7 @@
 import CourseDetails from "./CourseDetails";
 import EventDetailsHeader from "./EventDetailsHeader";
 import EventGallery from "./EventGallery";
+import GoogleMap from "./GoogleMap";
 import GuideLines from "./GuideLines";
 import Ratings from "./Ratings";
 import RegisterDetails from "./RegisterDetails";
@@ -21,6 +22,7 @@ const EventDetails = () => {
                 </div>
                 <div className="col-span-1">
                     <RegisterDetails />
+                    <GoogleMap />
                     <EventGallery />
                 </div>
             </div>
