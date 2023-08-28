@@ -1,7 +1,7 @@
 
 const CourseDetails = () => {
     return (
-        <div className="container mx-auto mt-8">
+        <div className="container mx-auto">
             <div className="flex items-center gap-4">
                 <div>
                     <img className="border border-gray-400 p-2 rounded-full" src="https://i.ibb.co/QCkWjNc/image-60.png" alt="" />
