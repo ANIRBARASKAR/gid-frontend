@@ -1,5 +1,6 @@
 import CourseDetails from "./CourseDetails";
 import EventDetailsHeader from "./EventDetailsHeader";
+import GuideLines from "./GuideLines";
 
 const EventDetails = () => {
     return (
@@ -8,6 +9,7 @@ const EventDetails = () => {
             <div className="grid grid-cols-4 gap-16 container mx-auto">
                 <div className="col-span-3">
                     <CourseDetails />
+                    <GuideLines />
                 </div>
                 <div className="col-span-1">
                 
