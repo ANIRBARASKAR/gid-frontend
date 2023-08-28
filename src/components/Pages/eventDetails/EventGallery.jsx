@@ -13,6 +13,12 @@ const EventGallery = () => {
                     </div>
                 </div>
             </div>
+            <div className="flex justify-center mt-10">
+                <div>
+                    <img className="relative w-[124px] h-[119px] md:h-[239px] md:w-[249px]" src="https://i.ibb.co/ns2KKTP/Rectangle-1783.png" alt="" />
+                    <span className="absolute text-white ml-[80px] mt-[-110px]">ADVERTISE 1</span>
+                </div>
+            </div>
         </div>
     );
 };
