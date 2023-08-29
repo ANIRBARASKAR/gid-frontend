@@ -10,7 +10,7 @@ const EventDetailsHeader = () => {
             <div>
                 <div className='flex justify-center'>
                     <div className=''>
-                        <h2 className='text-xl font-medium text-[#001356] text-center px-6 py-4 rounded-lg shadow-xl inline-block bg-white ml-[30%] relative'>Registration Open</h2>
+                        <h2 className='text-xl font-medium text-[#001356] text-center px-6 py-4 rounded-lg shadow-xl inline-block bg-white ml-[25%] md:ml-[35%] relative'>Registration Open</h2>
 
                         <img className='mt-[-10px]' src="https://i.ibb.co/xjY0smf/image-47-1.png absolute" alt="" />
                     </div>

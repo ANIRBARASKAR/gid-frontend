@@ -9,7 +9,7 @@ import Reviews from "./Reviews";
 const Ratings = () => {
     return (
         <div className="container mx-auto mt-16">
-            <div className="grid grid-cols-2 gap-16">
+            <div className="grid lg:grid-cols-2 gap-16">
                 <div>
                     <div>
                         <div className='border border-gray-500 p-4 rounded-lg'>

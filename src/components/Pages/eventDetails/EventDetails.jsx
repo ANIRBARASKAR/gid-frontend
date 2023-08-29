@@ -1,6 +1,7 @@
 import CourseDetails from "./CourseDetails";
 import EventDetailsHeader from "./EventDetailsHeader";
 import EventGallery from "./EventGallery";
+import GoogleMap from "./GoogleMap";
 // import GoogleMap from "./GoogleMap";
 import GuideLines from "./GuideLines";
 import Ratings from "./Ratings";
@@ -9,7 +10,7 @@ import Reward from "./Reward";
 
 const EventDetails = () => {
     return (
-        <div>
+        <div className="px-2 lg:px-0">
             <EventDetailsHeader />
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-16 container mx-auto mt-8">
                 <div className="col-span-3">
@@ -20,7 +21,7 @@ const EventDetails = () => {
                 </div>
                 <div className="col-span-1">
                     <RegisterDetails />
-                    {/* <GoogleMap /> */}
+                    <GoogleMap />
                     <EventGallery />
                 </div>
             </div>

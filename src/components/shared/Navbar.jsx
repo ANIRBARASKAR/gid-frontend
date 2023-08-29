@@ -47,7 +47,7 @@ const Navbar = () => {
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
                             <span>
-                                ContactUs
+                                <NavLink to={"/contacts"}>ContactUs</NavLink>
                             </span>
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
