@@ -16,8 +16,8 @@ const Reward = () => {
             </div>
             {/* ADVERTISE TWO */}
             <div className="mt-8">
-                <img className="relative" src="https://i.ibb.co/27qPxtj/Rectangle-1784-1.png" alt="" />
-                <p className="absolute ml-[100px] md:[ml-100px] lg:ml-[300px] text-white mt-[-32px] md:mt-[-50px]">ADVERTISE 2</p>
+                <img className="relative w-full" src="https://i.ibb.co/27qPxtj/Rectangle-1784-1.png" alt="" />
+                <p className="absolute ml-[35%] lg:ml-[30%] text-white mt-[-40px] md:mt-[-60px] lg:mt-[-75px]">ADVERTISE 2</p>
             </div>
         </div>
     );
