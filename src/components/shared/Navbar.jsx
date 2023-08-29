@@ -57,7 +57,7 @@ const Navbar = () => {
                         </li>
                         <li className="hover:text-primary cursor-pointer transition-all delay-100 duration-300">
                             <span>
-                                How it Works
+                                <NavLink to={"/how-it-works"}>How it Works</NavLink>
                             </span>
                         </li>
                     </ul>

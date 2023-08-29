@@ -9,6 +9,7 @@ import EventPageTwo from "./components/Pages/eventPageTwo/EventPageTwo"
 import MultipleEvents from "./components/Pages/multipaleEvents/MultipleEvents"
 import EventDetails from "./components/Pages/eventDetails/EventDetails"
 import Contacts from "./components/Pages/contacts/Contacts"
+import HowItWorks from "./components/Pages/howItWorks.jsx/HowItWorks"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/multiple-event" element={<MultipleEvents />} />
           <Route path="/event-details" element={<EventDetails />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
         </Routes>
         <Footer />
       </div>
