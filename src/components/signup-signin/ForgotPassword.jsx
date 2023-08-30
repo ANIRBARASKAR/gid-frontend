@@ -16,12 +16,12 @@ const ForgotPassword = () => {
                 <div className="col-span-2">
                     <img className=" " src="https://i.ibb.co/kDQ2FdD/Background-1.png" alt="" />
                 </div>
-                <div className="col-span-1 mt-12">
+                <div className="col-span-1 mt-16">
                     <div>
                         <img className="mx-auto" src="https://i.ibb.co/4JM5spC/LOGO-PNG-3.png" alt="" />
-                        <p className="text-center text-[#555555] font-semibold">Sign up into your account</p>
+                        
                     </div>
-                    <div>
+                    <div className='mt-8'>
                         <form onSubmit={handleSubmit(onSubmit)} className="p-4">
                             <div className="mb-4">
                                 <label className='text-[#555555]' htmlFor="new password">Enter New Password :</label>
