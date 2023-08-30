@@ -11,6 +11,7 @@ import EventDetails from "./components/Pages/eventDetails/EventDetails"
 import Contacts from "./components/Pages/contacts/Contacts"
 import HowItWorks from "./components/Pages/howItWorks.jsx/HowItWorks"
 import Register from "./components/signup-signin/Register"
+import LogIn from "./components/signup-signin/LogIn"
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<LogIn />} />
         </Routes>
         <Footer />
       </div>
