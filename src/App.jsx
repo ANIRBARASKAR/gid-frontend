@@ -10,6 +10,7 @@ import MultipleEvents from "./components/Pages/multipaleEvents/MultipleEvents"
 import EventDetails from "./components/Pages/eventDetails/EventDetails"
 import Contacts from "./components/Pages/contacts/Contacts"
 import HowItWorks from "./components/Pages/howItWorks.jsx/HowItWorks"
+import Register from "./components/signup-signin/Register"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/event-details" element={<EventDetails />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />
       </div>
