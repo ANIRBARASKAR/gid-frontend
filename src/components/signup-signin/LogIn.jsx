@@ -1,5 +1,8 @@
 import { useForm } from 'react-hook-form';
-import { MdOutlineMailOutline , MdLockOutline } from 'react-icons/md';
+import { MdOutlineMailOutline, MdLockOutline } from 'react-icons/md';
+import { FcGoogle } from 'react-icons/fc';
+import { FaFacebook } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const LogIn = () => {
     const {
@@ -12,12 +15,12 @@ const LogIn = () => {
         console.log(data);
     };
     return (
-        <div>
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                <div className="col-span-3">
-                    <img className="w-full" src="https://i.ibb.co/kDQ2FdD/Background-1.png" alt="" />
+        <div className='container mx-auto my-6'>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="col-span-2">
+                    <img className=" " src="https://i.ibb.co/kDQ2FdD/Background-1.png" alt="" />
                 </div>
-                <div className="col-span-1">
+                <div className="col-span-1 mt-12">
                     <div>
                         <img className="mx-auto" src="https://i.ibb.co/4JM5spC/LOGO-PNG-3.png" alt="" />
                         <p className="text-center text-[#555555] font-semibold">Sign up into your account</p>
@@ -59,6 +62,28 @@ const LogIn = () => {
                             Login now
                         </button>
                     </form>
+                    <div className='flex justify-center mt-2'>
+                        <div className='flex items-center gap-4'>
+                            <div className='w-32 h-[1px] bg-gray-400'></div>
+                            <p className='text-gray-400'>OR</p>
+                            <div className='w-32 h-[1px] bg-gray-400'></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className='flex justify-center mt-8'>
+                            <button className='flex items-center gap-4 bg-[#F3F9FA] px-16 py-3 rounded-md'>
+                                <FcGoogle size={20} />
+                                <p className='text-[#313957] text-sm font-semibold'>Sign in with Google</p>
+                            </button>
+                        </div>
+                        <div className='flex justify-center mt-4'>
+                            <button className='flex items-center gap-2 bg-[#F3F9FA] px-16 py-3 rounded-md'>
+                                <FaFacebook className='text-blue-600' size={20} />
+                                <p className='text-[#313957] text-sm font-semibold'>Sign in with Facebook</p>
+                            </button>
+                        </div>
+                    </div>
+                    <p className='text-center text-sm mt-8'>Do not you have an account? <span className='text-blue-600'><Link >Sign up</Link></span></p>
                 </div>
             </div>
         </div>
