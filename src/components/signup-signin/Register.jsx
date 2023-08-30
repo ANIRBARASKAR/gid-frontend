@@ -12,7 +12,7 @@ const Register = () => {
     };
     return (
         <div className="container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 py-12">
                 <div>
                     <div>
                         <img className="mx-auto" src="https://i.ibb.co/4JM5spC/LOGO-PNG-3.png" alt="" />
@@ -119,7 +119,7 @@ const Register = () => {
                 <div className='flex justify-center px-4 lg:px-0'>
                     <div>
                         <img className="relative" src="https://i.ibb.co/W54yPTf/Vector-5.png" alt="" />
-                        <img className="absolute mt-[-450px] ml-[-40px] lg:mt-[-500px] lg:ml-[-50px]" src="https://i.ibb.co/S5bgtX3/sign-up-01-1.png" alt="" />
+                        <img className="absolute mt-[-450px] ml-[-40px] md:ml-[-70px] md:mt-[-500px] lg:ml-[-50px]" src="https://i.ibb.co/S5bgtX3/sign-up-01-1.png" alt="" />
                     </div>
                 </div>
             </div>
