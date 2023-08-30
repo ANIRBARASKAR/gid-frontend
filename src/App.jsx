@@ -12,6 +12,7 @@ import Contacts from "./components/Pages/contacts/Contacts"
 import HowItWorks from "./components/Pages/howItWorks.jsx/HowItWorks"
 import Register from "./components/signup-signin/Register"
 import LogIn from "./components/signup-signin/LogIn"
+import ForgotPassword from "./components/signup-signin/ForgotPassword"
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<LogIn />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
         <Footer />
       </div>
