@@ -14,6 +14,7 @@ import Register from "./components/signup-signin/Register"
 import LogIn from "./components/signup-signin/LogIn"
 import ForgotPassword from "./components/signup-signin/ForgotPassword"
 import RegistrationOTP from "./components/signup-signin/RegistrationOTP"
+import GetOtp from "./components/signup-signin/GetOtp"
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/login" element={<LogIn />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/regi-otp" element={<RegistrationOTP />} />
+          <Route path="/get-otp" element={<GetOtp />} />
         </Routes>
         <Footer />
       </div>
