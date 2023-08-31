@@ -13,6 +13,7 @@ import HowItWorks from "./components/Pages/howItWorks.jsx/HowItWorks"
 import Register from "./components/signup-signin/Register"
 import LogIn from "./components/signup-signin/LogIn"
 import ForgotPassword from "./components/signup-signin/ForgotPassword"
+import RegistrationOTP from "./components/signup-signin/RegistrationOTP"
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/regi-otp" element={<RegistrationOTP />} />
         </Routes>
         <Footer />
       </div>
