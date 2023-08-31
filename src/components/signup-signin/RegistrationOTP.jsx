@@ -6,39 +6,34 @@ const RegistrationOTP = () => {
                 <div>
                     <div>
                         <img className="mx-auto" src="https://i.ibb.co/4JM5spC/LOGO-PNG-3.png" alt="" />
-                        <p className="text-center text-[#555555]  font-semibold">Sign up into your account</p>
+                        <p className="text-center text-[#555555] mt-2 font-semibold">Sign up into your account</p>
                     </div>
-                    <div className='mt-12'>
-                        <div className="bg-red-400 inline-block rounded-2xl">
-                            <div className="flex justify-center bg-[#7E93B3] roundrd-tl-xl">
-                                <p className="text-center text-white inline-block p-4 ">Enter the OTP you
-                                    received on the given Mobile no.</p>
-                            </div>
-                            <div className="flex justify-center mt-12">
-                                <div className="mt-8 flex items-center gap-4">
-                                    <div>
-                                        <p className="text-center"></p>
-                                        <div className="w-8 h-[1.5px] bg-gray-400 "></div>
-                                    </div>
-                                    <div>
-                                        <p className="text-center"></p>
-                                        <div className="w-8 h-[1.5px] bg-gray-400"></div>
-                                    </div>
-                                    <div>
-                                        <p className="text-center"></p>
-                                        <div className="w-8 h-[1.5px] bg-gray-400"></div>
-                                    </div>
-                                    <div>
-                                        <p className="text-center"></p>
-                                        <div className="w-8 h-[1.5px] bg-gray-400"></div>
-                                    </div>
-                                    <div>
-                                        <p className="text-center"></p>
-                                        <div className="w-8 h-[1.5px] bg-gray-400"></div>
-                                    </div>
-                                    <div>
-                                        <p className="text-center"></p>
-                                        <div className="w-8 h-[1.5px] bg-gray-400"></div>
+                    <div className='mt-16'>
+                        <div className="flex justify-center">
+                            <div className="inline-block rounded-3xl bg-white shadow-2xl">
+                                <div className="flex justify-center bg-[#7E93B3] rounded-t-3xl shadow-lg">
+                                    <p className="text-center text-white p-4 ">Enter the OTP you received on the given Mobile no.</p>
+                                </div>
+                                <div className="flex justify-center my-16">
+                                    <div className="flex items-center gap-4">
+                                        <div>
+                                            <input className="outline-none w-12 border-b-2 border-[#284B80]" type="text" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <input className="outline-none w-12 border-b-2 border-[#284B80]" type="text" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <input className="outline-none w-12 border-b-2 border-[#284B80]" type="text" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <input className="outline-none w-12 border-b-2 border-[#284B80]" type="text" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <input className="outline-none w-12 border-b-2 border-[#284B80]" type="text" name="" id="" />
+                                        </div>
+                                        <div>
+                                            <input className="outline-none w-12 border-b-2 border-[#284B80]" type="text" name="" id="" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
