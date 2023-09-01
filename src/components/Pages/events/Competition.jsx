@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { FiBookmark } from 'react-icons/fi';
 import EventTitle from '../../reusable/EventTitle';
+import { useNavigate } from 'react-router-dom';
 
 const Competition = () => {
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('/event.json')
@@ -11,6 +13,11 @@ const Competition = () => {
             .then(data => setData(data))
             .catch(error => console.error('Error fetching data:', error));
     }, []);
+
+    const handleNavigate = () =>{
+        navigate("/eventTwo")
+    }
+
     return (
         <div className="container mx-auto mt-8 px-2 md:px-0">
             <EventTitle title="Competition" />
@@ -30,7 +37,7 @@ const Competition = () => {
                                     <p>{item.date}</p>
                                 </div>
                                 <div className="mt-3 flex justify-between">
-                                    <button className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
+                                    <button onClick={handleNavigate} className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
                                     <FiBookmark className='text-[#284B80]' size={25} />
                                 </div>
                             </div>

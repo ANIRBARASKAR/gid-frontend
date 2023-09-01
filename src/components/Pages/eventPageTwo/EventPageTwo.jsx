@@ -1,7 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import EventHeader from "../events/EventHeader";
 import { FiBookmark } from 'react-icons/fi';
 
 const EventPageTwo = () => {
+    const navigate = useNavigate();
+    const handleNavigate = () => {
+        navigate("/event-details");
+    }
     return (
         <div>
             <EventHeader />
@@ -26,7 +31,7 @@ const EventPageTwo = () => {
                                     <p>01/08/2023 Thursday 02:00 pm</p>
                                 </div>
                                 <div className=" mt-1 lg:mt-20 pb-4 flex justify-between">
-                                    <button className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
+                                    <button onClick={handleNavigate} className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
                                     <FiBookmark className='text-[#284B80] mr-6' size={25} />
                                 </div>
                             </div>
@@ -51,7 +56,7 @@ const EventPageTwo = () => {
                                     <p>01/08/2023 Thursday 02:00 pm</p>
                                 </div>
                                 <div className="mt-1 lg:mt-20 pb-4 flex justify-between">
-                                    <button className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
+                                    <button onClick={handleNavigate} className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
                                     <FiBookmark className='text-[#284B80] mr-6' size={25} />
                                 </div>
                             </div>
@@ -76,7 +81,7 @@ const EventPageTwo = () => {
                                     <p>01/08/2023 Thursday 02:00 pm</p>
                                 </div>
                                 <div className="mt-1 lg:mt-20 pb-4 flex justify-between">
-                                    <button className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
+                                    <button onClick={handleNavigate} className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
                                     <FiBookmark className='text-[#284B80] mr-6' size={25} />
                                 </div>
                             </div>
@@ -101,7 +106,7 @@ const EventPageTwo = () => {
                                     <p>01/08/2023 Thursday 02:00 pm</p>
                                 </div>
                                 <div className="mt-1 lg:mt-20 pb-4 flex justify-between">
-                                    <button className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
+                                    <button onClick={handleNavigate} className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
                                     <FiBookmark className='text-[#284B80] mr-6' size={25} />
                                 </div>
                             </div>
