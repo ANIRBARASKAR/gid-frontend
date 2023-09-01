@@ -3,26 +3,37 @@ import { AiOutlineCalendar } from 'react-icons/ai';
 import { BiDollar } from 'react-icons/bi';
 import RegisterModal from '../../modals/RegisterModal';
 import { useState } from 'react';
+import JoinTeamModal from '../../modals/JoinTeamModal';
 
 const RegisterDetails = () => {
     // Register Modal
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
 
-    const handleModalOpen = () => {
+    const handleRegiModalOpen = () => {
         setIsModalOpen(true);
     };
 
-    const handleModalClose = () => {
+    const handleRegiClose = () => {
         setIsModalOpen(false);
+    };
+
+    const handleTeamModalOpen = () => {
+        setIsTeamModalOpen(true);
+    };
+
+    const handleTeamClose = () => {
+        setIsTeamModalOpen(false);
     };
 
     return (
         <div className="container mx-auto mt-6">
             <div className="flex justify-center">
                 <div className="flex gap-8 items-center">
-                    <button onClick={handleModalOpen} className="px-6 py-2 border-2 border-[##284B80] rounded-lg text-xs text-white bg-[#284B80]">Register</button>
-                    {isModalOpen && <RegisterModal onClose={handleModalClose} />}
-                    <button className="px-6 py-2 border-2 border-[##284B80] rounded-lg text-xs text-white bg-[#284B80]">Join Team</button>
+                    <button onClick={handleRegiModalOpen} className="px-6 py-2 border-2 border-[##284B80] rounded-lg text-xs text-white bg-[#284B80]">Register</button>
+                    {isModalOpen && <RegisterModal onClose={handleRegiClose} />}
+                    <button onClick={handleTeamModalOpen} className="px-6 py-2 border-2 border-[##284B80] rounded-lg text-xs text-white bg-[#284B80]">Join Team</button>
+                    {isTeamModalOpen && <JoinTeamModal onClose={handleTeamClose} />}
                 </div>
             </div>
             <div className='text-[#001356] bg-[#F5F5F5] mt-12 grid grid-cols-2 gap-16 px-4 py-8 rounded-lg'>
