@@ -1,13 +1,27 @@
 import { FiUsers } from 'react-icons/fi';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { BiDollar } from 'react-icons/bi';
+import RegisterModal from '../../modals/RegisterModal';
+import { useState } from 'react';
 
 const RegisterDetails = () => {
+    // Register Modal
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleModalOpen = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleModalClose = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <div className="container mx-auto mt-6">
             <div className="flex justify-center">
                 <div className="flex gap-8 items-center">
-                    <button className="px-6 py-2 border-2 border-[##284B80] rounded-lg text-xs text-white bg-[#284B80]">Register</button>
+                    <button onClick={handleModalOpen} className="px-6 py-2 border-2 border-[##284B80] rounded-lg text-xs text-white bg-[#284B80]">Register</button>
+                    {isModalOpen && <RegisterModal onClose={handleModalClose} />}
                     <button className="px-6 py-2 border-2 border-[##284B80] rounded-lg text-xs text-white bg-[#284B80]">Join Team</button>
                 </div>
             </div>

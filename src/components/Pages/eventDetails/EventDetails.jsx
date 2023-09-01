@@ -19,7 +19,7 @@ const EventDetails = () => {
                     <Reward />
                     <Ratings />
                 </div>
-                
+
                 <div className="col-span-1">
                     <RegisterDetails />
                     <GoogleMap />
