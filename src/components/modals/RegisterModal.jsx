@@ -10,7 +10,7 @@ const RegisterModal = ({ onClose }) => {
                 </div>
                 <span className="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
                 &#8203;
-                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle lg:max-w-[95%] sm:max-w-lg sm:w-full"
                     role="dialog"
                     aria-modal="true"
                     aria-labelledby="modal-headline"
@@ -32,32 +32,33 @@ const RegisterModal = ({ onClose }) => {
                                 <div className='mt-5'>
                                     <form action="">
                                         <label className='text-[#001356] font-medium' htmlFor="team_name">Team Name:</label> <br />
-                                        <input className='outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="text" id="team_name" name="team_name" required placeholder='Enter Title' /> <br /> <br />
+                                        <input className='w-[48%] outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="text" id="team_name" name="team_name" required placeholder='Enter Title' /> <br /> <br />
 
                                         <h3 className="text-xl leading-6 font-semibold text-[#001356]" id="modal-headline">
                                             Register Your Team
                                         </h3>
                                         <div className='mt-5'>
-                                            <div className='flex items-center gap-6'>
+                                            <div className='grid grid-cols-2 gap-8'>
                                                 <div>
                                                     <label className='text-[#001356] font-medium' htmlFor="name">Name:</label><br />
-                                                    <input className='outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="text" id="name" name="name" required placeholder='Enter title' /><br /><br />
+                                                    <input className='w-full outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="text" id="name" name="name" required placeholder='Enter title' /><br /><br />
                                                 </div>
                                                 <div>
                                                     <label className='text-[#001356] font-medium' htmlFor="email">Email:</label><br />
-                                                    <input className='outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="email" id="email" name="email" required placeholder='Enter Your Email' /><br /><br />
+                                                    <input className='w-full outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="email" id="email" name="email" required placeholder='Enter Your Email' /><br /><br />
                                                 </div>
                                             </div>
-                                            <div className='flex items-center gap-6'>
+                                            <div className='grid grid-cols-2 gap-8'>
                                                 <div>
                                                     <label className='text-[#001356] font-medium' htmlFor="mobile">Mobile No:</label><br />
-                                                    <input className='outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="tel" id="mobile" name="mobile" required placeholder='+91' /><br /><br />
+                                                    <input className='w-full outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="tel" id="mobile" name="mobile" required placeholder='+91' /><br /><br />
                                                 </div>
                                                 <div>
                                                     <label className='text-[#001356] font-medium' htmlFor="organization">Organization:</label><br />
-                                                    <input className='outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="text" id="organization" name="organization" required placeholder='Enter Organization Name' /><br /><br />
+                                                    <input className='w-full outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="text" id="organization" name="organization" required placeholder='Enter Organization Name' /><br /><br />
                                                 </div>
                                             </div>
+                                            {/* Gender */}
                                             <div>
                                                 <label className='text-[#001356] font-medium'>Gender</label><br />
                                                 <div className='flex items-center gap-4 mt-2'>
@@ -75,6 +76,7 @@ const RegisterModal = ({ onClose }) => {
                                                     </div>
                                                 </div>
                                             </div>
+                                            {/* Qualification Type */}
                                             <div className='mt-4'>
                                                 <label className='text-[#001356] font-medium'>Qualification Type</label><br />
                                                 <div className='flex items-center gap-4 mt-2'>
@@ -89,6 +91,27 @@ const RegisterModal = ({ onClose }) => {
                                                     <div className='flex items-center gap-2'>
                                                         <input type="radio" id="others" name="gender" value="others" required />
                                                         <label htmlFor="female">Others</label><br />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='mt-4 border border-[#001356] rounded-md lg:w-[60%]'>
+                                                <div className='px-2'>
+                                                    <p className='text-[#001356] text-lg'>Select school student</p>
+                                                    <div className='grid grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>1st</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2nd</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>3rd</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>4th</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>5th</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>6th</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>7th</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>8th</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>9th</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>10th</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>11th com.</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>12th com.</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>11th sci</p>
+                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>12th sci</p>
                                                     </div>
                                                 </div>
                                             </div>
