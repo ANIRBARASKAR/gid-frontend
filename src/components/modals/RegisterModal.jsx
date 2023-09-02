@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const RegisterModal = ({ onClose }) => {
     return (
-        <div className="fixed z-10 inset-0 overflow-y-auto">
+        <div className="fixed z-10 inset-0 overflow-y-auto mt-24">
             <div className="flex items-end justify-end min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                 <div className="fixed inset-0 transition-opacity">
                     <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
@@ -99,19 +99,45 @@ const RegisterModal = ({ onClose }) => {
                                                     <p className='text-[#001356] text-lg'>Select school student</p>
                                                     <div className='grid grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
                                                         <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>1st</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2nd</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>3rd</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>4th</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>5th</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>6th</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2nd</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>3rd</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>4th</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>5th</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>6th</p>
                                                         <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>7th</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>8th</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>9th</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>10th</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>11th com.</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>12th com.</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>11th sci</p>
-                                                        <p  className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>12th sci</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>8th</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>9th</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>10th</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>11th com.</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>12th com.</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>11th sci</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>12th sci</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='mt-4 border border-[#001356] rounded-md lg:w-[60%]'>
+                                                <div className='px-2'>
+                                                    <p className='text-[#001356] text-lg'>Select college student</p>
+                                                    <div className='grid grid-cols-5 gap-4 mt-1 pb-2 text-sm'>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Management</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Science & technology</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Diploma</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Computer Application</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Science & Arts</p>
+                                                    </div>
+                                                    <div className='flex items-center gap-4 mt-2'>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Computer</p>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Electrical</p>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Civil</p>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Mechanical</p>
+                                                    </div>
+                                                    <div className='flex items-center gap-4 my-3'>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2023</p>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2024</p>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2025</p>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2026</p>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2027</p>
+                                                        <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2028</p>
                                                     </div>
                                                 </div>
                                             </div>
