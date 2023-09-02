@@ -15,6 +15,8 @@ import LogIn from "./components/signup-signin/LogIn"
 import ForgotPassword from "./components/signup-signin/ForgotPassword"
 import RegistrationOTP from "./components/signup-signin/RegistrationOTP"
 import GetOtp from "./components/signup-signin/GetOtp"
+import HowToParticipate from "./components/Pages/howItWorks.jsx/HowToParticipate"
+
 
 function App() {
 
@@ -33,6 +35,7 @@ function App() {
           <Route path="/event-details" element={<EventDetails />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/how-to-participate" element={<HowToParticipate />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
