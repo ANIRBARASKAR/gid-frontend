@@ -141,6 +141,26 @@ const RegisterModal = ({ onClose }) => {
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div className='mt-4 border border-[#001356] rounded-md lg:w-[60%]'>
+                                                <div className='px-2'>
+                                                    <p className='text-[#001356] text-lg'>Select working professionals experience</p>
+                                                    <div className='grid grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>All</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Upto 11 months</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>1 year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>3year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>4year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>5year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>6year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>7year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>8year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>9year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>10year</p>
+                                                        <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>10years</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
