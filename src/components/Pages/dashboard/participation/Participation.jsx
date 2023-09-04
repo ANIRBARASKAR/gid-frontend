@@ -20,15 +20,15 @@ const Participation = () => {
                 </div>
             </div>
             <div className='mt-5'>
-                <table className="w-[100%]">
+                <table className="w-[100%] mt-8">
                     <thead>
                         <tr className='text-[#001356]'>
-                            <th>No</th>
-                            <th>Name</th>
-                            <th>Start Date</th>
-                            <th>End Date </th>
-                            <th>Status </th>
-                            <th>Event Type</th>
+                            <th className='py-4'>No</th>
+                            <th className='py-4'>Name</th>
+                            <th className='py-4'>Start Date</th>
+                            <th className='py-4'>End Date </th>
+                            <th className='py-4'>Status </th>
+                            <th className='py-4'>Event Type</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,9 +36,16 @@ const Participation = () => {
                             <tr key={index} className="border-b border-gray-300 text-gray-500">
                                 <td className='text-center py-4'>{index + 1}</td>
                                 <td className='text-center py-4'>{item.name}</td>
-                                <td className='text-center'>{item.sdate}</td>
-                                <td className='text-center'>{item.edate}</td>
-                                <td className='text-center'><span className='bg-[#23AE00] text-white px-2 py-1 rounded-lg'>{item.status}</span></td>
+                                <td className='text-center py-4'>{item.sdate}</td>
+                                <td className='text-center py-4'>{item.edate}</td>
+                                <td className='text-center py-4'>
+                                    <span
+                                        className={`px-2 py-1 rounded-lg ${item.status === 'On Sale' ? 'bg-[#23AE00] text-white' : 'bg-[#F2994A] text-white'
+                                            }`}
+                                    >
+                                        {item.status}
+                                    </span>
+                                </td>
                                 <td className='text-center'>{item.type}</td>
                             </tr>
                         ))}
