@@ -95,7 +95,7 @@ const RegisterModal = ({ onClose }) => {
                                                 </div>
                                             </div>
                                             <div className='mt-4 border border-[#001356] rounded-md lg:w-[60%]'>
-                                                <div className='px-2'>
+                                                <div className='px-2 cursor-pointer'>
                                                     <p className='text-[#001356] text-lg'>Select school student</p>
                                                     <div className='grid grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
                                                         <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>1st</p>
@@ -115,7 +115,7 @@ const RegisterModal = ({ onClose }) => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='mt-4 border border-[#001356] rounded-md lg:w-[60%]'>
+                                            <div className='mt-4 border border-[#001356] rounded-md lg:w-[60%] cursor-pointer'>
                                                 <div className='px-2'>
                                                     <p className='text-[#001356] text-lg'>Select college student</p>
                                                     <div className='grid grid-cols-5 gap-4 mt-1 pb-2 text-sm'>
@@ -141,7 +141,7 @@ const RegisterModal = ({ onClose }) => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='mt-4 border border-[#001356] rounded-md lg:w-[60%]'>
+                                            <div className='mt-4 border border-[#001356] rounded-md lg:w-[60%] cursor-pointer'>
                                                 <div className='px-2'>
                                                     <p className='text-[#001356] text-lg'>Select working professionals experience</p>
                                                     <div className='grid grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
@@ -161,6 +161,7 @@ const RegisterModal = ({ onClose }) => {
                                                     </div>
                                                 </div>
                                             </div>
+                                            <button className='px-6 py-2 rounded-lg bg-[#284B80] text-white mt-5'>Register</button>
                                         </div>
                                     </form>
                                 </div>

@@ -10,7 +10,7 @@ const JoinTeamModal = ({ onClose }) => {
                 </div>
                 <span className="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
                 &#8203;
-                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full lg:max-w-[80%]"
                     role="dialog"
                     aria-modal="true"
                     aria-labelledby="modal-headline"
@@ -32,12 +32,14 @@ const JoinTeamModal = ({ onClose }) => {
                                 <div className='mt-5'>
                                     <form action="">
                                         <div className='flex justify-between items-center gap-8'>
-                                            <div className='flex items-center gap-8'>
-                                                <div>
+                                            <div className='grid grid-cols-4 gap-4'>
+                                                <div className='col-span-3'>
                                                     <label className='text-[#001356] font-medium' htmlFor="team_name">Team Code:</label> <br />
-                                                    <input className='outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1' type="text" id="team_name" name="team_name" required placeholder='Enter Title' /> <br /> <br />
+                                                    <input className='outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1 w-full' type="text" id="team_name" name="team_name" required placeholder='Enter Title' /> <br /> <br />
                                                 </div>
-                                                <button className='text-white bg-[#284B80] px-4 py-1 rounded-md'>Join Team</button>
+                                                <div className='col-span-1 mt-6'>
+                                                    <button className='text-white bg-[#284B80] px-4 py-1 rounded-md'>Join Team</button>
+                                                </div>
                                             </div>
                                             <div>
                                                 <p className='text-[#001356]'>Your Team code is : <b>abc@123</b></p>
