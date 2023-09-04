@@ -4,7 +4,7 @@ import DashboardMenu from "./DashboardMenu";
 
 const Dashboard = () => {
     return (
-        <div className="flex items-center bg-[#F6F6F6] pb-8">
+        <div className="flex items-center bg-[#F6F6F6] pb-8 lg:pr-6">
             <div>
                 <DashboardMenu />
             </div>

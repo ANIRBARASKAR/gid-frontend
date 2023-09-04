@@ -1,5 +1,6 @@
 import Profile from "./Profile";
 import ProfileReviews from "./ProfileReviews";
+import RecentEvents from "./RecentEvents";
 
 const MyProfile = () => {
     return (
@@ -12,6 +13,7 @@ const MyProfile = () => {
                     <ProfileReviews />
                 </div>
             </div>
+            <RecentEvents />
         </div>
     );
 };
