@@ -4,11 +4,11 @@ import DashboardMenu from "./DashboardMenu";
 
 const Dashboard = () => {
     return (
-        <div className="flex items-center">
-            <div>
+        <div className="grid grid-cols-4 bg-[#F6F6F6]">
+            <div className="col-span-1">
                 <DashboardMenu />
             </div>
-            <div>
+            <div className="col-span-3">
                 <Outlet />
             </div>
         </div>
