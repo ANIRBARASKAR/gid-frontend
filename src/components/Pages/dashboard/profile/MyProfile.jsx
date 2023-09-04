@@ -1,71 +1,15 @@
+import Profile from "./Profile";
+import ProfileReviews from "./ProfileReviews";
 
 const MyProfile = () => {
     return (
-        <div className="">
-            <div className="mt-5">
-                <div className="grid grid-cols-2 gap-8">
-                    <div>
-                        <h1 className="text-[#001356] text-[26px] font-semibold">My Profile</h1>
-                        <div className="bg-white p-6 grid grid-cols-2">
-                            <div className="text-[14px] text-[#001356]">
-                                <img src="https://i.ibb.co/j4HRznb/Ellipse-1501.png" alt="" />
-                                <div className="mt-4">
-                                    <div className="flex items-center gap-3">
-                                        <img src="https://i.ibb.co/FmCDcQZ/Vector-1.png" alt="" />
-                                        <p>+1012 3456 789</p>
-                                    </div>
-                                    <div className="flex items-center gap-3 mt-1">
-                                        <img src="https://i.ibb.co/hCMnJS8/Vector-2.png" alt="" />
-                                        <p>demo@gmail.com</p>
-                                    </div>
-                                    <div className="flex items-center gap-3 mt-1">
-                                        <img src="https://i.ibb.co/LpZck64/check-circle.png" alt="" />
-                                        <p>33 Following</p>
-                                    </div>
-                                    <div className="flex items-center gap-3 mt-1">
-                                        <img src="https://i.ibb.co/zbk0kPn/coffee.png" alt="" />
-                                        <p>13 event attended</p>
-                                    </div>
-                                    <div className="flex items-center gap-3 mt-1">
-                                        <img src="https://i.ibb.co/Gpfn6PH/shield.png" alt="" />
-                                        <p>Organization Name</p>
-                                    </div>
-                                    <div className="flex items-center gap-3 mt-1">
-                                        <img src="https://i.ibb.co/1ZyLZ5z/gift.png" alt="" />
-                                        <p>Member since 23/01/2021</p>
-                                    </div>
-                                    <div className="flex items-center gap-3 mt-1">
-                                        <img src="https://i.ibb.co/nMrmXZ3/home.png" alt="" />
-                                        <p>London, England</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <h1 className="text-[#001356] text-xl font-medium">Username</h1>
-                                <p className="text-gray-500">xyz@gmail.com</p>
-                                <div>
-                                    <p className="text-[#001356] font-semibold text-base">About</p>
-                                    <p className="text-gray-500">Lorem ipsum dolor sit amet consectetur. Morbi gravida dui amet blandit aliquet euismod in ridiculus. Fermentum scelerisque amet cursus massa morbi venenatis. Amet f</p>
-                                </div>
-                                <div className="mt-2">
-                                    <p className="text-[#001356] font-semibold text-base">Personal information</p>
-                                    <div className="text-gray-500 text-sm">
-                                        User Type : College Student
-                                        <p>Qualification : BCA (3rd Year)</p>
-                                        <p>Fisrt Name : xyz</p>
-                                        <p>Last Name : xyz</p>
-                                        <p>Date of Birth :01/010/1999</p>
-                                        <p>Address : xyz</p>
-                                        <p>Last Login : 20 minutes Ago</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="text-[#001356] text-[26px] font-semibold">My Profile</h1>
-                    </div>
+        <div className="mt-5 lg:ml-[300px]">
+            <div className="grid lg:grid-cols-2 md:gap-4 lg:gap-12">
+                <div>
+                    <Profile />
+                </div>
+                <div>
+                    <ProfileReviews />
                 </div>
             </div>
         </div>
