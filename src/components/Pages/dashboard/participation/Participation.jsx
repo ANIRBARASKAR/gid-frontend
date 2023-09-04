@@ -1,8 +1,8 @@
 
 const Participation = () => {
     return (
-        <div className="lg:ml-[300px]">
-            <h1>Participation page</h1>
+        <div className="mt-5 lg:ml-[300px]">
+            <h1 className="text-[#001356] text-[26px] font-semibold">My Profile</h1>
         </div>
     );
 };
