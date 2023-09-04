@@ -43,7 +43,7 @@ const RecentEvents = () => {
                         <div className="mt-8 bg-white rounded-lg mb-5" style={{
                             boxShadow: "0px 4px 10px 0px #0000001A"
                         }}>
-                            <div className="flex items-center justify-between gap-4">
+                            <div className="md:flex items-center justify-between gap-4">
                                 <div className="p-4 rounded-xl flex gap-8">
                                     <div>
                                         <img className=" " src={item.img} alt="" />
@@ -59,7 +59,7 @@ const RecentEvents = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <div className="px-4 md:px-0">
                                     <p className="text-xl font-medium text-[#001356]">1 ticket</p>
                                     <div className="textsm text-[#001356]">
                                         <div className="flex items-center gap-12">
@@ -77,7 +77,7 @@ const RecentEvents = () => {
 
                                     </div>
                                 </div>
-                                <div className="mt-3 pr-6">
+                                <div className="mt-3 pr-6 flex justify-center pb-2">
                                     <button className="bg-[#284B80] px-4 py-1 text-white rounded-lg">View Details</button>
                                 </div>
                             </div>
