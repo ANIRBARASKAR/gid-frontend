@@ -16,6 +16,14 @@ import ForgotPassword from "./components/signup-signin/ForgotPassword"
 import RegistrationOTP from "./components/signup-signin/RegistrationOTP"
 import GetOtp from "./components/signup-signin/GetOtp"
 import HowToParticipate from "./components/Pages/howItWorks.jsx/HowToParticipate"
+import Dashboard from "./components/Pages/dashboard/Dashboard"
+import MyProfile from "./components/Pages/dashboard/profile/MyProfile"
+import MyTickets from "./components/Pages/dashboard/tickets/MyTickets"
+import Participation from "./components/Pages/dashboard/participation/Participation"
+import MyReviews from "./components/Pages/dashboard/reviews/MyReviews"
+import Certifications from "./components/Pages/dashboard/certifications/Certifications"
+import SavedEvents from "./components/Pages/dashboard/savedEvents/SavedEvents"
+import Blogs from "./components/Pages/dashboard/blogs/Blogs"
 
 
 function App() {
@@ -41,6 +49,16 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/regi-otp" element={<RegistrationOTP />} />
           <Route path="/get-otp" element={<GetOtp />} />
+          {/* DASHBOARD */}
+          <Route path="/dashboard" element={<Dashboard />}>
+              <Route path="profile" element={<MyProfile />} />
+              <Route path="tickets" element={<MyTickets />} />
+              <Route path="participation" element={<Participation />} />
+              <Route path="reviews" element={<MyReviews />} />
+              <Route path="certification" element={<Certifications />} />
+              <Route path="saved-events" element={<SavedEvents />} />
+              <Route path="blogs" element={<Blogs />} />
+          </Route>
         </Routes>
         <Footer />
       </div>

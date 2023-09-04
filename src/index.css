@@ -45,7 +45,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* =========== */
 
 .react-multiple-carousel__arrow{
-    background-color: #001356;
+    background-color: hsl(240, 1%, 24%);
 }
 
 .react-multiple-carousel__arrow--right {
