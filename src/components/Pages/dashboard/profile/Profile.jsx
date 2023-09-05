@@ -9,8 +9,8 @@ const handleNavigate = () => {
 
     return (
         <div>
-            <h1 className="text-[#001356] text-[26px] font-semibold">My Profile</h1>
-            <div className="bg-white lg:p-6 grid-cols-1 grid md:grid-cols-2 mt-8 rounded-lg mx-6" style={{
+            <h1 className="text-[#001356] text-[26px] font-semibold mx-6 md:mx-0">My Profile</h1>
+            <div className="bg-white lg:p-6 grid-cols-1 grid md:grid-cols-2 mt-8 rounded-lg mx-5 lg:mx-0 px-4 py-4" style={{
                 boxShadow: "0px 4px 10px 0px #0000001A"
             }}>
                 <div className="text-[14px] text-[#001356] font-medium">

@@ -27,9 +27,9 @@ const profileReview = [
 
 const ProfileReviews = () => {
     return (
-        <div>
-            <h1 className="text-[#001356] text-[26px] font-semibold">My Reviews</h1>
-            <div className="mt-8 bg-white p-3 lg:p-6 rounded-lg mx-4" style={{
+        <div className='mt-8 md:mt-0'>
+            <h1 className="text-[#001356] text-[26px] font-semibold mx-6 md:mx-0">My Reviews</h1>
+            <div className="mt-8 bg-white p-3 lg:p-6 rounded-lg mx-4 md:mx-0" style={{
                 boxShadow: "0px 4px 10px 0px #0000001A"
             }}>
                 {
