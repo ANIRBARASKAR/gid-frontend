@@ -24,6 +24,7 @@ import MyReviews from "./components/Pages/dashboard/reviews/MyReviews"
 import Certifications from "./components/Pages/dashboard/certifications/Certifications"
 import SavedEvents from "./components/Pages/dashboard/savedEvents/SavedEvents"
 import Blogs from "./components/Pages/dashboard/blogs/Blogs"
+import EditProfile from "./components/Pages/dashboard/profile/EditProfile"
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           {/* DASHBOARD */}
           <Route path="/dashboard" element={<Dashboard />}>
               <Route path="profile" element={<MyProfile />} />
+              <Route path="edit-profile" element={<EditProfile />} />
               <Route path="tickets" element={<MyTickets />} />
               <Route path="participation" element={<Participation />} />
               <Route path="reviews" element={<MyReviews />} />

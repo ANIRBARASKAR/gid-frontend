@@ -1,5 +1,12 @@
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
+
+const navigative = useNavigate();
+const handleNavigate = () => {
+    navigative("/edit-profile");
+}
+
     return (
         <div>
             <h1 className="text-[#001356] text-[26px] font-semibold">My Profile</h1>
@@ -58,7 +65,7 @@ const Profile = () => {
                             <p>Last Login : 20 minutes Ago</p>
                         </div>
                     </div>
-                    <button className="bg-[#001356] text-white px-6 py-2 mt-3 rounded-lg" style={{
+                    <button onClick={handleNavigate} className="bg-[#001356] text-white px-6 py-2 mt-3 rounded-lg" style={{
                         boxShadow: "0px -4px 4px 0px #000D3D inset"
                     }}>Edit profile</button>
                 </div>
