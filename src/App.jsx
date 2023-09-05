@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import Home from "./components/Pages/home/Home"
 import Footer from "./components/shared/Footer"
 import Navbar from "./components/shared/Navbar"
@@ -28,6 +28,8 @@ import EditProfile from "./components/Pages/dashboard/profile/EditProfile"
 
 
 function App() {
+  const location = useLocation();
+  const isDashboardPage = location.pathname.startsWith("/dashboard");
 
   return (
     <>
@@ -62,7 +64,7 @@ function App() {
               <Route path="blogs" element={<Blogs />} />
           </Route>
         </Routes>
-        <Footer />
+        {!isDashboardPage && <Footer />}
       </div>
     </>
   )
