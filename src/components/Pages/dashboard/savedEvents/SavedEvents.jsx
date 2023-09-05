@@ -27,12 +27,12 @@ const events = [
 const SavedEvents = () => {
     return (
         <div className="lg:ml-[300px]">
-            <div className="mt-5 flex items-center gap-2">
+            <div className="mt-5 flex items-center gap-2 mx-4 md:mx-0">
                 <h1 className="text-[#001356] text-[26px] font-semibold">Saved Events</h1>
                 <img src="https://i.ibb.co/1LrRSX8/Add-Bookmark.png" alt="" />
             </div>
             <div>
-                <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-4 md:mx-0">
                     {events.map(item => (
                         <>
                             <div className="shadow-lg p-4 rounded-lg">
