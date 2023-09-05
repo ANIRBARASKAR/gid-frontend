@@ -10,11 +10,11 @@ const handleNavigate = () => {
     return (
         <div>
             <h1 className="text-[#001356] text-[26px] font-semibold">My Profile</h1>
-            <div className="bg-white p-6 grid-cols-1 grid md:grid-cols-2 mt-8 rounded-lg" style={{
+            <div className="bg-white lg:p-6 grid-cols-1 grid md:grid-cols-2 mt-8 rounded-lg mx-6" style={{
                 boxShadow: "0px 4px 10px 0px #0000001A"
             }}>
                 <div className="text-[14px] text-[#001356] font-medium">
-                    <img src="https://i.ibb.co/j4HRznb/Ellipse-1501.png" alt="" />
+                    <img className="" src="https://i.ibb.co/j4HRznb/Ellipse-1501.png" alt="" />
                     <div className="mt-4">
                         <div className="flex items-center gap-3">
                             <img src="https://i.ibb.co/FmCDcQZ/Vector-1.png" alt="" />
@@ -51,7 +51,7 @@ const handleNavigate = () => {
                     <p className="text-gray-500">xyz@gmail.com</p>
                     <div className="mt-1">
                         <p className="text-[#001356] font-semibold text-base">About</p>
-                        <p className="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur. Morbi gravida dui amet blandit aliquet euismod in ridiculus. Fermentum scelerisque amet cursus massa morbi venenatis. Amet f</p>
+                        <p className="text-gray-500 text-xs md:text-sm">Lorem ipsum dolor sit amet consectetur. Morbi gravida dui amet blandit aliquet euismod in ridiculus. Fermentum scelerisque amet cursus massa morbi venenatis. Amet f</p>
                     </div>
                     <div className="mt-2">
                         <p className="text-[#001356] font-semibold text-base">Personal information</p>
