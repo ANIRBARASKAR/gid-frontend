@@ -4,7 +4,7 @@ const Profile = () => {
 
 const navigative = useNavigate();
 const handleNavigate = () => {
-    navigative("/edit-profile");
+    navigative("../edit-profile");
 }
 
     return (
