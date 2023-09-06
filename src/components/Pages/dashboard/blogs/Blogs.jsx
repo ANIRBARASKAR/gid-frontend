@@ -1,5 +1,6 @@
 import { FaHeart } from 'react-icons/fa';
 import { BsBoxArrowInDown } from 'react-icons/bs';
+import { BiBookmark } from 'react-icons/bi';
 
 const blog = [
     {
@@ -69,7 +70,7 @@ const Blogs = () => {
                                                     <small>72</small>
                                                 </div>
                                                 <div>
-                                                    <img src="https://i.ibb.co/vkNfGWz/Vector.png" alt="" />
+                                                    <BiBookmark />
                                                 </div>
                                             </div>
                                         </div>

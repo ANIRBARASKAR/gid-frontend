@@ -12,17 +12,6 @@ const DashboardMenu = () => {
                     <div className="flex flex-col">
 
                         <ul className="flex-col min-w-full flex list-none mt-2">
-                            {/* <li className="mb-4">
-                                <NavLink
-                                    to="/dashboard"
-                                    exact
-                                    className={style}
-                                >
-
-                                    <img src="https://i.ibb.co/0ZKqcwK/element-3.png" alt="" />
-                                    My Profile
-                                </NavLink>
-                            </li> */}
                             <li className="mb-4">
                                 <NavLink
                                     to="/dashboard/profile"
