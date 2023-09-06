@@ -9,33 +9,35 @@ const EditProfile = () => {
 
     return (
         <div className="mt-5 lg:ml-[300px]">
-            <img src="https://i.ibb.co/wCyschy/Ellipse-1502.png" alt="" />
-            <div className="">
-                <h2 className="text-2xl font-semibold mb-5">User Information</h2>
+            <div>
+                <img src="https://i.ibb.co/wCyschy/Ellipse-1502.png" alt="" />
+            </div>
+            <div className="mx-4">
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className='grid grid-cols-3 gap-8'>
-                        <div className="mb-4">
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="firstName">First Name</label>
                             <input
                                 type="text"
                                 id="firstName"
                                 {...register('firstName', { required: true })}
-                                placeholder='Enter yourname'
+                                placeholder='Enter your name'
                                 className="input w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2"
                             />
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="lastName">Last Name</label>
                             <input
                                 type="text"
                                 id="lastName"
                                 {...register('lastName', { required: true })}
+                                placeholder='Enter your name'
                                 className="input w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2"
                             />
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="gender">Gender</label>
                             <select id="gender" {...register('gender')} className="input text-[#555555] w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2">
                                 <option value="male">Male</option>
@@ -45,39 +47,42 @@ const EditProfile = () => {
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-3 gap-8'>
-                        <div className="mb-4">
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="email">Email Id</label>
                             <input
                                 type="email"
                                 id="email"
                                 {...register('email', { required: true })}
+                                placeholder='info@xyz.com'
                                 className="input w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2"
                             />
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="mobile">Mobile No</label>
                             <input
                                 type="tel"
                                 id="mobile"
                                 {...register('mobile', { required: true })}
+                                placeholder='+91 - 98596 58000'
                                 className="input w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2"
                             />
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="address">Address</label>
                             <input
                                 id="address"
                                 {...register('address', { required: true })}
+                                placeholder='Enter your Address'
                                 className="input w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2"
                             />
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-3 gap-8'>
-                        <div className="mb-4">
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="birthdate">Birth Date</label>
                             <input
                                 type="date"
@@ -87,16 +92,17 @@ const EditProfile = () => {
                             />
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="about">About</label>
                             <input
                                 id="about"
                                 {...register('about')}
+                                placeholder='Enter your about'
                                 className="input w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2"
                             />
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="country">Country</label>
                             <select id="country" {...register('country')} className="input text-[#555555] w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2">
                                 <option value="usa">USA</option>
@@ -106,8 +112,8 @@ const EditProfile = () => {
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-3 gap-8'>
-                        <div className="mb-4">
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="userType">User Type</label>
                             <select id="userType" {...register('userType')} className="input text-[#555555] w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2">
                                 <option value="student">Student</option>
@@ -116,7 +122,7 @@ const EditProfile = () => {
                             </select>
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="education">Domain of Education</label>
                             <select id="education" {...register('education')} className="input text-[#555555] w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2">
                                 <option value="student">Engineering</option>
@@ -125,7 +131,7 @@ const EditProfile = () => {
                             </select>
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="gradYear">Year of Graduation</label>
                             <select id="gradYear" {...register('gradYear')} className="input text-[#555555] w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2">
                                 <option value="student">Computer Application (BCA)</option>
@@ -135,18 +141,19 @@ const EditProfile = () => {
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-3 gap-8'>
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
                         <div className="mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="orgName">Institution / Organization Name :</label>
                             <input
                                 type="text"
                                 id="orgName"
                                 {...register('orgName')}
+                                placeholder='Enter your name..'
                                 className="input w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2"
                             />
                         </div>
 
-                        <div className="mb-4">
+                        <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="qualification">Qualification</label>
                             <select id="qualification" {...register('qualification')} className="input text-[#555555] w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2">
                                 <option value="student">Computer Application (BCA)</option>
@@ -155,10 +162,14 @@ const EditProfile = () => {
                             </select>
                         </div>
 
-                        <div className="mt-6">
-                            <button type="submit" className="btn btn-primary">
-                                Submit
-                            </button>
+                        <div className="mt-8 flex justify-center">
+                            <div>
+                                <button type="submit" className="btn btn-primary bg-[#001356] text-white px-4 py-2 rounded-lg" style={{
+                                    boxShadow: "0px -4px 4px 0px #000D3D inset"
+                                }}>
+                                    Save Changes
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </form>
