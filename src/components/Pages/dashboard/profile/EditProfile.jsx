@@ -1,4 +1,6 @@
 import { useForm } from 'react-hook-form';
+import { BiUserPlus } from 'react-icons/bi';
+import { MdArrowForwardIos } from 'react-icons/md';
 
 const EditProfile = () => {
     const { handleSubmit, register } = useForm();
@@ -10,11 +12,23 @@ const EditProfile = () => {
     return (
         <div className="mt-5 lg:ml-[300px]">
             <div>
-                <img src="https://i.ibb.co/wCyschy/Ellipse-1502.png" alt="" />
+                <div className='flex items-center gap-4'>
+                    <h1 className="text-[#001356] text-[26px] font-semibold mx-6 md:mx-0">My Profile</h1>
+                    <MdArrowForwardIos className="text-[#001356]" />
+                    <h1 className="text-[#001356] text-[26px] font-semibold mx-6 md:mx-0">Edit Profile</h1>
+                </div>
+                <div>
+                    <img className='mx-auto' src="https://i.ibb.co/wCyschy/Ellipse-1502.png" alt="" />
+                    <div className='text-center mt-[-30px] ml-[80px]'>
+                        <input type="file" name="upload-image" id="upload-image" className='sr-only' />
+                        <div className='bg-white border border-gray-400 inline-block p-1 rounded-full'><label className='cursor-pointer' htmlFor="upload-image"><BiUserPlus size={20} /></label></div>
+                    </div>
+                    <p className='text-center'>Update your profile photo</p>
+                </div>
             </div>
-            <div className="mx-4">
+            <div className="mx-4 mt-12">
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-12'>
                         <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="firstName">First Name</label>
                             <input
@@ -47,7 +61,7 @@ const EditProfile = () => {
                         </div>
                     </div>
 
-                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-12 lg:mt-5'>
                         <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="email">Email Id</label>
                             <input
@@ -81,7 +95,7 @@ const EditProfile = () => {
                         </div>
                     </div>
 
-                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-12 lg:mt-5'>
                         <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="birthdate">Birth Date</label>
                             <input
@@ -112,7 +126,7 @@ const EditProfile = () => {
                         </div>
                     </div>
 
-                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-12 lg:mt-5'>
                         <div className="lg:mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="userType">User Type</label>
                             <select id="userType" {...register('userType')} className="input text-[#555555] w-full bg-[#EBEBEB] py-2 px-2 rounded-md outline-none mt-2">
@@ -141,7 +155,7 @@ const EditProfile = () => {
                         </div>
                     </div>
 
-                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-8'>
+                    <div className='grid lg:grid-cols-3 gap-4 lg:gap-12 lg:mt-5'>
                         <div className="mb-4">
                             <label className='text-[#555555] text-lg' htmlFor="orgName">Institution / Organization Name :</label>
                             <input
