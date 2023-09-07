@@ -1,24 +1,28 @@
 import { FiBookmark } from "react-icons/fi";
 const pastEvent = [
-    {   id:"1",
+    {
+        id: "1",
         img: "https://i.ibb.co/NWNXLsv/image-47.png",
         title: "DEVOPS TRANNING & COURSE",
         venue: "Oxford University campus",
         date: "01/08/2023 Thursday 02:00 pm",
     },
-    {   id:"2",
+    {
+        id: "2",
         img: "https://i.ibb.co/NWNXLsv/image-47.png",
         title: "DEVOPS TRANNING & COURSE",
         venue: "Oxford University campus",
         date: "01/08/2023 Thursday 02:00 pm",
     },
-    {   id:"3",
+    {
+        id: "3",
         img: "https://i.ibb.co/NWNXLsv/image-47.png",
         title: "DEVOPS TRANNING & COURSE",
         venue: "Oxford University campus",
         date: "01/08/2023 Thursday 02:00 pm",
     },
-    {   id:"4",
+    {
+        id: "4",
         img: "https://i.ibb.co/NWNXLsv/image-47.png",
         title: "DEVOPS TRANNING & COURSE",
         venue: "Oxford University campus",
@@ -60,6 +64,11 @@ const PastEvent = () => {
                         </>
                     ))
                 }
+            </div>
+            <div className=" mt-8 flex justify-center">
+                <button className="bg-[#000D3D] text-white px-6 py-2 rounded-lg" style={{
+                    boxShadow: "0px -4px 4px 0px #000D3D inset"
+                }}>Load More</button>
             </div>
         </div>
     );
