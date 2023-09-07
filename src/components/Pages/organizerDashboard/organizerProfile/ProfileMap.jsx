@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { AiOutlineArrowsAlt } from "react-icons/ai";
 
 const ProfileMap = () => {
     useEffect(() => {
@@ -9,8 +10,11 @@ const ProfileMap = () => {
     })
     return (
         <div className="container mx-auto mt-6">
-            <div className="border border-gray-400 p-4">
-                <p className="font-bold text-[#001356] mb-4">Venue</p>
+            <div className="border border-gray-400 p-4 rounded-md">
+                <div className="flex justify-between items-center">
+                    <p className="font-bold text-[#001356] mb-4">Venue</p>
+                    <AiOutlineArrowsAlt size={20} />
+                </div>
                 <iframe id="iframeId" height="400px" width="100%"></iframe>
             </div>
         </div>
