@@ -68,6 +68,7 @@ const MyProfile = () => {
                         </div>
                     </div>
                 </div>
+                <div className="bg-blue-100 w-full h-[2px] mt-12"></div>
             </div>
         </>
     );
