@@ -25,6 +25,7 @@ import Certifications from "./components/Pages/dashboard/certifications/Certific
 import SavedEvents from "./components/Pages/dashboard/savedEvents/SavedEvents"
 import Blogs from "./components/Pages/dashboard/blogs/Blogs"
 import EditProfile from "./components/Pages/dashboard/profile/EditProfile"
+import OrganizerDashboard from "./components/Pages/organizerDashboard/OrganizerDashboard"
 
 
 function App() {
@@ -62,6 +63,10 @@ function App() {
               <Route path="certification" element={<Certifications />} />
               <Route path="saved-events" element={<SavedEvents />} />
               <Route path="blogs" element={<Blogs />} />
+          </Route>
+          {/*ORGANIZER DASHBOARD */}
+          <Route path="/organizer-dashboard" element={<OrganizerDashboard />}>
+              
           </Route>
         </Routes>
         {!isDashboardPage && <Footer />}
