@@ -2,6 +2,7 @@ import MyProfile from "./MyProfile";
 import PastEvent from "./PastEvent";
 import ProfileMap from "./ProfileMap";
 import ProfileRatings from "./ProfileRatings";
+import ProfileReviews from "./ProfileReviews";
 
 const Profile = () => {
     return (
@@ -14,6 +15,7 @@ const Profile = () => {
                 </div>
                 <div className="col-span-1">
                     <ProfileRatings />
+                    <ProfileReviews />
                 </div>
             </div>
         </div>
