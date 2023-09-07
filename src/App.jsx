@@ -27,6 +27,8 @@ import Blogs from "./components/Pages/dashboard/blogs/Blogs"
 import EditProfile from "./components/Pages/dashboard/profile/EditProfile"
 import OrganizerDashboard from "./components/Pages/organizerDashboard/OrganizerDashboard"
 import Users from "./components/Pages/organizerDashboard/user/Users"
+import Profile from "./components/Pages/organizerDashboard/organizerProfile/Profile"
+
 
 
 function App() {
@@ -69,6 +71,8 @@ function App() {
           {/*ORGANIZER DASHBOARD */}
           <Route path="/organizer-dashboard" element={<OrganizerDashboard />}>
             <Route path="users" element={<Users />} />
+            <Route path="my-profile" element={<Profile />} />
+            
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage) && <Footer />}

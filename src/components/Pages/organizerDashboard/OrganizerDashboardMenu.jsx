@@ -26,7 +26,7 @@ const OrganizerDashboardMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to=""
+                                    to="/organizer-dashboard/my-profile"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
