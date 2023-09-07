@@ -26,11 +26,13 @@ import SavedEvents from "./components/Pages/dashboard/savedEvents/SavedEvents"
 import Blogs from "./components/Pages/dashboard/blogs/Blogs"
 import EditProfile from "./components/Pages/dashboard/profile/EditProfile"
 import OrganizerDashboard from "./components/Pages/organizerDashboard/OrganizerDashboard"
+import Users from "./components/Pages/organizerDashboard/user/Users"
 
 
 function App() {
   const location = useLocation();
   const isDashboardPage = location.pathname.startsWith("/dashboard");
+  const isOrganizerDashboardPage = location.pathname.startsWith("/organizer-dashboard");
 
   return (
     <>
@@ -55,21 +57,21 @@ function App() {
           <Route path="/get-otp" element={<GetOtp />} />
           {/* DASHBOARD */}
           <Route path="/dashboard" element={<Dashboard />}>
-              <Route path="profile" element={<MyProfile />} />
-              <Route path="edit-profile" element={<EditProfile />} />
-              <Route path="tickets" element={<MyTickets />} />
-              <Route path="participation" element={<Participation />} />
-              <Route path="reviews" element={<MyReviews />} />
-              <Route path="certification" element={<Certifications />} />
-              <Route path="saved-events" element={<SavedEvents />} />
-              <Route path="blogs" element={<Blogs />} />
+            <Route path="profile" element={<MyProfile />} />
+            <Route path="edit-profile" element={<EditProfile />} />
+            <Route path="tickets" element={<MyTickets />} />
+            <Route path="participation" element={<Participation />} />
+            <Route path="reviews" element={<MyReviews />} />
+            <Route path="certification" element={<Certifications />} />
+            <Route path="saved-events" element={<SavedEvents />} />
+            <Route path="blogs" element={<Blogs />} />
           </Route>
           {/*ORGANIZER DASHBOARD */}
           <Route path="/organizer-dashboard" element={<OrganizerDashboard />}>
-              
+            <Route path="users" element={<Users />} />
           </Route>
         </Routes>
-        {!isDashboardPage && <Footer />}
+        {(!isDashboardPage && !isOrganizerDashboardPage) && <Footer />}
       </div>
     </>
   )
