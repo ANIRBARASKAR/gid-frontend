@@ -4,7 +4,7 @@ import OrganizerDashboardMenu from "./OrganizerDashboardMenu";
 
 const OrganizerDashboard = () => {
     return (
-        <div className="lg:flex items-center bg-[#F6F6F6] pb-8 lg:pr-6">
+        <div className="lg:flex items-center bg-[#F6F6F6] lg:pr-6">
             <div>
                 <OrganizerDashboardMenu />
             </div>
