@@ -5,8 +5,8 @@ import LineProgress from "./LineProgress";
 const Summery = () => {
     return (
         <div className="lg:ml-[300px]">
-            <div className='mt-5 mx-2 md:mx-0'>
-                <table className="w-[100%] mt-8 text-xs md:text-base">
+            <div className='mt-5 lg:mt-16 mx-2 md:mx-0 border-2 border-gray-400 px-4 rounded-lg'>
+                <table className="w-[100%] text-xs md:text-base">
                     <thead>
                         <tr className='text-xl font-semibold text-[#001356] text-left'>
                             <th className='py-4'>Events</th>

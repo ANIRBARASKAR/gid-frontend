@@ -1,3 +1,4 @@
+import Attendess from "./Attendess";
 import EventSummery from "./EventSummery";
 import Summery from "./Summery";
 
@@ -7,6 +8,7 @@ const OrgDashboard = () => {
         <div>
             <EventSummery />
             <Summery />
+            <Attendess />
         </div>
     );
 };
