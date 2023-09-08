@@ -15,7 +15,7 @@ const OrganizerDashboardMenu = () => {
                         <ul className="flex-col min-w-full flex list-none mt-2">
                             <li className="mb-4">
                                 <NavLink
-                                    to=""
+                                    to="/organizer-dashboard/org-dashboard"
                                     exact
                                     className={style}
                                 >

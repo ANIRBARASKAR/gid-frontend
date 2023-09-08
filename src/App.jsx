@@ -29,6 +29,7 @@ import OrganizerDashboard from "./components/Pages/organizerDashboard/OrganizerD
 import Users from "./components/Pages/organizerDashboard/user/Users"
 import Profile from "./components/Pages/organizerDashboard/organizerProfile/Profile"
 import AddEvent from "./components/Pages/organizerDashboard/addEvent/AddEvent"
+import OrgDashboard from "./components/Pages/organizerDashboard/ordashboard/OrgDashboard"
 
 
 
@@ -74,6 +75,7 @@ function App() {
             <Route path="users" element={<Users />} />
             <Route path="my-profile" element={<Profile />} />
             <Route path="add-event" element={<AddEvent />} />
+            <Route path="org-dashboard" element={<OrgDashboard />} />
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage) && <Footer />}

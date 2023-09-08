@@ -1,4 +1,6 @@
 import { BiSearch } from "react-icons/bi";
+import { AiFillEdit } from 'react-icons/ai';
+import { MdDelete } from 'react-icons/md';
 const data = [
     { name: 'Event Name', sdate: '15/07/20203', edate: '15/07/20203', status: 'On Sale', type: 'Solo' },
     { name: 'Event Name', sdate: '15/07/20203', edate: '15/07/20203', status: 'Not Published', type: 'Group' },
@@ -56,6 +58,20 @@ const AddEvent = () => {
                                     </span>
                                 </td>
                                 <td className='text-center'>{item.type}</td>
+                                <td className='flex justify-center py-4'>
+                                    <div className="flex gap-8 items-center">
+                                        <div>
+                                            <button className="bg-[#001356] text-white px-2 rounded-md">copy</button>
+                                        </div>
+                                        <div className='flex items-center gap-8'>
+                                            <AiFillEdit className="cursor-pointer" size={30} />
+                                            <MdDelete className='text-[#EC6453] cursor-pointer' size={30} />
+                                        </div>
+                                        <div>
+                                            <img src="https://i.ibb.co/nnyww5p/Icon.png" alt="" />
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
                         ))}
                     </tbody>
