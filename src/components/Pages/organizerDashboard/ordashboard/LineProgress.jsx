@@ -4,10 +4,11 @@ const LineProgress = () => {
     
     return (
         <div>
-            <div className="">
+            <div className="flex justify-between  text-[#001356] font-medium">
                 {completed}%
+                <p className="text-xs">105 participation</p>
             </div>
-            <ProgressBar className="w-[100%]  h-10" completed={80}  />
+            <ProgressBar className="w-[100%]" completed={80}  />
         </div>
     );
 };
