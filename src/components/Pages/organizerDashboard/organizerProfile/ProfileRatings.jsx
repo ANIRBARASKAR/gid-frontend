@@ -3,11 +3,11 @@ import { BiSolidStar } from 'react-icons/bi';
 
 const ProfileRatings = () => {
     return (
-        <div className="container mx-auto mt-8">
+        <div className="mt-8">
             <div className="">
                 <div>
                     <div>
-                        <div className='border border-gray-500 p-4 rounded-lg'>
+                        <div className='border border-gray-500 p-4 rounded-lg w-full'>
                             <div>
                                 <p className="font-semibold text-xl text-[#001356] mt-2">Ratings</p>
                                 <div className="flex justify-between items-center">

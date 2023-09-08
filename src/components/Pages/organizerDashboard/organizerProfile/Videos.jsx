@@ -5,23 +5,23 @@ const Videos = () => {
         <div className="border border-gray-600 rounded-lg mt-5 p-4">
             <p className="font-semibold text-xl text-[#001356]   ">Videos</p>
             <div className="mt-5">
-                <div className="flex gap-4">
-                    <img src="https://i.ibb.co/s5m640d/image-53.png" alt="" />
+                <div className="flex gap-4 mt-4">
+                    <img className="w-[114px] h-[70px] md:w-[202px] md:h-[115px]" src="https://i.ibb.co/s5m640d/image-53.png" alt="" />
                     <div>
-                        <p className="text-base font-bold">How to plan an Event</p>
-                        <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nisi eu augue luctus sagittis.</p>
-                        <button className="text-sm flex items-center gap-2 border border-gray-600 px-3 py-1 rounded-lg mt-8">
+                        <p className="text-xs md:text-base font-bold">How to plan an Event</p>
+                        <p className="text-xs md:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nisi eu augue luctus sagittis.</p>
+                        <button className="text-xs md:text-sm flex items-center gap-2 border border-gray-600 px-3 py-1 rounded-lg mt-2 lg:mt-8">
                             Watch on
                             <FaYoutube className="text-red-600" />
                         </button>
                     </div>
                 </div>
                 <div className="flex gap-4 mt-4">
-                    <img src="https://i.ibb.co/s5m640d/image-53.png" alt="" />
+                    <img className="w-[114px] h-[70px] md:w-[202px] md:h-[115px]" src="https://i.ibb.co/s5m640d/image-53.png" alt="" />
                     <div>
-                        <p className="text-base font-bold">How to plan an Event</p>
-                        <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nisi eu augue luctus sagittis.</p>
-                        <button className="text-sm flex items-center gap-2 border border-gray-600 px-3 py-1 rounded-lg mt-8">
+                        <p className="text-xs md:text-base font-bold">How to plan an Event</p>
+                        <p className="text-xs md:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nisi eu augue luctus sagittis.</p>
+                        <button className="text-xs md:text-sm flex items-center gap-2 border border-gray-600 px-3 py-1 rounded-lg mt-2 lg:mt-8">
                             Watch on
                             <FaYoutube className="text-red-600" />
                         </button>
