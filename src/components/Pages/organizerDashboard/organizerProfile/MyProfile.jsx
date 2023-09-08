@@ -1,6 +1,11 @@
 import { AiOutlineEdit } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const MyProfile = () => {
+    const navigate = useNavigate();
+    const handleNavigate = () =>{
+        navigate("../edit-my-profile")
+    }
     return (
         <>
             <div>
@@ -23,7 +28,7 @@ const MyProfile = () => {
                         </div>
                         <p className="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nisi eu augue luctus sagittis. Nulla facilisi. Nunc luctus, ex in faucibus cursus, turpis est eleifend lorem, sit amet eleifend dui libero.</p>
                         <div className="flex items-center my-5 lg:mt-32 gap-3">
-                            <button className="flex items-center gap-2 bg-[#284B80] text-white px-2 py-1 rounded-md">
+                            <button onClick={handleNavigate} className="flex items-center gap-2 bg-[#284B80] text-white px-2 py-1 rounded-md">
                                 <AiOutlineEdit />
                                 Edit Profile
                             </button>
