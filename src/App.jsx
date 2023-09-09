@@ -31,6 +31,7 @@ import Profile from "./components/Pages/organizerDashboard/organizerProfile/Prof
 import AddEvent from "./components/Pages/organizerDashboard/addEvent/AddEvent"
 import OrgDashboard from "./components/Pages/organizerDashboard/ordashboard/OrgDashboard"
 import EditMyProfile from "./components/Pages/organizerDashboard/organizerProfile/EditMyProfile"
+import Notfound from "./components/Pages/Notfound"
 
 
 
@@ -60,6 +61,7 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/regi-otp" element={<RegistrationOTP />} />
           <Route path="/get-otp" element={<GetOtp />} />
+          <Route path="*" element={<Notfound />} />
           {/* DASHBOARD */}
           <Route path="/dashboard" element={<Dashboard />}>
             <Route path="profile" element={<MyProfile />} />
