@@ -15,23 +15,26 @@ const EditMyProfile = () => {
     };
     return (
         <div className="mt-5 lg:ml-[300px]">
+            {/* HEADER START **********************/}
             <div className="mt-5 flex items-center gap-2 mx-4 md:mx-0">
                 <h1 className="text-[#001356] text-[26px] font-semibold">Edit Profile</h1>
                 <img src="https://i.ibb.co/6vJ6BsP/Account.png" alt="" />
             </div>
+             {/* HEADER END **********************/}
             <div className="bg-white">
+                {/* EDIT PROFILE STRAT ***************/}
                 <div className="flex justify-between items-center mt-8 ">
                     <div className="">
                         <div className="flex items-center gap-4">
                             <div>
-                                <img src="https://i.ibb.co/crmkCd9/Polygon-1.png" alt="" />
+                                <img className="" src="https://i.ibb.co/crmkCd9/Polygon-1.png" alt="" />
                                 <BsArrowLeftCircle size={20} className="text-white mt-[-35px] ml-[15px]" />
                             </div>
                             <p className="text-lg">Cancel</p>
                         </div>
                         <div className="flex items-center gap-4 mt-8 mx-4">
                             <div>
-                                <img src="https://i.ibb.co/L9JXGRr/Ellipse-6.png relative" alt="" />
+                                <img className="" src="https://i.ibb.co/L9JXGRr/Ellipse-6.png relative" alt="" />
                                 <div className='bg-white border border-gray-400 inline-block p-1 rounded-full mt-[-20px] ml-[50px] absolute cursor-pointer'><AiOutlineEdit size={15} /></div>
                             </div>
                             <p className="text-sm text-[#001356] font-semibold">edit your profile photo</p>
@@ -49,6 +52,7 @@ const EditMyProfile = () => {
                         </div>
                     </div>
                 </div>
+                 {/* EDIT PROFILE END */}
                 {/* EDIT PROFILE FORM START FROM HERE */}
                 <div className="bg-[#284B80] py-4 mx-4 mt-5 rounded-lg">
                     <form onSubmit={handleSubmit(onSubmit)}>
