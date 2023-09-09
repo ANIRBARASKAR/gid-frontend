@@ -50,11 +50,11 @@ const EditMyProfile = () => {
                     </div>
                 </div>
                 {/* EDIT PROFILE FORM START FROM HERE */}
-                <div className="bg-[#284B80] mx-4 mt-5 rounded-lg">
+                <div className="bg-[#284B80] py-4 mx-4 mt-5 rounded-lg">
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <div className="grid grid-cols-4 mx-4">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 mx-8">
                             {/* left side */}
-                            <div className="col-span-2 mt-5">
+                            <div className="col-span-3 mt-5">
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="mb-4">
                                         <input
@@ -118,11 +118,11 @@ const EditMyProfile = () => {
                                     </select>
                                 </div>
 
-                                <div className="bg-white py-2 px-4 rounded-md">
+                                <div className="bg-white py-6 px-4 rounded-md">
                                     <p className="text-gray-500 ">Social Media Links</p>
-                                    <div className="mx-4">
+                                    <div className="mx-4 py-10">
                                         <div className="flex items-center gap-2">
-                                            <RxTwitterLogo size={20} />
+                                            <RxTwitterLogo className="text-[#284B80]" size={25} />
                                             <input
                                                 {...register('twitter')}
                                                 id="twitter"
@@ -131,7 +131,7 @@ const EditMyProfile = () => {
                                             />
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <FaInstagram size={20} />
+                                            <FaInstagram className="text-[#284B80]" size={25} />
                                             <input
                                                 {...register('instagram')}
                                                 id="instagram"
@@ -140,7 +140,7 @@ const EditMyProfile = () => {
                                             />
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <PiFacebookLogo size={20} />
+                                            <PiFacebookLogo className="text-[#284B80]" size={25} />
                                             <input
                                                 {...register('facebook')}
                                                 id="facebook"
@@ -149,7 +149,7 @@ const EditMyProfile = () => {
                                             />
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <AiOutlineYoutube size={20} />
+                                            <AiOutlineYoutube className="text-[#284B80]" size={25} />
                                             <input
                                                 {...register('youtube')}
                                                 id="youtube"
@@ -158,7 +158,7 @@ const EditMyProfile = () => {
                                             />
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <TbWorldWww size={20} />
+                                            <TbWorldWww className="text-[#284B80]" size={25} />
                                             <input
                                                 {...register('linkedin')}
                                                 id="linkedin"
@@ -172,17 +172,56 @@ const EditMyProfile = () => {
                             </div>
                             {/* Left side end */}
                             {/* Right-side start */}
-                            <div className="col-span-1">
+                            <div className="col-span-1 mt-5">
+                                <textarea
+                                    {...register('about')}
+                                    id="about"
+                                    className="input w-full rounded-md h-[70px] lg:h-[211px] px-2 mb-4"
+                                    placeholder="About"
+                                />
+                                <select {...register('country')} id="country" className="input w-full px-2 py-2 rounded-lg text-gray-400 mb-4">
+                                    <option value="">Country</option>
+                                    <option value="usa">USA</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="uk">UK</option>
+                                    <option value="australia">Australia</option>
+                                </select>
 
+                                <select {...register('gender')} id="gender" className="input w-full px-2 py-2 rounded-lg text-gray-400 mb-4">
+                                    <option value="">Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                                <input
+                                    {...register('experience')}
+                                    id="experience"
+                                    type="text"
+                                    className="input w-full px-2 py-2 rounded-lg mb-4"
+                                    placeholder="Experience"
+                                />
+                                <input
+                                    {...register('mapLink')}
+                                    id="mapLink"
+                                    type="text"
+                                    className="input w-full px-2 py-2 rounded-lg mb-4"
+                                    placeholder="Map Link"
+                                />
+                                <input
+                                    {...register('youtubeLink')}
+                                    id="youtubeLink"
+                                    type="text"
+                                    className="input w-full px-2 py-2 rounded-lg mb-4"
+                                    placeholder="youtube video Link"
+                                />
                             </div>
                             {/* Right-side End */}
                         </div>
-                        <div className="mt-4">
+                        <div className="mt-4 mx-8">
                             <button
                                 type="submit"
-                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                                className=" text-white font-semibold py-2 px-4 rounded text-[22px] border-2 border-white w-full"
                             >
-                                Submit
+                                Save Changes
                             </button>
                         </div>
                     </form>
