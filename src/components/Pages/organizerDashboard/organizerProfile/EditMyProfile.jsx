@@ -1,16 +1,26 @@
-import { AiOutlineEdit } from "react-icons/ai";
+import { AiOutlineEdit, AiOutlineYoutube } from "react-icons/ai";
 import { BsArrowLeftCircle } from "react-icons/bs";
+import { RxTwitterLogo } from "react-icons/rx";
+import { useForm } from 'react-hook-form';
+import { FaInstagram } from "react-icons/fa";
+import { PiFacebookLogo } from "react-icons/pi";
+import { TbWorldWww } from "react-icons/tb";
 
 const EditMyProfile = () => {
+    // FROM
+    const { register, handleSubmit } = useForm();
+
+    const onSubmit = (data) => {
+        console.log(data);
+    };
     return (
         <div className="mt-5 lg:ml-[300px]">
-
-            <div>
-                <div className="mt-5 flex items-center gap-2 mx-4 md:mx-0">
-                    <h1 className="text-[#001356] text-[26px] font-semibold">Edit Profile</h1>
-                    <img src="https://i.ibb.co/6vJ6BsP/Account.png" alt="" />
-                </div>
-                <div className="flex justify-between items-center mt-8 bg-white">
+            <div className="mt-5 flex items-center gap-2 mx-4 md:mx-0">
+                <h1 className="text-[#001356] text-[26px] font-semibold">Edit Profile</h1>
+                <img src="https://i.ibb.co/6vJ6BsP/Account.png" alt="" />
+            </div>
+            <div className="bg-white">
+                <div className="flex justify-between items-center mt-8 ">
                     <div className="">
                         <div className="flex items-center gap-4">
                             <div>
@@ -19,7 +29,7 @@ const EditMyProfile = () => {
                             </div>
                             <p className="text-lg">Cancel</p>
                         </div>
-                        <div className="flex items-center gap-4 mt-8">
+                        <div className="flex items-center gap-4 mt-8 mx-4">
                             <div>
                                 <img src="https://i.ibb.co/L9JXGRr/Ellipse-6.png relative" alt="" />
                                 <div className='bg-white border border-gray-400 inline-block p-1 rounded-full mt-[-20px] ml-[50px] absolute cursor-pointer'><AiOutlineEdit size={15} /></div>
@@ -27,7 +37,7 @@ const EditMyProfile = () => {
                             <p className="text-sm text-[#001356] font-semibold">edit your profile photo</p>
                         </div>
                     </div>
-                    <div>
+                    <div className="mx-4">
                         <img className="w-[228px] h-[129px]" src="https://i.ibb.co/VvMgpYH/Rectangle-1-1.png" alt="" />
                         <div className="flex gap-3 items-center text-[#001356] mt-[-40px] ml-[10px]">
                             <div className='bg-white border border-gray-400 inline-block p-1 rounded-full cursor-pointer' style={{
@@ -39,7 +49,145 @@ const EditMyProfile = () => {
                         </div>
                     </div>
                 </div>
+                {/* EDIT PROFILE FORM START FROM HERE */}
+                <div className="bg-[#284B80] mx-4 mt-5 rounded-lg">
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <div className="grid grid-cols-4 mx-4">
+                            {/* left side */}
+                            <div className="col-span-2 mt-5">
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className="mb-4">
+                                        <input
+                                            {...register('firstName')}
+                                            id="firstName"
+                                            type="text"
+                                            className="input w-full px-2 py-2 rounded-lg"
+                                            placeholder="First Name"
+                                        />
+                                    </div>
 
+                                    <div className="mb-4">
+                                        <input
+                                            {...register('lastName')}
+                                            id="lastName"
+                                            type="text"
+                                            className="input w-full px-2 py-2 rounded-lg"
+                                            placeholder="Last Name"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="mb-4">
+                                    <input
+                                        {...register('email')}
+                                        id="email"
+                                        type="text"
+                                        className="input w-full px-2 py-2 rounded-lg"
+                                        placeholder="Email ID"
+                                    />
+                                </div>
+
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className="mb-4">
+                                        <input
+                                            {...register('mobile')}
+                                            id="mobile"
+                                            type="text"
+                                            className="input w-full px-2 py-2 rounded-lg"
+                                            placeholder="Mobile no."
+                                        />
+                                    </div>
+
+                                    <div className="mb-4">
+                                        <input
+                                            {...register('birthdate')}
+                                            id="birthdate"
+                                            type="text"
+                                            className="input w-full px-2 py-2 rounded-lg"
+                                            placeholder="Birthdate"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="mb-4">
+                                    <select {...register('categories')} className="input w-full px-2 py-2 rounded-lg text-gray-400">
+                                        <option value="">Categories</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                </div>
+
+                                <div className="bg-white py-2 px-4 rounded-md">
+                                    <p className="text-gray-500 ">Social Media Links</p>
+                                    <div className="mx-4">
+                                        <div className="flex items-center gap-2">
+                                            <RxTwitterLogo size={20} />
+                                            <input
+                                                {...register('twitter')}
+                                                id="twitter"
+                                                type="text"
+                                                className="input w-full border-b border-gray-400 mb-4"
+                                            />
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <FaInstagram size={20} />
+                                            <input
+                                                {...register('instagram')}
+                                                id="instagram"
+                                                type="text"
+                                                className="input w-full border-b border-gray-400 mb-4"
+                                            />
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <PiFacebookLogo size={20} />
+                                            <input
+                                                {...register('facebook')}
+                                                id="facebook"
+                                                type="text"
+                                                className="input w-full border-b border-gray-400 mb-4"
+                                            />
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <AiOutlineYoutube size={20} />
+                                            <input
+                                                {...register('youtube')}
+                                                id="youtube"
+                                                type="text"
+                                                className="input w-full border-b border-gray-400 mb-4"
+                                            />
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <TbWorldWww size={20} />
+                                            <input
+                                                {...register('linkedin')}
+                                                id="linkedin"
+                                                type="text"
+                                                className="input w-full border-b border-gray-400 mb-4"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {/* Left side end */}
+                            {/* Right-side start */}
+                            <div className="col-span-1">
+
+                            </div>
+                            {/* Right-side End */}
+                        </div>
+                        <div className="mt-4">
+                            <button
+                                type="submit"
+                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                {/* EDIT PROFILE FORM END FROM HERE */}
             </div>
         </div>
     );
