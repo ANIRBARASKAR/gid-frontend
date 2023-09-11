@@ -32,6 +32,7 @@ import AddEvent from "./components/Pages/organizerDashboard/addEvent/AddEvent"
 import OrgDashboard from "./components/Pages/organizerDashboard/ordashboard/OrgDashboard"
 import EditMyProfile from "./components/Pages/organizerDashboard/organizerProfile/EditMyProfile"
 import Notfound from "./components/Pages/Notfound"
+import EventOrgDetails from "./components/Pages/organizerDashboard/eventDetails/EventOrgDetails"
 
 
 
@@ -81,6 +82,7 @@ function App() {
             <Route path="org-dashboard" element={<OrgDashboard />} />
             <Route path="org-dashboard" element={<OrgDashboard />} />
             <Route path="edit-my-profile" element={<EditMyProfile />} />
+            <Route path="event-org-details" element={<EventOrgDetails />} />
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage) && <Footer />}

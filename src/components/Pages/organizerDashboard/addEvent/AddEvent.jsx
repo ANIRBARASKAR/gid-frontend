@@ -1,6 +1,7 @@
 import { BiSearch } from "react-icons/bi";
 import { AiFillEdit } from 'react-icons/ai';
 import { MdDelete } from 'react-icons/md';
+import { useNavigate } from "react-router-dom";
 const data = [
     { name: 'Event Name', sdate: '15/07/20203', edate: '15/07/20203', status: 'On Sale', type: 'Solo' },
     { name: 'Event Name', sdate: '15/07/20203', edate: '15/07/20203', status: 'Not Published', type: 'Group' },
@@ -10,6 +11,10 @@ const data = [
 ];
 
 const AddEvent = () => {
+    const navigate = useNavigate();
+    const handleNavigate = () => {
+        navigate("../event-org-details")
+    }
     return (
         <div className="mt-5 lg:ml-[300px]">
             <div className='mx-4 md:mx-0 flex items-center justify-between'>
@@ -24,7 +29,7 @@ const AddEvent = () => {
                 </div>
                 <div>
                     <div className="flex gap-4">
-                        <button className="text-white bg-[#001356] px px-4 py-1 rounded-md">Add Event</button>
+                        <button onClick={handleNavigate} className="text-white bg-[#001356] px px-4 py-1 rounded-md">Add Event</button>
                         <button className="text-white bg-[#001356] px px-4 py-1 rounded-md">Add Group Event</button>
                     </div>
                 </div>
