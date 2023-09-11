@@ -8,7 +8,7 @@ const Roundes = () => {
         }}>
             <p className="text-[12px] md:text-base text-[#001356] font-medium">Add/Manage Rounds</p>
             <div className="border-2 border-[#284B80] rounded-lg pl-4 py-1 flex justify-between">
-                <p className="text-[#284B80]">List all the rounds separately to give users a clear understanding of how they will proceed forward in this opportunity.</p>
+                <p className="text-[#284B80] text-[10px] md:text-base">List all the rounds separately to give users a clear understanding of how they will proceed forward in this opportunity.</p>
                 <button className="bg-[#284B80] text-white px-2 py-1 rounded-md text-right">Add Round</button>
             </div>
             <p className="text-[12px] md:text-base text-[#001356] font-medium mt-5">Round List</p>
