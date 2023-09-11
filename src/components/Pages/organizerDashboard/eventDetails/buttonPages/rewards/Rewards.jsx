@@ -12,6 +12,17 @@ const Rewards = () => {
                 <p className="text-[#001356]">Within how many days will you be able to release the prizes (if any) and/or certificates after the event is over?*</p>
                 <input className="w-full border-2 border-[#284B80] rounded-md py-1 px-4 mt-1 placeholder-[#001356]" type="text" name="" id="" placeholder="Enter how many days release the prizes" />
             </div>
+            <div className="flex items-center gap-4 text-[#001356] mt-5">
+                <p className="text-medium">Participation certificate will be provided ?</p>
+                <div className="flex items-center gap-4">
+                    <input type="radio" name="" id="" />
+                    <label htmlFor="">Yes</label>
+                </div>
+                <div className="flex items-center gap-4">
+                    <input type="radio" name="" id="" />
+                    <label htmlFor="">No</label>
+                </div>
+            </div>
         </div>
     );
 };
