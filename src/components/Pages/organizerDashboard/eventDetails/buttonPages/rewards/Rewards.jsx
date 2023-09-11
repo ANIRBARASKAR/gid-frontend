@@ -1,3 +1,6 @@
+import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
+import { FaPlus } from 'react-icons/fa';
+import { MdDelete } from 'react-icons/md';
 
 const Rewards = () => {
     return (
@@ -21,6 +24,93 @@ const Rewards = () => {
                 <div className="flex items-center gap-4">
                     <input type="radio" name="" id="" />
                     <label htmlFor="">No</label>
+                </div>
+            </div>
+            <div className="mt-4 flex justify-between items-center">
+                <p className="text-[#001356] font-medium text-[14px]">Add Prizes</p>
+                <button className='flex items-center gap-2 text-white bg-[#284B80] px-2 py-1 rounded-md'>
+                    <FaPlus />
+                    Add New
+                </button>
+            </div>
+            {/* CARDS */}
+            <div className='mt-3 grid grid-cols-1 md:grid-cols-3 gap-8'>
+                <div className='bg-[#CFE5FF] h-[155px] p-4 rounded-md'>
+                    <div className='flex gap-16 items-center'>
+                        <p className='text-base font-medium text-[#001356]'>Rank</p>
+                        <input className='rounded-md' type="text" name="" id="" />
+                    </div>
+                    <div className='flex gap-16 items-center mt-3'>
+                        <p className='text-base font-medium text-[#001356]'>Cash</p>
+                        <input className='rounded-md' type="text" name="" id="" />
+                    </div>
+                    <div className='flex gap-6 items-center mt-3'>
+                        <p className='text-base font-medium text-[#001356]'>Certificate</p>
+                        <input className='rounded-md' type="checkbox" name="" id="" />
+                    </div>
+                    <div>
+                        <div className='flex justify-end mb-8'>
+                            <div className='bg-white p-2 inline-block rounded-md'>
+                                <MdDelete className='text-red-500' size={20} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='bg-[#CFE5FF] h-[155px] p-4 rounded-md'>
+                    <div className='flex gap-16 items-center'>
+                        <p className='text-base font-medium text-[#001356]'>Rank</p>
+                        <input className='rounded-md' type="text" name="" id="" />
+                    </div>
+                    <div className='flex gap-16 items-center mt-3'>
+                        <p className='text-base font-medium text-[#001356]'>Cash</p>
+                        <input className='rounded-md' type="text" name="" id="" />
+                    </div>
+                    <div className='flex gap-6 items-center mt-3'>
+                        <p className='text-base font-medium text-[#001356]'>Certificate</p>
+                        <input className='rounded-md' type="checkbox" name="" id="" />
+                    </div>
+                    <div>
+                        <div className='flex justify-end mb-8'>
+                            <div className='bg-white p-2 inline-block rounded-md'>
+                                <MdDelete className='text-red-500' size={20} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='bg-[#CFE5FF] h-[155px] p-4 rounded-md'>
+                    <div className='flex gap-16 items-center'>
+                        <p className='text-base font-medium text-[#001356]'>Rank</p>
+                        <input className='rounded-md' type="text" name="" id="" />
+                    </div>
+                    <div className='flex gap-16 items-center mt-3'>
+                        <p className='text-base font-medium text-[#001356]'>Cash</p>
+                        <input className='rounded-md' type="text" name="" id="" />
+                    </div>
+                    <div className='flex gap-6 items-center mt-3'>
+                        <p className='text-base font-medium text-[#001356]'>Certificate</p>
+                        <input className='rounded-md' type="checkbox" name="" id="" />
+                    </div>
+                    <div>
+                        <div className='flex justify-end mb-8'>
+                            <div className='bg-white p-2 inline-block rounded-md'>
+                                <MdDelete className='text-red-500' size={20} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='flex justify-between mt-5'>
+                <div className='flex items-center bg-[#284B80] text-white px-4 py-2 rounded-md gap-4' style={{
+                    boxShadow: "0px 4px 4px 0px #00135640"
+                }}>
+                    <BsArrowLeftCircle size={20} />
+                    <button>Previous</button>
+                </div>
+                <div className='flex items-center bg-[#284B80] text-white px-4 py-2 rounded-md gap-4' style={{
+                    boxShadow: "0px 4px 4px 0px #00135640"
+                }}>
+                    <button>Save</button>
+                    <BsArrowRightCircle size={20} />
                 </div>
             </div>
         </div>
