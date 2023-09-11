@@ -1,3 +1,4 @@
+import { RxTriangleUp } from "react-icons/rx";
 
 const EventOrgDetails = () => {
     return (
@@ -43,6 +44,26 @@ const EventOrgDetails = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="flex justify-between lg:mx-[280px] mt-1">
+                    <div>
+                        <div className="flex justify-center"><RxTriangleUp className="text-[#284B80]" size={25} /></div>
+                        <button className="text-white bg-[#284B80] px-2 py-1 rounded-full ml-5 mt-0" style={{
+                            boxShadow: "0px 2px 4px 0px #00000040 inset"
+                        }}>Opportunity Visibility</button>
+                    </div>
+                    <div>
+                        <div className="flex justify-center"><RxTriangleUp className="text-[#D9D9D9]" size={25} /></div>
+                        <button className="bg-[#D9D9D9] px-2 py-1 rounded-full" style={{
+                            boxShadow: "0px 2px 4px 0px #00000040 inset"
+                        }}>Rounds</button>
+                    </div>
+                    <div>
+                        <div className="flex justify-center"><RxTriangleUp className="text-[#D9D9D9]" size={25} /></div>
+                        <button className="bg-[#D9D9D9] px-2 py-1 rounded-full" style={{
+                            boxShadow: "0px 2px 4px 0px #00000040 inset"
+                        }}>Rewards & Recognition</button>
                     </div>
                 </div>
             </div>
