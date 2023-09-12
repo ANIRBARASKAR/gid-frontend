@@ -1,7 +1,6 @@
 import { useForm } from 'react-hook-form';
 import Select from 'react-select';
 
-
 const options = [
     { label: 'Option 1', value: 'option1' },
     { label: 'Option 2', value: 'option2' },
@@ -9,7 +8,7 @@ const options = [
     // Add more options as needed
 ];
 
-const Opportunity = () => {
+const SaveAndNext = () => {
     const { handleSubmit } = useForm();
 
     const onSubmit = (data) => {
@@ -148,7 +147,7 @@ const Opportunity = () => {
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-1 mmd:grid-cols-2 md:gap-8'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 md:gap-8'>
                         <div className="mb-4">
                             <label htmlFor="logo" className="block text-[#001356] text-base font-medium">Logo (Upload)</label>
                             <input
@@ -202,26 +201,59 @@ const Opportunity = () => {
                         </div>
                     </div>
                     <div className='grid grid-cols-1 md:grid-cols-3 md:gap-8 text-[#001356]'>
-                        <div className="mb-4">
+                        <div className="mb-4 p-2">
                             <label className="block text-base font-medium">Mode of Payment</label>
                             <div className='grid grid-cols-2 w-full border border-[#001356] rounded-lg p-1 mt-1'>
                                 <label className="mr-4 flex items-center gap-2">
                                     <input type="radio" name="gender" value="male" />
                                     Free Event
                                 </label>
-                                <label className="mr-4 flex items-center gap-2">
-                                    <input type="radio" name="gender" value="female" />
-                                    Payable Event
-                                </label>
+                                <div>
+                                    <label className="mr-4 flex items-center gap-2">
+                                        <input type="radio" name="gender" value="female" />
+                                        Payable Event
+                                    </label>
+                                    <div>
+                                        <input
+                                            type="text"
+                                            id="charge"
+                                            name="charge"
+                                            className="w-full border-b border-[#001356] p-1 my-4 placeholder-[#001356]"
+                                            placeholder='Enter the charge'
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="mb-4">
                             <label className="block text-base font-medium">Mode of Event</label>
                             <div className='grid grid-cols-2 w-full border border-[#001356] rounded-lg p-1 mt-1'>
-                                <label className="mr-4 flex items-center gap-2">
-                                    <input type="radio" name="gender" value="male" />
-                                    Online Event
-                                </label>
+                                <div>
+                                    <label className="mr-4 flex items-center gap-2">
+                                        <input type="radio" name="gender" value="male" />
+                                        Online Event
+                                    </label>
+                                    <div>
+                                        <input
+                                            type="text"
+                                            id="charge"
+                                            name="charge"
+                                            className="w-full border-b border-[#001356] p-1 my-4 placeholder-[#001356]"
+                                            placeholder='Enter the charge'
+                                        />
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="text"
+                                            id="charge"
+                                            name="charge"
+                                            className="w-full border-b border-[#001356] p-1 my-4 placeholder-[#001356]"
+                                            placeholder='Enter the charge'
+                                        />
+                                    </div>
+                                </div>
+
+
                                 <label className="mr-4 flex items-center gap-2">
                                     <input type="radio" name="gender" value="male" />
                                     Offline Event
@@ -293,4 +325,4 @@ const Opportunity = () => {
     );
 };
 
-export default Opportunity;
+export default SaveAndNext;

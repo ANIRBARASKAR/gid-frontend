@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { RxTriangleUp } from "react-icons/rx";
-import Opportunity from "./buttonPages/opportunity/Opportunity";
+// import Opportunity from "./buttonPages/opportunity/Opportunity";
 import Roundes from "./buttonPages/rounds/Roundes";
 import Rewards from "./buttonPages/rewards/Rewards";
+import SaveAndNext from "./buttonPages/opportunity/SaveAndNext";
 
 const EventOrgDetails = () => {
     const [active, setActive] = useState("firstButton");
     return (
         <div className=" mt-8 lg:ml-[300px]">
             <div>
-                <div className="w-[275px] md:w-[665px] h-[10px] md:h-[15px] bg-[#FCFCFC] mx-auto" style={{
-                    boxShadow: "0px 2px 4px 0px #00000040 inset"
-                }}></div>
+                <div className="flex justify-center">
+                    <div className="w-[275px] md:w-[665px] h-[10px] md:h-[15px] bg-[#FCFCFC]" style={{
+                        boxShadow: "0px 2px 4px 0px #00000040 inset"
+                    }}></div>
+                </div>
                 <div className="flex justify-center mt-[-15px] md:mt-[-25px]">
                     <div>
                         <div className="flex justify-between w-[280px] md:w-[670px]">
@@ -98,8 +101,11 @@ const EventOrgDetails = () => {
             </div>
             {/* Different pages */}
             <div>
-                {
+                {/* {
                     active === "firstButton" && <Opportunity />
+                } */}
+                {
+                    active === "firstButton" && <SaveAndNext />
                 }
                 {
                     active === "secondButton" && <Roundes />
