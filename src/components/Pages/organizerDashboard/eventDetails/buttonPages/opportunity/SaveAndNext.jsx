@@ -77,7 +77,7 @@ const SaveAndNext = () => {
                         <label className="block text-[#001356] text-base font-medium">Categories*</label>
                         <Select
                             isMulti
-                            className='w-full border border-[#001356] rounded-lg mt-1'
+                            className='w-full md:w-[50%] border border-[#001356] rounded-lg mt-1'
                             options={options}
                         />
                     </div>
