@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { RxTriangleUp } from "react-icons/rx";
 // import Opportunity from "./buttonPages/opportunity/Opportunity";
-import Roundes from "./buttonPages/rounds/Roundes";
+// import Roundes from "./buttonPages/rounds/Roundes";
 import Rewards from "./buttonPages/rewards/Rewards";
 import SaveAndNext from "./buttonPages/opportunity/SaveAndNext";
+import NextRound from "./buttonPages/rounds/NextRound";
 
 const EventOrgDetails = () => {
     const [active, setActive] = useState("firstButton");
@@ -107,8 +108,11 @@ const EventOrgDetails = () => {
                 {
                     active === "firstButton" && <SaveAndNext />
                 }
-                {
+                {/* {
                     active === "secondButton" && <Roundes />
+                } */}
+                {
+                    active === "secondButton" && <NextRound />
                 }
                 {
                     active === "thirdButton" && <Rewards />
