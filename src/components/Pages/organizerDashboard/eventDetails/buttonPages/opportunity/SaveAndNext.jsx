@@ -353,7 +353,7 @@ const SaveAndNext = () => {
                                 <div className='mt-4 border border-[#001356] rounded-md cursor-pointer'>
                                     <div className='px-2 cursor-pointer'>
                                         <p className='text-[#001356] text-lg'>Select school student</p>
-                                        <div className='grid grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
+                                        <div className='grid grid-cols-4 md:grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>1st</p>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2nd</p>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>3rd</p>
@@ -376,20 +376,20 @@ const SaveAndNext = () => {
                                 <div className='mt-4 border border-[#001356] rounded-md cursor-pointer'>
                                     <div className='px-2'>
                                         <p className='text-[#001356] text-lg'>Select college student</p>
-                                        <div className='grid grid-cols-5 gap-4 mt-1 pb-2 text-sm'>
+                                        <div className='grid grid-cols-3 md:grid-cols-5 gap-4 mt-1 pb-2 text-sm'>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Management</p>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Science & technology</p>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Diploma</p>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Computer Application</p>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Science & Arts</p>
                                         </div>
-                                        <div className='flex items-center gap-4 mt-2'>
+                                        <div className='grid grid-cols-3 md:grid-cols-4 gap-4 mt-2'>
                                             <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Computer</p>
                                             <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Electrical</p>
                                             <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Civil</p>
                                             <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Mechanical</p>
                                         </div>
-                                        <div className='flex items-center gap-4 my-3'>
+                                        <div className='grid grid-cols-3 md:grid-cols-4 gap-4 my-3'>
                                             <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2023</p>
                                             <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2024</p>
                                             <p className='px-4 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>2025</p>
@@ -404,7 +404,7 @@ const SaveAndNext = () => {
                                 <div className='mt-4 border border-[#001356] rounded-md cursor-pointer'>
                                     <div className='px-2'>
                                         <p className='text-[#001356] text-lg'>Select working professionals experience</p>
-                                        <div className='grid grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
+                                        <div className='grid grid-cols-3 lg:grid-cols-7 gap-4 mt-1 pb-2 text-sm'>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>All</p>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>Upto 11 months</p>
                                             <p className='px-4 py-1 text-center bg-[#E7E7E7] text-gray-500 rounded-md'>1 year</p>
@@ -432,7 +432,8 @@ const SaveAndNext = () => {
                             type="text"
                             id="opportunityTitle"
                             name="opportunityTitle"
-                            className="w-full border border-[#001356] rounded-lg p-1 mt-1"
+                            placeholder='Enter about opportunity'
+                            className="w-full placeholder-[#001356] border border-[#001356] rounded-lg p-1 mt-1"
                         />
                     </div>
 
@@ -440,7 +441,9 @@ const SaveAndNext = () => {
                         <button
                             type="submit"
                             className="bg-[#284B80] text-white px-8 py-2 rounded-lg hover:bg-blue-600"
-                        >
+                            style={{
+                                boxShadow: "0px 4px 4px 0px #00135640"
+                            }}>
                             Save & Next
                         </button>
                     </div>
