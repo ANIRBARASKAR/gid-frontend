@@ -1,8 +1,16 @@
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 import { FaPlus } from 'react-icons/fa';
 import { MdDelete } from 'react-icons/md';
+import { useNavigate } from "react-router-dom";
+
 
 const Rewards = () => {
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        navigate("../others-details");
+    }
+
     return (
         <div className="bg-white mt-5 py-8 px-6 rounded-lg" style={{
             boxShadow: "0px 4px 4px 0px #00000040"
@@ -109,7 +117,7 @@ const Rewards = () => {
                 <div className='flex items-center bg-[#284B80] text-white px-4 py-2 rounded-md gap-4' style={{
                     boxShadow: "0px 4px 4px 0px #00135640"
                 }}>
-                    <button>Save</button>
+                    <button onClick={handleNavigate} >Save</button>
                     <BsArrowRightCircle size={20} />
                 </div>
             </div>

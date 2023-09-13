@@ -6,8 +6,12 @@ import Rewards from "./buttonPages/rewards/Rewards";
 import SaveAndNext from "./buttonPages/opportunity/SaveAndNext";
 import NextRound from "./buttonPages/rounds/NextRound";
 
+
+
 const EventOrgDetails = () => {
+
     const [active, setActive] = useState("firstButton");
+    
     return (
         <div className=" mt-8 lg:ml-[300px]">
             <div>
@@ -117,6 +121,7 @@ const EventOrgDetails = () => {
                 {
                     active === "thirdButton" && <Rewards />
                 }
+                
             </div>
         </div>
     );
