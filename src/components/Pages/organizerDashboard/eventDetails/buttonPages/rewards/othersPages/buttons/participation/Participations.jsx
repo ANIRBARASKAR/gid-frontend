@@ -6,7 +6,6 @@ const data = [
     { name: 'Amish Savaliya', email: 'abc@gmail.com', regi: '15/07/20203', time: "16:40:06", mobile: '9998887776', pti: '#hdu82s8ds96' },
     { name: 'Amish Savaliya', email: 'abc@gmail.com', regi: '15/07/20203', time: "16:40:06", mobile: '9998887776', pti: '#hdu82s8ds96' },
     { name: 'Amish Savaliya', email: 'abc@gmail.com', regi: '15/07/20203', time: "16:40:06", mobile: '9998887776', pti: '#hdu82s8ds96' },
-
 ];
 
 const Participations = () => {
