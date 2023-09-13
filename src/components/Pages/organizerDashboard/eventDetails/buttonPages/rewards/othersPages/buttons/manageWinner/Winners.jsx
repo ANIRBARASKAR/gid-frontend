@@ -1,3 +1,15 @@
+const data = [
+    { name: 'Username', email: 'abc@gmail.com', org: 'xyz', status: "Attended", marks: '44/50' },
+    { name: 'Username', email: 'abc@gmail.com', org: 'xyz', status: "Not Attended", marks: '44/50' },
+    { name: 'Username', email: 'abc@gmail.com', org: 'xyz', status: "Attended", marks: '44/50' },
+    { name: 'Username', email: 'abc@gmail.com', org: 'xyz', status: "Attended", marks: '44/50' },
+    { name: 'Username', email: 'abc@gmail.com', org: 'xyz', status: "Not Attended", marks: '44/50' },
+    { name: 'Username', email: 'abc@gmail.com', org: 'xyz', status: "Attended", marks: '44/50' },
+    { name: 'Username', email: 'abc@gmail.com', org: 'xyz', status: "Attended", marks: '44/50' },
+    { name: 'Username', email: 'abc@gmail.com', org: 'xyz', status: "Attended", marks: '44/50' },
+
+];
+
 
 const Winners = () => {
     return (
@@ -23,6 +35,53 @@ const Winners = () => {
                     <button className="text-xs md:text-sm font-medium text-[#001356] px px-4 py-2 border border-[#001356] rounded">Select Rewards & Recognition</button>
                     <button className="text-xs md:text-sm font-medium text-white px px-4 py-2 bg-[#23AE00] rounded">Add to Rewards & Recognition</button>
                 </div>
+            </div>
+
+            <div>
+                {/* Table Start */}
+                <div className='mt-5 mx-2 md:mx-0'>
+                    <div className="overflow-x-auto">
+                        <table className="w-[100%] mt-8 text-xs md:text-base">
+                            <thead>
+                                <tr className='text-[#001356]'>
+
+                                    <th className='py-4'>Profile</th>
+                                    <th className='py-4'>Name</th>
+                                    <th className='py-4'>Email</th>
+                                    <th className='py-4'>Org.</th>
+                                    <th className='py-4'>Round status</th>
+                                    <th className='py-4'>Marks if Attended</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {data.map((item, index) => (
+                                    <tr key={index} className="border-b border-gray-300 text-gray-500">
+                                        <td className='text-center py-4 flex gap-2'>
+                                            <input type="checkbox" name="" id="" />
+                                            <img className="w-[20px] h-[20px] md:w-[30px] md:h-[30px] rounded-full mx-auto" src="https://i.ibb.co/B22zDkB/image-4.png" alt="" />
+                                        </td>
+                                        <td className='text-center py-4'>{item.name}</td>
+                                        <td className='text-center py-4'>{item.email}</td>
+                                        <td className='text-center py-4'>
+                                            <div>
+                                                {item.regi}
+                                                <p className="text-xs">{item.org}</p>
+                                            </div>
+                                        </td>
+                                        <td className='text-center'>
+                                            <span className={`${item.status === 'Attended' ? 'text-[#23AE00]' : 'text-[#EC6453]'}`}>
+                                                {item.status}
+                                            </span>
+                                        </td>
+
+                                        <td className='text-center'>{item.marks}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {/* Table End */}
             </div>
         </div>
     );
