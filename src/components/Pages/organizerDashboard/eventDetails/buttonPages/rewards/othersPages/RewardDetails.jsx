@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Participations from "./buttons/participation/Participations";
+// import Participations from "./buttons/participation/Participations";
 import ManageRegi from "./buttons/manageRegi/ManageRegi";
 import Cirtificate from "./buttons/manageCirtificate/Cirtificate";
 import Winners from "./buttons/manageWinner/Winners";
+import AddEventParticipation from "./buttons/participation/AddEventParticipation";
 
 const RewardDetails = () => {
     const [active, setActive] = useState("participation");
@@ -31,8 +32,11 @@ const RewardDetails = () => {
                 </button>
             </div>
             <div>
-                {
+                {/* {
                     active === "participation" && <Participations />
+                } */}
+                {
+                    active === "participation" && <AddEventParticipation />
                 }
                 {
                     active === "registration" && <ManageRegi />
