@@ -23,9 +23,9 @@ const ManageRegi = () => {
                     <button className="px-2 py-1 rounded-md bg-[#D9D9D9] text-gray-500">Round 3</button>
                 </div>
                 <div className="flex items-center gap-3 mt-3 md:mt-0">
-                    <button className="text-xs md:text-sm font-medium text-[#001356] px px-4 py-1 border border-[#001356] rounded">Select Round for Forward</button>
-                    <button className="text-xs md:text-sm font-medium text-white px px-4 py-1 bg-[#23AE00] rounded">Forward to Next Round</button>
-                    <button className="text-xs md:text-sm font-medium text-white px px-4 py-1 bg-[#EC6453] rounded">Remove from this Round</button>
+                    <button className="text-xs md:text-sm font-medium text-[#001356] px px-4 py-2 border border-[#001356] rounded">Select Round for Forward</button>
+                    <button className="text-xs md:text-sm font-medium text-white px px-4 py-2 bg-[#23AE00] rounded">Forward to Next Round</button>
+                    <button className="text-xs md:text-sm font-medium text-white px px-4 py-2 bg-[#EC6453] rounded">Remove from this Round</button>
                 </div>
             </div>
 
