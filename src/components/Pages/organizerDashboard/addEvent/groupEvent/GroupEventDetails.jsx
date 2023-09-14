@@ -111,6 +111,29 @@ const GroupEventDetails = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className='grid grid-cols-2 mt-4'>
+                            <div className='flex justify-end'>
+                                <button
+                                    type="submit"
+                                    className="bg-[#284B80] text-white px-10 py-2 rounded-md"
+                                    style={{
+                                        boxShadow: "0px 4px 4px 0px #00135640"
+                                    }}>
+                                    Submit
+                                </button>
+                            </div>
+                            <div className='flex justify-end'>
+                                <button
+                                    type="submit"
+                                    className="bg-[#284B80] text-white px-4 py-2 rounded-md"
+                                    style={{
+                                        boxShadow: "0px 4px 4px 0px #00135640"
+                                    }}>
+                                    View
+                                </button>
+                            </div>
+
+                        </div>
                     </form>
                 </div>
             </div>
