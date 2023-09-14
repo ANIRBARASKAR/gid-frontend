@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Participations from "./buttons/participation/Participations";
 import ManageRegi from "./buttons/manageRegi/ManageRegi";
-// import Cirtificate from "./buttons/manageCirtificate/Cirtificate";
+import Cirtificate from "./buttons/manageCirtificate/Cirtificate";
 import Winners from "./buttons/manageWinner/Winners";
-import CreateCirtificate from "./buttons/manageCirtificate/CreateCirtificate";
+// import CreateCirtificate from "./buttons/manageCirtificate/CreateCirtificate";
 // import AddEventParticipation from "./buttons/participation/AddEventParticipation";
 
 const RewardDetails = () => {
@@ -36,19 +36,27 @@ const RewardDetails = () => {
                 {
                     active === "participation" && <Participations />
                 }
+
                 {/* After Clicking the ADD pArticipation Button the Add Event Participation will be show. */}
+
                 {/* {
                     active === "participation" && <AddEventParticipation />
                 } */}
+
                 {
                     active === "registration" && <ManageRegi />
                 }
-                {/* {
-                    active === "cirtificate" && <Cirtificate />
-                } */}
+
                 {
-                    active === "cirtificate" && <CreateCirtificate />
+                    active === "cirtificate" && <Cirtificate />
                 }
+
+                {/* After Clicking the Add Certificate Button this Create Cirtificate Page will be show. */}
+
+                {/* {
+                    active === "cirtificate" && <CreateCirtificate />
+                } */}
+                
                 {
                     active === "winner" && <Winners />
                 }

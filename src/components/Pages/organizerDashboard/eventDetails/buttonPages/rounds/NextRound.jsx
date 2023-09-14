@@ -136,7 +136,7 @@ const NextRound = () => {
                 <div className='flex justify-center mt-4'>
                     <button
                         type="submit"
-                        className="bg-[#284B80] text-white px-8 py-2 rounded-lg hover:bg-blue-600"
+                        className="bg-[#284B80] text-white px-8 py-2 rounded-lg"
                         style={{
                             boxShadow: "0px 4px 4px 0px #00135640"
                         }}>

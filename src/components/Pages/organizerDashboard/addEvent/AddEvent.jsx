@@ -12,8 +12,11 @@ const data = [
 
 const AddEvent = () => {
     const navigate = useNavigate();
-    const handleNavigate = () => {
+    const handleAddEventNavigate = () => {
         navigate("../event-org-details")
+    }
+    const handleGroupEventNavigate = () => {
+        navigate("../group-event")
     }
     return (
         <div className="mt-5 lg:ml-[300px]">
@@ -29,8 +32,8 @@ const AddEvent = () => {
                 </div>
                 <div>
                     <div className="flex gap-4">
-                        <button onClick={handleNavigate} className="text-white bg-[#001356] px px-4 py-1 rounded-md">Add Event</button>
-                        <button className="text-white bg-[#001356] px px-4 py-1 rounded-md">Add Group Event</button>
+                        <button onClick={handleAddEventNavigate} className="text-white bg-[#001356] px px-4 py-1 rounded-md">Add Event</button>
+                        <button onClick={handleGroupEventNavigate} className="text-white bg-[#001356] px px-4 py-1 rounded-md">Add Group Event</button>
                     </div>
                 </div>
             </div>
