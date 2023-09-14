@@ -52,15 +52,14 @@ const CreateCirtificate = () => {
                     </div>
                     <div>
                     </div>
-                    {/* =============================== */}
+                    {/* FIRST Coordinate */}
                     <div className='grid grid-cols-1 md:grid-cols-2 md:gap-8'>
-                        {/* FIRST */}
                         <div>
                             <label className="mr-4 flex items-center gap-2 text-[#001356]">
                                 <input type="radio" name="gender" value="male" />
                                 First Coordinate
                             </label>
-                            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:gap-8 mt-4'>
                                 <div>
                                     <div className="mb-4">
                                         <label htmlFor="opportunityTitle" className="block text-[#001356] text-base font-medium">Character limit</label>
@@ -128,18 +127,96 @@ const CreateCirtificate = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* SECOND */}
+                        {/* SECOND Coordinate */}
                         <div>
                             <label className="mr-4 flex items-center gap-2 text-[#001356]">
                                 <input type="radio" name="gender" value="male" />
                                 Second Coordinate
                             </label>
-                            <div>
+                            <div className='grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:gap-8 mt-4'>
+                                <div>
+                                    <div className="mb-4">
+                                        <label htmlFor="opportunityTitle" className="block text-[#001356] text-base font-medium">Character limit</label>
+                                        <input
+                                            type="text"
+                                            id="characterlimit"
+                                            name="characterlimit"
+                                            placeholder='Enter Character limit'
+                                            className="w-full border border-[#001356] placeholder-[#001356] px-2 rounded-md p-1 mt-1"
+                                        />
+                                    </div>
+                                    <div className="mb-4">
+                                        <label htmlFor="opportunityTitle" className="block text-[#001356] text-base font-medium">X - Coordinate</label>
+                                        <input
+                                            type="text"
+                                            id="xCoordinator"
+                                            name="xCoordinator"
+                                            placeholder='Enter X - Coordinate'
+                                            className="w-full border border-[#001356] placeholder-[#001356] px-2 rounded-md p-1 mt-1"
+                                        />
+                                    </div>
+                                    <div className="mb-4">
+                                        <label htmlFor="opportunityTitle" className="block text-[#001356] text-base font-medium">Font Size</label>
+                                        <input
+                                            type="text"
+                                            id="fontSize"
+                                            name="fontSize"
+                                            placeholder='Enter Font Size'
+                                            className="w-full border border-[#001356] placeholder-[#001356] px-2 rounded-md p-1 mt-1"
+                                        />
+                                    </div>
 
+                                </div>
+                                <div>
+                                    <div className="mb-4">
+                                        <label htmlFor="opportunityTitle" className="block text-[#001356] text-base font-medium">Name Rotate</label>
+                                        <input
+                                            type="text"
+                                            id="nameRotate"
+                                            name="nameRotate"
+                                            placeholder='Enter Rotate'
+                                            className="w-full border border-[#001356] placeholder-[#001356] px-2 rounded-md p-1 mt-1"
+                                        />
+                                    </div>
+                                    <div className="mb-4">
+                                        <label htmlFor="opportunityTitle" className="block text-[#001356] text-base font-medium">Y - Coordinate</label>
+                                        <input
+                                            type="text"
+                                            id="yCoordinator"
+                                            name="yCoordinator"
+                                            placeholder='Enter Y - Coordinate'
+                                            className="w-full border border-[#001356] placeholder-[#001356] px-2 rounded-md p-1 mt-1"
+                                        />
+                                    </div>
+                                    <div className="mb-4">
+                                        <label htmlFor="opportunityTitle" className="block text-[#001356] text-base font-medium">Color</label>
+                                        <input
+                                            type="text"
+                                            id="color"
+                                            name="color"
+                                            className="w-full border border-[#001356] placeholder-[#001356] px-2 rounded-md p-1 mt-1"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    {/* =============================== */}
+                    <div className='flex items-center justify-center mt-5'>
+                        <div className='flex gap-8'>
+                            <button
+                                type="submit"
+                                className="bg-[#23AE00] text-white px-10 py-2 rounded-md"
+                            >
+                                Preview
+                            </button>
+                            <button
+                                type="submit"
+                                className="bg-[#284B80] text-white px-10 py-2 rounded-md"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>
             {/* FROM - END - HERE */}
