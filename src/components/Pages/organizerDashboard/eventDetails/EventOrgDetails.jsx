@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { RxTriangleUp } from "react-icons/rx";
-// import Opportunity from "./buttonPages/opportunity/Opportunity";
-// import Roundes from "./buttonPages/rounds/Roundes";
+import Opportunity from "./buttonPages/opportunity/Opportunity";
+import Roundes from "./buttonPages/rounds/Roundes";
 import Rewards from "./buttonPages/rewards/Rewards";
-import SaveAndNext from "./buttonPages/opportunity/SaveAndNext";
-import NextRound from "./buttonPages/rounds/NextRound";
+// import SaveAndNext from "./buttonPages/opportunity/SaveAndNext";
+// import NextRound from "./buttonPages/rounds/NextRound";
 
 
 
@@ -106,18 +106,20 @@ const EventOrgDetails = () => {
             </div>
             {/* Different pages */}
             <div>
-                {/* {
+                {
                     active === "firstButton" && <Opportunity />
-                } */}
-                {
-                    active === "firstButton" && <SaveAndNext />
                 }
+                {/* After Clicking on the save and next Button the Save And Next page will be show */}
                 {/* {
-                    active === "secondButton" && <Roundes />
+                    active === "firstButton" && <SaveAndNext />
                 } */}
                 {
-                    active === "secondButton" && <NextRound />
+                    active === "secondButton" && <Roundes />
                 }
+                {/* After Clicking on the button the next round will show */}
+                {/* {
+                    active === "secondButton" && <NextRound />
+                } */}
                 {
                     active === "thirdButton" && <Rewards />
                 }
