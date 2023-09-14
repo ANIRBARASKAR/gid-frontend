@@ -36,6 +36,7 @@ import EventOrgDetails from "./components/Pages/organizerDashboard/eventDetails/
 import RewardDetails from "./components/Pages/organizerDashboard/eventDetails/buttonPages/rewards/othersPages/RewardDetails"
 import GroupEventDetails from "./components/Pages/organizerDashboard/addEvent/groupEvent/GroupEventDetails"
 import GroupEventCreateTwo from "./components/Pages/organizerDashboard/addEvent/groupEvent/GroupEventCreateTwo"
+import GroupEvant from "./components/Pages/organizerDashboard/addEvent/groupEvent/groupEvantPage/GroupEvant"
 
 
 
@@ -91,6 +92,7 @@ function App() {
             <Route path="group-event" element={<GroupEventDetails />} />
             <Route path="group-event-two" element={<GroupEventCreateTwo />} />
             <Route path="others-details" element={<RewardDetails />} />
+            <Route path="group-event-three" element={<GroupEvant />} />
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage) && <Footer />}

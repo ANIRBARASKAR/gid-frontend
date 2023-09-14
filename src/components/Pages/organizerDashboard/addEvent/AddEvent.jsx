@@ -16,7 +16,7 @@ const AddEvent = () => {
         navigate("../event-org-details")
     }
     const handleGroupEventNavigate = () => {
-        navigate("../group-event-two")
+        navigate("../group-event-three")
     }
     return (
         <div className="mt-5 lg:ml-[300px]">
