@@ -35,6 +35,7 @@ import Notfound from "./components/Pages/Notfound"
 import EventOrgDetails from "./components/Pages/organizerDashboard/eventDetails/EventOrgDetails"
 import RewardDetails from "./components/Pages/organizerDashboard/eventDetails/buttonPages/rewards/othersPages/RewardDetails"
 import GroupEventDetails from "./components/Pages/organizerDashboard/addEvent/groupEvent/GroupEventDetails"
+import GroupEventCreateTwo from "./components/Pages/organizerDashboard/addEvent/groupEvent/GroupEventCreateTwo"
 
 
 
@@ -88,6 +89,7 @@ function App() {
             <Route path="edit-my-profile" element={<EditMyProfile />} />
             <Route path="event-org-details" element={<EventOrgDetails />} />
             <Route path="group-event" element={<GroupEventDetails />} />
+            <Route path="group-event-two" element={<GroupEventCreateTwo />} />
             <Route path="others-details" element={<RewardDetails />} />
           </Route>
         </Routes>
