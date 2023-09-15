@@ -29,7 +29,7 @@ const GroupEventCreateTwo = () => {
             <div>
                 {/* Header End */}
                 {/* Table Start */}
-                <div className='mt-10 mx-2 md:mx-0 flex items-center gap-16 bg-white px-4 rounded-md' style={{
+                <div className='mt-10 mx-2 md:mx-0 lg:flex items-center gap-16 bg-white px-4 rounded-md' style={{
                     boxShadow: "0px 4px 4px 0px #00000040"
                 }}>
                     <div className="">
