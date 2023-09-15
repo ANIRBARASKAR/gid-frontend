@@ -16,10 +16,10 @@ const AddEvent = () => {
         navigate("../event-org-details")
     }
     const handleGroupEventNavigate = () => {
-        navigate("../group-event-three")
+        navigate("../group-event-two")
     }
     return (
-        <div className="mt-5 lg:ml-[300px]">
+        <div className="mt-5 lg:ml-[300px] lg:pr-6">
             <div className='mx-4 md:mx-0 flex items-center justify-between'>
                 <div>
                     <div className='flex items-center gap-8 mt-5'>
@@ -37,6 +37,7 @@ const AddEvent = () => {
                     </div>
                 </div>
             </div>
+            
             {/* TABLE DATA */}
             <div className='mt-5 mx-2 md:mx-0'>
                 <table className="w-[100%] mt-8 text-xs md:text-base">

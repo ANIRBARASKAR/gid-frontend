@@ -91,8 +91,8 @@ function App() {
             <Route path="event-org-details" element={<EventOrgDetails />} />
             <Route path="group-event" element={<GroupEventDetails />} />
             <Route path="group-event-two" element={<GroupEventCreateTwo />} />
-            <Route path="others-details" element={<RewardDetails />} />
             <Route path="group-event-three" element={<GroupEvant />} />
+            <Route path="others-details" element={<RewardDetails />} />
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage) && <Footer />}

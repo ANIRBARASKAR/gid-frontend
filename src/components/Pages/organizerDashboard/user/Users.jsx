@@ -20,7 +20,7 @@ const data = [
 const Users = () => {
     return (
         <>
-            <div className="mt-5 lg:ml-[300px]">
+            <div className="mt-5 lg:ml-[300px] lg:pr-6">
                 <div className='mx-4 md:mx-0'>
                     <div className='flex items-center gap-8 mt-5'>
                         <p className="text-[18px] text-[#343A40]">All (125)</p>

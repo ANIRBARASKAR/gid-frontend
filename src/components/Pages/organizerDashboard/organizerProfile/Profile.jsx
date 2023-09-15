@@ -7,7 +7,7 @@ import Videos from "./Videos";
 
 const Profile = () => {
     return (
-        <div className="mt-5 lg:ml-[300px]">
+        <div className="mt-5 lg:ml-[300px] lg:pr-6">
             <MyProfile />
             <PastEvent />
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">

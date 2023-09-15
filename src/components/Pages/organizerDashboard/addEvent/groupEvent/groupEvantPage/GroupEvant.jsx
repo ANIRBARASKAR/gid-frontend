@@ -3,7 +3,7 @@ import EventTable from './EventTable';
 
 const GroupEvant = () => {
     return (
-        <div className="mt-10 lg:ml-[300px]">
+        <div className="mt-10 lg:ml-[300px] lg:pr-6">
             <p className="text-[#001356] text-[16px] font-medium">Group Event</p>
             <div className="bg-white p-4 rounded-xl mt-8" style={{ boxShadow: "0px 4px 4px 0px #00000040" }}>
                 <div className="md:flex gap-8">

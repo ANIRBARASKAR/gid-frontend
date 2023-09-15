@@ -4,7 +4,7 @@ import GroupEventTable from "./groupEventCreate/GroupEventTable";
 const GroupEventDetails = () => {
     
     return (
-        <div className="mt-5 lg:ml-[300px]">
+        <div className="mt-5 lg:ml-[300px] lg:pr-6">
             <AddGroupEvent />
             <GroupEventTable />
         </div>

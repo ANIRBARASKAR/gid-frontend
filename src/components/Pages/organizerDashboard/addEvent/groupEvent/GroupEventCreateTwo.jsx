@@ -8,7 +8,7 @@ const teamOne = [
 
 const GroupEventCreateTwo = () => {
     return (
-        <div className="mt-5 lg:ml-[300px]">
+        <div className="mt-5 lg:ml-[300px] lg:pr-6">
             <div className='mx-4 md:mx-0 flex items-center justify-between'>
                 <div>
                     <div className='flex items-center gap-8 mt-5'>

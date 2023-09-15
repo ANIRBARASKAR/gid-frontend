@@ -13,7 +13,7 @@ const EventOrgDetails = () => {
     const [active, setActive] = useState("firstButton");
     
     return (
-        <div className=" mt-8 lg:ml-[300px]">
+        <div className=" mt-8 lg:ml-[300px] lg:pr-6">
             <div>
                 <div className="flex justify-center">
                     <div className="w-[275px] md:w-[665px] h-[10px] md:h-[15px] bg-[#FCFCFC]" style={{

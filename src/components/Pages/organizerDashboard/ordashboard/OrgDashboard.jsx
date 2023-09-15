@@ -5,7 +5,7 @@ import Summery from "./Summery";
 
 const OrgDashboard = () => {
     return (
-        <div>
+        <div className="lg:pr-6">
             <EventSummery />
             <Summery />
             <Attendess />
