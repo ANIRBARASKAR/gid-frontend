@@ -8,7 +8,7 @@ const CreateCirtificate = () => {
     };
 
     return (
-        <div className='lg:pr-6'>
+        <div className='lg:pr-6 lg:ml-[300px]'>
             <div className="bg-white mt-5 py-8 px-6 rounded-lg" style={{
                 boxShadow: "0px 4px 4px 0px #00000040"
             }}>

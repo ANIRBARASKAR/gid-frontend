@@ -9,28 +9,30 @@ import Winners from "./buttons/manageWinner/Winners";
 const RewardDetails = () => {
     const [active, setActive] = useState("participation");
     return (
-        <div className="mt-12 lg:ml-[300px]">
-            <div className="mx-2 md:mx-32 flex justify-between">
-                <button
-                    onClick={() => setActive("participation")}
-                    className={active === "participation" ? "text-base text-[#001356] font-medium border-b border-[#001356]" : "text-base text-[#001356] font-medium"}>
-                    Participation
-                </button>
-                <button
-                    onClick={() => setActive("registration")}
-                    className={active === "registration" ? "text-base text-[#001356] font-medium border-b border-[#001356]" : "text-base text-[#001356] font-medium"}>
-                    Manage Registration
-                </button>
-                <button
-                    onClick={() => setActive("cirtificate")}
-                    className={active === "cirtificate" ? "text-base text-[#001356] font-medium border-b border-[#001356]" : "text-base text-[#001356] font-medium"}>
-                    Manage Certificate
-                </button>
-                <button
-                    onClick={() => setActive("winner")}
-                    className={active === "winner" ? "text-base text-[#001356] font-medium border-b border-[#001356]" : "text-base text-[#001356] font-medium"}>
-                    Manage Winners
-                </button>
+        <>
+            <div className="mt-12 lg:ml-[300px]">
+                <div className="mx-2 md:mx-32 flex justify-between">
+                    <button
+                        onClick={() => setActive("participation")}
+                        className={active === "participation" ? "text-base text-[#001356] font-medium border-b border-[#001356]" : "text-base text-[#001356] font-medium"}>
+                        Participation
+                    </button>
+                    <button
+                        onClick={() => setActive("registration")}
+                        className={active === "registration" ? "text-base text-[#001356] font-medium border-b border-[#001356]" : "text-base text-[#001356] font-medium"}>
+                        Manage Registration
+                    </button>
+                    <button
+                        onClick={() => setActive("cirtificate")}
+                        className={active === "cirtificate" ? "text-base text-[#001356] font-medium border-b border-[#001356]" : "text-base text-[#001356] font-medium"}>
+                        Manage Certificate
+                    </button>
+                    <button
+                        onClick={() => setActive("winner")}
+                        className={active === "winner" ? "text-base text-[#001356] font-medium border-b border-[#001356]" : "text-base text-[#001356] font-medium"}>
+                        Manage Winners
+                    </button>
+                </div>
             </div>
             <div>
                 {
@@ -56,12 +58,12 @@ const RewardDetails = () => {
                 {/* {
                     active === "cirtificate" && <CreateCirtificate />
                 } */}
-                
+
                 {
                     active === "winner" && <Winners />
                 }
             </div>
-        </div>
+        </>
     );
 };
 

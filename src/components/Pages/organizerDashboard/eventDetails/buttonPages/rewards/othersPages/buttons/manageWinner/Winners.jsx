@@ -16,7 +16,7 @@ const data = [
 const Winners = () => {
     return (
         <>
-            <div className="lg:pr-6">
+            <div className="lg:pr-6 lg:ml-[300px]">
                 <div className="bg-white mt-10 py-8 px-6 rounded-lg" style={{
                     boxShadow: "0px 4px 4px 0px #00000040"
                 }}>
@@ -89,7 +89,7 @@ const Winners = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-white w-full mt-8 '>
+            <div className='bg-white mt-8 lg:ml-[255px] pt-3'>
                 <div className='flex justify-between items-center'>
                     <div className='mt-2 lg:ml-2'>
                         <p>Showing 1 to 10 of 50 entries</p>
