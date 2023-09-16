@@ -1,6 +1,7 @@
 import AdmEventSummery from "./AdmEventSummery";
 import AdmSummery from "./AdmSummery";
 import OrderSummery from "./OrderSummery";
+import UserSummery from "./UserSummery";
 
 const AdmDashboardHome = () => {
     return (
@@ -9,6 +10,7 @@ const AdmDashboardHome = () => {
             <AdmSummery />
             <OrderSummery />
             {/* Here will be the chart component */}
+            <UserSummery />
         </div>
     );
 };
