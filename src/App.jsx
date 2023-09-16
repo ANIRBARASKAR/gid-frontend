@@ -37,6 +37,7 @@ import RewardDetails from "./components/Pages/organizerDashboard/eventDetails/bu
 import GroupEventDetails from "./components/Pages/organizerDashboard/addEvent/groupEvent/GroupEventDetails"
 import GroupEventCreateTwo from "./components/Pages/organizerDashboard/addEvent/groupEvent/GroupEventCreateTwo"
 import GroupEvant from "./components/Pages/organizerDashboard/addEvent/groupEvent/groupEvantPage/GroupEvant"
+import AdminDashboard from "./components/Pages/adminDashboard/AdminDashboard"
 
 
 
@@ -46,6 +47,7 @@ function App() {
   const location = useLocation();
   const isDashboardPage = location.pathname.startsWith("/dashboard");
   const isOrganizerDashboardPage = location.pathname.startsWith("/organizer-dashboard");
+  const isAdminDashboardPage = location.pathname.startsWith("/admin-dashboard");
 
   return (
     <>
@@ -94,8 +96,12 @@ function App() {
             <Route path="group-event-three" element={<GroupEvant />} />
             <Route path="others-details" element={<RewardDetails />} />
           </Route>
+          {/*ADMIN DASHBOARD */}
+          <Route path="/admin-dashboard" element={<AdminDashboard />}>
+
+          </Route>
         </Routes>
-        {(!isDashboardPage && !isOrganizerDashboardPage) && <Footer />}
+        {(!isDashboardPage && !isOrganizerDashboardPage && !isAdminDashboardPage) && <Footer />}
       </div>
     </>
   )
