@@ -16,34 +16,36 @@ const AdmHomeTable = () => {
         <>
             <div className="lg:ml-[300px] lg:pr-6">
                 <div className='mt-5 mx-2 md:mx-0'>
-                    <table className="w-[100%] mt-8 text-xs md:text-base">
-                        <thead>
-                            <tr className='text-[#001356] text-left'>
-                                <th className='py-4'>No</th>
-                                <th className='py-4'>Name</th>
-                                <th className='py-4'>Email</th>
-                                <th className='py-4'>Registration Date</th>
-                                <th className='py-4'>Last Login</th>
-                                <th className='py-4'>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {data.map((item, index) => (
-                                <tr key={index} className="border-b border-gray-300 text-gray-500">
-                                    <td className='py-4'>{index + 1}</td>
-                                    <td className='py-4'>{item.name}</td>
-                                    <td className='py-4'>{item.email}</td>
-                                    <td className='py-4'>{item.regi}</td>
-                                    <td className='py-4'>{item.login}</td>
-                                    <td className='py-4'>
-                                        <div className=''>
-                                            <BsToggleOn className="text-green-700" size={30} />
-                                        </div>
-                                    </td>
+                    <div className="overflow-x-auto w-full">
+                        <table className="w-[100%] mt-8 text-xs md:text-base">
+                            <thead>
+                                <tr className='text-[#001356] text-left'>
+                                    <th className='py-4'>No</th>
+                                    <th className='py-4'>Name</th>
+                                    <th className='py-4'>Email</th>
+                                    <th className='py-4'>Registration Date</th>
+                                    <th className='py-4'>Last Login</th>
+                                    <th className='py-4'>Status</th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                {data.map((item, index) => (
+                                    <tr key={index} className="border-b border-gray-300 text-gray-500">
+                                        <td className='py-4'>{index + 1}</td>
+                                        <td className='py-4'>{item.name}</td>
+                                        <td className='py-4'>{item.email}</td>
+                                        <td className='py-4'>{item.regi}</td>
+                                        <td className='py-4'>{item.login}</td>
+                                        <td className='py-4'>
+                                            <div className=''>
+                                                <BsToggleOn className="text-green-700" size={30} />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div className='bg-white lg:ml-[255px]'>
