@@ -14,7 +14,7 @@ const LargeDeviceMenu = () => {
                         <ul className="flex-col min-w-full flex list-none mt-2">
                             <li className="mb-4">
                                 <NavLink
-                                    to="/dashboard/profile"
+                                    to="/admin-dashboard/adm-dashboard-home"
                                     exact
                                     className={style}
                                 >
@@ -25,7 +25,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/tickets"
+                                    to="/admin-dashboard/tickets"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
@@ -35,7 +35,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/participation"
+                                    to="/admin-dashboard/participation"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
@@ -45,7 +45,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/reviews"
+                                    to="/admin-dashboard/reviews"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
@@ -55,7 +55,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/certification"
+                                    to="/admin-dashboard/certification"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
@@ -65,7 +65,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/saved-events"
+                                    to="/admin-dashboard/saved-events"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
@@ -75,7 +75,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/blogs"
+                                    to="/admin-dashboard/blogs"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
@@ -85,7 +85,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/blogs"
+                                    to="/admin-dashboard/blogs"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
@@ -95,7 +95,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/blogs"
+                                    to="/admin-dashboard/blogs"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >
@@ -105,7 +105,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/dashboard/blogs"
+                                    to="/admin-dashboard/blogs"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >

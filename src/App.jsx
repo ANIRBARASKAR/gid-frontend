@@ -38,6 +38,7 @@ import GroupEventDetails from "./components/Pages/organizerDashboard/addEvent/gr
 import GroupEventCreateTwo from "./components/Pages/organizerDashboard/addEvent/groupEvent/GroupEventCreateTwo"
 import GroupEvant from "./components/Pages/organizerDashboard/addEvent/groupEvent/groupEvantPage/GroupEvant"
 import AdminDashboard from "./components/Pages/adminDashboard/AdminDashboard"
+import AdmDashboardHome from "./components/Pages/adminDashboard/admDashboardHome/AdmDashboardHome"
 
 
 
@@ -98,7 +99,7 @@ function App() {
           </Route>
           {/*ADMIN DASHBOARD */}
           <Route path="/admin-dashboard" element={<AdminDashboard />}>
-
+            <Route path="adm-dashboard-home" element={<AdmDashboardHome />} />
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage && !isAdminDashboardPage) && <Footer />}
