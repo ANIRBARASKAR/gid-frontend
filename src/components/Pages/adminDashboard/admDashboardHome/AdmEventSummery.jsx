@@ -2,7 +2,7 @@
 
 const AdmEventSummery = () => {
     return (
-        <div>
+        <div className="lg:ml-[300px] lg:pr-6">
             <div className="mt-5 flex items-center gap-4 mx-4 md:mx-0">
                 <h1 className="text-[#001356] text-[26px] font-bold">Dashboard</h1>
                 <img src="https://i.ibb.co/sjJWFNX/airplay.png" alt="" />

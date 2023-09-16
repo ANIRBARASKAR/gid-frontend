@@ -5,7 +5,7 @@ import SmallDeviceProgress from "./SmallDeviceProgress";
 
 const AdmSummery = () => {
     return (
-        <div>
+        <div className="lg:ml-[300px] lg:pr-6">
             <div className='mt-5 lg:mt-16 mx-2 md:mx-0 border-2 border-gray-400 px-4 rounded-lg'>
                 <div className="overflow-x-auto w-full">
                     <table className="w-[100%] text-xs md:text-base">
