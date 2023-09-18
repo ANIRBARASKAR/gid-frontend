@@ -1,18 +1,19 @@
 import { AiTwotoneEye } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdDelete } from "react-icons/md";
 
 const data = [
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
-    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email:'xyz@gmail.com', type:'Business', status:'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
+    { name: 'Event Name', createDate: "15/07/20203", mobile: '94090054848', email: 'xyz@gmail.com', type: 'Business', status: 'Pending', },
 ];
 
 const CallInQuiry = () => {
@@ -68,7 +69,26 @@ const CallInQuiry = () => {
                 </div>
             </div>
             {/* Call -Inquiry Table End */}
-
+            {/* Paigination */}
+            <div className='bg-white lg:ml-[255px] pt-2'>
+                <div className='flex justify-between items-center'>
+                    <div className='mt-2 lg:ml-2'>
+                        <p>Showing 1 to 10 of 50 entries</p>
+                    </div>
+                    <div className='flex items-center gap-3 mt-2'>
+                        <div className='bg-[#DFDFDF] p-2'>
+                            <IoIosArrowBack />
+                        </div>
+                        <p className='text-gray-500'>1</p>
+                        <p className='text-gray-500'>2</p>
+                        <p className='text-gray-500'>3</p>
+                        <p className='text-gray-500'>4</p>
+                        <div className='bg-[#DFDFDF] p-2'>
+                            <IoIosArrowForward />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 };
