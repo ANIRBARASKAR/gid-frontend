@@ -41,6 +41,7 @@ import AdminDashboard from "./components/Pages/adminDashboard/AdminDashboard"
 import AdmDashboardHome from "./components/Pages/adminDashboard/admDashboardHome/AdmDashboardHome"
 import AdmUsers from "./components/Pages/adminDashboard/user/AdmUsers"
 import AddUser from "./components/Pages/adminDashboard/user/AddUser"
+import Organization from "./components/Pages/adminDashboard/organization/Organization"
 
 
 
@@ -104,6 +105,7 @@ function App() {
             <Route path="adm-dashboard-home" element={<AdmDashboardHome />} />
             <Route path="adm-users" element={<AdmUsers />} />
             <Route path="add-user" element={<AddUser />} />
+            <Route path="organization" element={<Organization />} />
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage && !isAdminDashboardPage) && <Footer />}
