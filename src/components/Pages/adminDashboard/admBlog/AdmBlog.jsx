@@ -32,9 +32,10 @@ const AdmBlog = () => {
                             <MdOutlineKeyboardArrowUp className='text[#001356]' size={30} />
                         </div>
                     </div>
+                    <div className='w-full h-[1px] bg-[#001356] mt-5'></div>
                     <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 mt-5">
                         <div className="mb-4">
-                            <label htmlFor="role" className="block text-[#001356] text-base font-medium">Role</label>
+                            <label htmlFor="role" className="block text-[#001356] text-base font-medium">Keyword</label>
                             <select
                                 id="role"
                                 name="role"

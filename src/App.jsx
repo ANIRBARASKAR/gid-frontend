@@ -45,6 +45,7 @@ import Organization from "./components/Pages/adminDashboard/organization/Organiz
 import AddOrganization from "./components/Pages/adminDashboard/organization/AddOrganization"
 import AdmBlog from "./components/Pages/adminDashboard/admBlog/AdmBlog"
 import AddBlog from "./components/Pages/adminDashboard/admBlog/AddBlog"
+import Reports from "./components/Pages/adminDashboard/Reports/Reports"
 
 
 
@@ -112,6 +113,7 @@ function App() {
             <Route path="add-organization" element={<AddOrganization />} />
             <Route path="adm-blog" element={<AdmBlog />} />
             <Route path="add-blog" element={<AddBlog />} />
+            <Route path="reports" element={<Reports />} />
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage && !isAdminDashboardPage) && <Footer />}

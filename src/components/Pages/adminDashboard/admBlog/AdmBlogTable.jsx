@@ -29,7 +29,7 @@ const AdmBlogTable = () => {
                                     <th className='py-4'>Title</th>
                                     <th className='py-4'>Written By</th>
                                     <th className='py-4'>Image</th>
-                                    <th className='py-4'>Status</th>
+                                    <th className='py-4'>Is Publish</th>
                                 </tr>
                             </thead>
                             <tbody>
