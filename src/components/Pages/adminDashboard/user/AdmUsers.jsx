@@ -141,16 +141,16 @@ const AdmUsers = () => {
                                         className="w-full border border-[#001356] rounded-md p-1 mt-1"
                                     />
                                 </div>
-                                <div className='grid grid-cols-3 ml-4'>
-                                    <label className="mr-4 flex items-center gap-2">
+                                <div className='flex items-center gap-4'>
+                                    <label className=" flex items-center gap-2">
                                         <input type="radio" name="gender" value="all" />
                                         All
                                     </label>
-                                    <label className="mr-4 flex items-center gap-2">
+                                    <label className=" flex items-center gap-2">
                                         <input type="radio" name="gender" value="Enabled Only" />
                                         Enabled Only
                                     </label>
-                                    <label className="mr-4 flex items-center gap-2">
+                                    <label className=" flex items-center gap-2">
                                         <input type="radio" name="gender" value="Disabled Only" />
                                         Disabled Only
                                     </label>
