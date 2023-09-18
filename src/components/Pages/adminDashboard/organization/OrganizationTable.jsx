@@ -1,5 +1,6 @@
 import { AiFillEdit } from "react-icons/ai";
 import { BsToggleOn } from "react-icons/bs";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdDelete } from "react-icons/md";
 
 const data = [
@@ -9,7 +10,7 @@ const data = [
     { name: 'Organization Name', email: "xyz@gmail.com", },
     { name: 'Organization Name', email: "xyz@gmail.com", },
     { name: 'Organization Name', email: "xyz@gmail.com", },
-    
+
 ];
 
 const OrganizationTable = () => {
@@ -52,6 +53,25 @@ const OrganizationTable = () => {
                                 ))}
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+            <div className='bg-white lg:ml-[255px] pt-2'>
+                <div className='flex justify-between items-center'>
+                    <div className='mt-2 lg:ml-2'>
+                        <p>Showing 1 to 10 of 50 entries</p>
+                    </div>
+                    <div className='flex items-center gap-3 mt-2'>
+                        <div className='bg-[#DFDFDF] p-2'>
+                            <IoIosArrowBack />
+                        </div>
+                        <p className='text-gray-500'>1</p>
+                        <p className='text-gray-500'>2</p>
+                        <p className='text-gray-500'>3</p>
+                        <p className='text-gray-500'>4</p>
+                        <div className='bg-[#DFDFDF] p-2'>
+                            <IoIosArrowForward />
+                        </div>
                     </div>
                 </div>
             </div>
