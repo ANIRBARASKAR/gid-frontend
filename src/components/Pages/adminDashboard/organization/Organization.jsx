@@ -3,8 +3,13 @@ import { HiOutlineDocument, HiOutlineSearch } from "react-icons/hi";
 import { useForm } from 'react-hook-form';
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import OrganizationTable from "./OrganizationTable";
+import { useNavigate } from "react-router-dom";
 
 const Organization = () => {
+    const navigate = useNavigate();
+    const handleAddUser = () => {
+        navigate("../add-organization");
+    }
     const { handleSubmit } = useForm();
 
     const onSubmit = (data) => {
@@ -16,7 +21,7 @@ const Organization = () => {
                 <div className="mt-5 flex items-center justify-between mx-4 md:mx-0">
                     <h1 className="text-[#001356] text-[26px] font-bold">Organizations</h1>
                     <div className='flex items-center gap-4'>
-                        <button className="text-white bg-[#001356] px-4 py-1 rounded-md">Add User</button>
+                        <button onClick={handleAddUser} className="text-white bg-[#001356] px-4 py-1 rounded-md">Add Organization</button>
                         <button className='flex items-center gap-2 px-4 py-1 border border-[#001356] rounded-md text-[#001356]'>
                             <HiOutlineDocument />
                             Export

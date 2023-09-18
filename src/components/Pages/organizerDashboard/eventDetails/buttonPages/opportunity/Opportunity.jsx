@@ -148,7 +148,7 @@ const Opportunity = () => {
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-1 mmd:grid-cols-2 md:gap-8'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 md:gap-8'>
                         <div className="mb-4">
                             <label htmlFor="logo" className="block text-[#001356] text-base font-medium">Logo (Upload)</label>
                             <input
