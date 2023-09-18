@@ -1,5 +1,6 @@
 import { HiOutlineSearch } from "react-icons/hi";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import UserReviews from "./UserReviews";
 
 
 const AdmReviews = () => {
@@ -98,6 +99,7 @@ const AdmReviews = () => {
                     </div>
                 </div>
             </div>
+            <UserReviews />
         </>
     );
 };
