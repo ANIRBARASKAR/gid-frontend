@@ -1,5 +1,6 @@
 import { HiOutlineSearch } from "react-icons/hi";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import ReportTable from "./ReportTable";
 
 const Reports = () => {
     return (
@@ -77,6 +78,7 @@ const Reports = () => {
                     </div>
                 </div>
             </div>
+            <ReportTable />
         </>
     );
 };
