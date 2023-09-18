@@ -1,15 +1,20 @@
 import { HiOutlineSearch } from "react-icons/hi";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import AdmBlogTable from "./AdmBlogTable";
+import { useNavigate } from "react-router-dom";
 
 const AdmBlog = () => {
+    const navigate = useNavigate();
+    const handleAddBlog = () => {
+        navigate("../add-blog");
+    }
     return (
         <>
             <div className="lg:ml-[300px] lg:pr-6">
                 <div className="mt-5 flex items-center justify-between mx-4 md:mx-0">
                     <h1 className="text-[#001356] text-[26px] font-bold">Blogs</h1>
                     <div className='flex items-center gap-4'>
-                        <button className="text-white bg-[#001356] px-4 py-1 rounded-md">Add  Blog</button>
+                        <button onClick={handleAddBlog} className="text-white bg-[#001356] px-4 py-1 rounded-md">Add  Blog</button>
                     </div>
                 </div>
                 <div className="bg-white mt-5 py-8 px-6 rounded-lg" style={{ boxShadow: "0px 4px 4px 0px #00000040" }}>

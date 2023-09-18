@@ -14,7 +14,6 @@ const data = [
     { title: 'Blog Title', author: "xyz@gmail.com", },
     { title: 'Blog Title', author: "xyz@gmail.com", },
     { title: 'Blog Title', author: "xyz@gmail.com", },
-
 ];
 
 const AdmBlogTable = () => {
