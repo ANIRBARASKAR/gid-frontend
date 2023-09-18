@@ -38,8 +38,8 @@ const Organization = () => {
                                 <label htmlFor="date" className="text-sm">sort by :</label>
 
                                 <select id="date" className="border border-[#001356] rounded px-2 py-1">
-                                    <option value="volvo">Start date (desc)</option>
-                                    <option value="saab">Start date (desc)</option>
+                                    <option value="volvo">Creation date (desc)</option>
+                                    <option value="saab">Creation (desc)</option>
                                 </select>
                             </div>
                             <MdOutlineKeyboardArrowUp className='text[#001356]' size={30} />
