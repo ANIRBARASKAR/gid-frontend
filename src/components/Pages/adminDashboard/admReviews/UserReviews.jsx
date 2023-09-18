@@ -76,6 +76,7 @@ const UserReviews = () => {
                     }
                 </div>
             </div>
+            {/* Paigination */}
             <div className='bg-white lg:ml-[255px] pt-2 mt-12'>
                 <div className='flex justify-between items-center'>
                     <div className='mt-2 lg:ml-2'>
