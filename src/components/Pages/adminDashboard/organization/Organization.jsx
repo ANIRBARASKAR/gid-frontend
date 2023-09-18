@@ -2,6 +2,7 @@ import { BiChevronDown } from "react-icons/bi";
 import { HiOutlineDocument, HiOutlineSearch } from "react-icons/hi";
 import { useForm } from 'react-hook-form';
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import OrganizationTable from "./OrganizationTable";
 
 const Organization = () => {
     const { handleSubmit } = useForm();
@@ -162,9 +163,8 @@ const Organization = () => {
                     </div>
                     {/* Form End */}
                 </div>
-
-
             </div>
+            <OrganizationTable />
         </>
     );
 };
