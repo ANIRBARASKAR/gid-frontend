@@ -48,6 +48,7 @@ import AddBlog from "./components/Pages/adminDashboard/admBlog/AddBlog"
 import Reports from "./components/Pages/adminDashboard/Reports/Reports"
 import AdmReviews from "./components/Pages/adminDashboard/admReviews/AdmReviews"
 import CallInQuiry from "./components/Pages/adminDashboard/callInquiry/CallInQuiry"
+import Ads from "./components/Pages/adminDashboard/ads/Ads"
 
 
 
@@ -118,6 +119,7 @@ function App() {
             <Route path="reports" element={<Reports />} />
             <Route path="reviews" element={<AdmReviews />} />
             <Route path="call-inquiry" element={<CallInQuiry />} />
+            <Route path="ads" element={<Ads />} />
           </Route>
         </Routes>
         {(!isDashboardPage && !isOrganizerDashboardPage && !isAdminDashboardPage) && <Footer />}
