@@ -45,7 +45,7 @@ const LargeDeviceMenu = () => {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/admin-dashboard/reviews"
+                                    to="/admin-dashboard/manage-event"
                                     activeClassName="text-red-500"
                                     className={style}
                                 >

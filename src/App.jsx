@@ -50,6 +50,7 @@ import AdmReviews from "./components/Pages/adminDashboard/admReviews/AdmReviews"
 import CallInQuiry from "./components/Pages/adminDashboard/callInquiry/CallInQuiry"
 import Ads from "./components/Pages/adminDashboard/ads/Ads"
 import PayoutRequest from "./components/Pages/adminDashboard/payoutRequest/PayoutRequest"
+import ManageEvent from "./components/Pages/adminDashboard/admEvent/ManageEvent"
 
 
 
@@ -114,6 +115,7 @@ function App() {
             <Route path="adm-users" element={<AdmUsers />} />
             <Route path="add-user" element={<AddUser />} />
             <Route path="organization" element={<Organization />} />
+            <Route path="manage-event" element={<ManageEvent />} />
             <Route path="add-organization" element={<AddOrganization />} />
             <Route path="payout-request" element={<PayoutRequest />} />
             <Route path="adm-blog" element={<AdmBlog />} />
