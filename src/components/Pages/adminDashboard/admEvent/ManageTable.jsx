@@ -1,6 +1,7 @@
 import { MdDelete } from "react-icons/md";
 import ManageLineProgress from "./ManageLineProgress";
 import ManageCircleProgress from "./ManageCircleProgress";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const data = [
     { name: 'Event Name', organizer: "Organizer Name", status: "On Sale" },
@@ -54,6 +55,26 @@ const ManageTable = () => {
                                 ))}
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+            {/* Paigination */}
+            <div className='bg-white lg:ml-[255px] pt-2'>
+                <div className='flex justify-between items-center'>
+                    <div className='mt-2 lg:ml-2'>
+                        <p>Showing 1 to 10 of 50 entries</p>
+                    </div>
+                    <div className='flex items-center gap-3 mt-2'>
+                        <div className='bg-[#DFDFDF] p-2 cursor-pointer'>
+                            <IoIosArrowBack />
+                        </div>
+                        <p className='text-gray-500'>1</p>
+                        <p className='text-gray-500'>2</p>
+                        <p className='text-gray-500'>3</p>
+                        <p className='text-gray-500'>4</p>
+                        <div className='bg-[#DFDFDF] p-2 cursor-pointer'>
+                            <IoIosArrowForward />
+                        </div>
                     </div>
                 </div>
             </div>
