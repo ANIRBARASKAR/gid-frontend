@@ -1,5 +1,6 @@
 import { HiOutlineSearch } from "react-icons/hi";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import PayoutTable from "./PayoutTable";
 
 const PayoutRequest = () => {
     return (
@@ -107,6 +108,7 @@ const PayoutRequest = () => {
                     </div>
                 </div>
             </div>
+            <PayoutTable />
         </>
     );
 };
