@@ -1,13 +1,14 @@
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdDelete } from "react-icons/md";
 
 const data = [
-    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales:"1490$", reqDate:"Sun 16 Jul 2023, 4:00 PM " },
-    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales:"1490$", reqDate:"Sun 16 Jul 2023, 4:00 PM " },
-    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales:"1490$", reqDate:"Sun 16 Jul 2023, 4:00 PM " },
-    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales:"1490$", reqDate:"Sun 16 Jul 2023, 4:00 PM " },
-    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales:"1490$", reqDate:"Sun 16 Jul 2023, 4:00 PM " },
-    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales:"1490$", reqDate:"Sun 16 Jul 2023, 4:00 PM " },
-    
+    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales: "1490$", reqDate: "Sun 16 Jul 2023, 4:00 PM " },
+    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales: "1490$", reqDate: "Sun 16 Jul 2023, 4:00 PM " },
+    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales: "1490$", reqDate: "Sun 16 Jul 2023, 4:00 PM " },
+    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales: "1490$", reqDate: "Sun 16 Jul 2023, 4:00 PM " },
+    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales: "1490$", reqDate: "Sun 16 Jul 2023, 4:00 PM " },
+    { reference: '#98d5a6dc', event: "Sun 16 Jul 2023, 4:00 PM ", Organizer: 'Organizer Name', sales: "1490$", reqDate: "Sun 16 Jul 2023, 4:00 PM " },
+
 ];
 
 const PayoutTable = () => {
@@ -51,6 +52,26 @@ const PayoutTable = () => {
                                 ))}
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+            {/* Paigination */}
+            <div className='bg-white lg:ml-[255px] pt-2'>
+                <div className='flex justify-between items-center'>
+                    <div className='mt-2 lg:ml-2'>
+                        <p>Showing 1 to 10 of 50 entries</p>
+                    </div>
+                    <div className='flex items-center gap-3 mt-2'>
+                        <div className='bg-[#DFDFDF] p-2 cursor-pointer'>
+                            <IoIosArrowBack />
+                        </div>
+                        <p className='text-gray-500'>1</p>
+                        <p className='text-gray-500'>2</p>
+                        <p className='text-gray-500'>3</p>
+                        <p className='text-gray-500'>4</p>
+                        <div className='bg-[#DFDFDF] p-2 cursor-pointer'>
+                            <IoIosArrowForward />
+                        </div>
                     </div>
                 </div>
             </div>
