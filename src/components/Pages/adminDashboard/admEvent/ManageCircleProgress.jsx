@@ -5,7 +5,7 @@ const ManageCircleProgress = () => {
     const percentage = 75
     return (
         <div className="flex items-center gap-4">
-            <div className="progress-container" style={{ width: 40, height: 40 }}>
+            <div className="progress-container" style={{ width: 29, height: 29 }}>
                 <div className="progress">
                     <CircularProgressbar
                         className="custom-progress"

@@ -1,5 +1,7 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import ManageTable from "./ManageTable";
+import { HiOutlineSearch } from "react-icons/hi";
 
 const ManageEvent = () => {
     return (
@@ -86,9 +88,19 @@ const ManageEvent = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className='flex justify-center mt-5'>
+                            <button
+                                type="submit"
+                                className="bg-[#284B80] text-white px-8 py-2 rounded-lg flex items-center gap-4"
+                            >
+                                <HiOutlineSearch size={25} />
+                                Search
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <ManageTable />
         </>
     );
 };
