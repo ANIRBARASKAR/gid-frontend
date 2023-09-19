@@ -49,6 +49,7 @@ import Reports from "./components/Pages/adminDashboard/Reports/Reports"
 import AdmReviews from "./components/Pages/adminDashboard/admReviews/AdmReviews"
 import CallInQuiry from "./components/Pages/adminDashboard/callInquiry/CallInQuiry"
 import Ads from "./components/Pages/adminDashboard/ads/Ads"
+import PayoutRequest from "./components/Pages/adminDashboard/payoutRequest/PayoutRequest"
 
 
 
@@ -114,6 +115,7 @@ function App() {
             <Route path="add-user" element={<AddUser />} />
             <Route path="organization" element={<Organization />} />
             <Route path="add-organization" element={<AddOrganization />} />
+            <Route path="payout-request" element={<PayoutRequest />} />
             <Route path="adm-blog" element={<AdmBlog />} />
             <Route path="add-blog" element={<AddBlog />} />
             <Route path="reports" element={<Reports />} />
