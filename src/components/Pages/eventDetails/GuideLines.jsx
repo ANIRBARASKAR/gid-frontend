@@ -1,5 +1,11 @@
+import { useNavigate } from "react-router-dom";
 
 const GuideLines = () => {
+    const navigate = useNavigate();
+    const handleQuize = () => {
+        navigate("/quizes");
+    }
+    
     return (
         <div className="text-xl text-gray-500 mt-5">
             <p className="mb-5">
@@ -22,21 +28,21 @@ const GuideLines = () => {
                     <li>
                         <div className="flex justify-between">
                             <button className="px-6 py-1 border border-[#284B80] rounded-md text-sm">ROUND 1</button>
-                            <button className="px-6 py-1 border-2 border-[##284B80] rounded-md text-sm text-white bg-[#284B80]">START QUIZ</button>
+                            <button onClick={handleQuize} className="px-6 py-1 border-2 border-[##284B80] rounded-md text-sm text-white bg-[#284B80]">START QUIZ</button>
                         </div>
                         <p className="mt-2">Lorem ipsum dolor sit amet consectetur. Vel elit pulvinar felis cras faucibus diam faucibus iaculis. Pretium nascetur eg</p>
                     </li>
                     <li className="mt-8">
                         <div className="flex justify-between">
                             <button className="px-6 py-1 border border-[#284B80] rounded-md text-sm">ROUND 1</button>
-                            <button className="px-6 py-1 border-2 border-[##284B80] rounded-md text-sm text-white bg-[#284B80]">START QUIZ</button>
+                            <button onClick={handleQuize} className="px-6 py-1 border-2 border-[##284B80] rounded-md text-sm text-white bg-[#284B80]">START QUIZ</button>
                         </div>
                         <p className="mt-2">Lorem ipsum dolor sit amet consectetur. Vel elit pulvinar felis cras faucibus diam faucibus iaculis. Pretium nascetur eg</p>
                     </li>
                     <li className="mt-8">
                         <div className="flex justify-between">
                             <button className="px-6 py-1 border border-[#284B80] rounded-md text-sm">ROUND 1</button>
-                            <button className="px-6 py-1 border-2 border-[##284B80] rounded-md text-sm text-white bg-[#284B80]">START QUIZ</button>
+                            <button onClick={handleQuize} className="px-6 py-1 border-2 border-[##284B80] rounded-md text-sm text-white bg-[#284B80]">START QUIZ</button>
                         </div>
                         <p className="mt-2">Lorem ipsum dolor sit amet consectetur. Vel elit pulvinar felis cras faucibus diam faucibus iaculis. Pretium nascetur eg</p>
                     </li>

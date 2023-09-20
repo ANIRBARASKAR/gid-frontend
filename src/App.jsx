@@ -51,6 +51,7 @@ import CallInQuiry from "./components/Pages/adminDashboard/callInquiry/CallInQui
 import Ads from "./components/Pages/adminDashboard/ads/Ads"
 import PayoutRequest from "./components/Pages/adminDashboard/payoutRequest/PayoutRequest"
 import ManageEvent from "./components/Pages/adminDashboard/admEvent/ManageEvent"
+import Quizes from "./components/Pages/quizes/Quizes"
 
 
 
@@ -75,6 +76,7 @@ function App() {
           <Route path="/eventTwo" element={<EventPageTwo />} />
           <Route path="/multiple-event" element={<MultipleEvents />} />
           <Route path="/event-details" element={<EventDetails />} />
+          <Route path="/quizes" element={<Quizes />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/how-to-participate" element={<HowToParticipate />} />

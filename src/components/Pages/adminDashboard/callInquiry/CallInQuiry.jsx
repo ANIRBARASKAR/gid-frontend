@@ -36,26 +36,26 @@ const CallInQuiry = () => {
                         <table className="w-[100%] mt-8 text-xs md:text-base">
                             <thead>
                                 <tr className='text-[#001356] text-left'>
-                                    <th className='py-4'>No</th>
-                                    <th className='py-4'>Name</th>
-                                    <th className='py-4'>Created Date</th>
-                                    <th className='py-4'>Mobile No.</th>
-                                    <th className='py-4'>E-mail</th>
-                                    <th className='py-4'>Inquiry Type</th>
-                                    <th className='py-4'>Status</th>
+                                    <th className='py-4 px-4 md:px-0'>No</th>
+                                    <th className='py-4 px-4 md:px-0'>Name</th>
+                                    <th className='py-4 px-4 md:px-0'>Created Date</th>
+                                    <th className='py-4 px-4 md:px-0'>Mobile No.</th>
+                                    <th className='py-4 px-4 md:px-0'>E-mail</th>
+                                    <th className='py-4 px-4 md:px-0'>Inquiry Type</th>
+                                    <th className='py-4 px-4 md:px-0'>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {data.map((item, index) => (
                                     <tr key={index} className="border-b border-gray-300 text-gray-500">
-                                        <td className='py-4'>{index + 1}</td>
-                                        <td className='py-4'>{item.name}</td>
-                                        <td className='py-4'>{item.createDate}</td>
-                                        <td className='py-4'>{item.mobile}</td>
-                                        <td className='py-4'>{item.email}</td>
-                                        <td className='py-4'>{item.type}</td>
-                                        <td className='py-4'>{item.status}</td>
-                                        <td className='py-4'>
+                                        <td className='py-4 px-4 md:px-0'>{index + 1}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.name}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.createDate}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.mobile}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.email}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.type}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.status}</td>
+                                        <td className='py-4 px-4 md:px-0'>
                                             <div className='flex items-center gap-8'>
                                                 <AiTwotoneEye className="text-[#4A5786]" size={25} />
                                                 <MdDelete className="text-[#EC6453]" size={25} />

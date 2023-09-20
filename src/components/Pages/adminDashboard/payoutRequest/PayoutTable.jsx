@@ -20,29 +20,29 @@ const PayoutTable = () => {
                         <table className="w-[100%] mt-8 text-xs md:text-base">
                             <thead>
                                 <tr className='text-[#001356] text-left'>
-                                    <th className='py-4'>No</th>
-                                    <th className='py-4'>Reference</th>
-                                    <th className='py-4'>Event Date</th>
-                                    <th className='py-4'>Organizer</th>
-                                    <th className='py-4'>Method</th>
-                                    <th className='py-4'>Net Sales</th>
-                                    <th className='py-4'>Request Date</th>
-                                    <th className='py-4'>Status</th>
+                                    <th className='py-4 px-4 md:px-0'>No</th>
+                                    <th className='py-4 px-4 md:px-0'>Reference</th>
+                                    <th className='py-4 px-4 md:px-0'>Event Date</th>
+                                    <th className='py-4 px-4 md:px-0'>Organizer</th>
+                                    <th className='py-4 px-4 md:px-0'>Method</th>
+                                    <th className='py-4 px-4 md:px-0'>Net Sales</th>
+                                    <th className='py-4 px-4 md:px-0'>Request Date</th>
+                                    <th className='py-4 px-4 md:px-0'>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {data.map((item, index) => (
                                     <tr key={index} className="border-b border-gray-300 text-gray-500">
-                                        <td className='py-4'>{index + 1}</td>
-                                        <td className='py-4'>{item.reference}</td>
-                                        <td className='py-4'>{item.event}</td>
-                                        <td className='py-4'>{item.Organizer}</td>
-                                        <td className='py-4'>
+                                        <td className='py-4 px-4 md:px-0'>{index + 1}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.reference}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.event}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.Organizer}</td>
+                                        <td className='py-4 px-4 md:px-0'>
                                             <img className="w-[32px] h-[32px]" src="https://i.ibb.co/dfcRLkD/image-73.png" alt="" />
                                         </td>
-                                        <td className='py-4'>{item.sales}</td>
-                                        <td className='py-4'>{item.reqDate}</td>
-                                        <td className='py-4'>
+                                        <td className='py-4 px-4 md:px-0'>{item.sales}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.reqDate}</td>
+                                        <td className='py-4 px-4 md:px-0'>
                                             <div className='flex items-center gap-4'>
                                                 <button className="text-xs md:text-sm text-white bg-[#FDA502] px-2 py-1 rounded-md">Canceled</button>
                                                 <MdDelete className="text-[#EC6453] cursor-pointer" size={25} />

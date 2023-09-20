@@ -31,16 +31,16 @@ const ManageTable = () => {
                             <tbody>
                                 {data.map((item, index) => (
                                     <tr key={index} className="border-b border-gray-300 text-gray-500">
-                                        <td className='py-4'>{index + 1}</td>
-                                        <td className='py-4'>{item.name}</td>
-                                        <td className='py-4'>{item.organizer}</td>
-                                        <td className='py-4'>
+                                        <td className='py-4 px-4 md:px-0'>{index + 1}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.name}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.organizer}</td>
+                                        <td className='py-4 px-4 md:px-0'>
                                             <ManageLineProgress />
                                         </td>
-                                        <td className='py-4 flex justify-center'>
+                                        <td className='py-4 px-4 md:px-0 flex justify-center'>
                                             <ManageCircleProgress />
                                         </td>
-                                        <td className='py-4 text-center'>
+                                        <td className='py-4 px-4 md:px-0 text-center'>
                                             <span
                                                 className={`px-2 py-1 rounded-lg ${item.status === 'On Sale' ? 'bg-[#23AE00] text-white' : 'bg-[#F2994A] text-white'
                                                     }`}
@@ -48,7 +48,7 @@ const ManageTable = () => {
                                                 {item.status}
                                             </span>
                                         </td>
-                                        <td className='py-4'>
+                                        <td className='py-4 px-4 md:px-0'>
                                             <MdDelete className="text-red-500 cursor-pointer" size={25} />
                                         </td>
                                     </tr>

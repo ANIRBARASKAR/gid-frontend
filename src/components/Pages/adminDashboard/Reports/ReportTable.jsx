@@ -24,20 +24,20 @@ const ReportTable = () => {
                         <table className="w-[100%] mt-8 text-xs md:text-base">
                             <thead>
                                 <tr className='text-[#001356] text-left'>
-                                    <th className='py-4'>No</th>
-                                    <th className='py-4'>Reference</th>
-                                    <th className='py-4'>Event Date</th>
-                                    <th className='py-4'>Organizer</th>
+                                    <th className='py-4 px-4 md:px-0'>No</th>
+                                    <th className='py-4 px-4 md:px-0'>Reference</th>
+                                    <th className='py-4 px-4 md:px-0'>Event Date</th>
+                                    <th className='py-4 px-4 md:px-0'>Organizer</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {data.map((item, index) => (
                                     <tr key={index} className="border-b border-gray-300 text-gray-500">
-                                        <td className='py-4'>{index + 1}</td>
-                                        <td className='py-4'>{item.reference}</td>
-                                        <td className='py-4'>{item.event}</td>
-                                        <td className='py-4'>{item.Organizer}</td>
-                                        <td className='py-4'>
+                                        <td className='py-4 px-4 md:px-0'>{index + 1}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.reference}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.event}</td>
+                                        <td className='py-4 px-4 md:px-0'>{item.Organizer}</td>
+                                        <td className='py-4 px-4 md:px-0'>
                                             <div className=''>
                                                 <CiMenuKebab className="text-black cursor-pointer" size={25} />
                                             </div>
