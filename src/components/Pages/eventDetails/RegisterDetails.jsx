@@ -4,6 +4,7 @@ import { BiDollar } from 'react-icons/bi';
 import RegisterModal from '../../modals/RegisterModal';
 import { useState } from 'react';
 import JoinTeamModal from '../../modals/JoinTeamModal';
+// import PaymentDetails from '../../modals/PaymentDetails';
 // import RegisterModalTwo from '../../modals/RegisterModalTwo';
 
 const RegisterDetails = () => {
