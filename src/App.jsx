@@ -52,6 +52,7 @@ import Ads from "./components/Pages/adminDashboard/ads/Ads"
 import PayoutRequest from "./components/Pages/adminDashboard/payoutRequest/PayoutRequest"
 import ManageEvent from "./components/Pages/adminDashboard/admEvent/ManageEvent"
 import Quizes from "./components/Pages/quizes/Quizes"
+import Result from "./components/Pages/quizes/Result"
 
 
 
@@ -77,6 +78,7 @@ function App() {
           <Route path="/multiple-event" element={<MultipleEvents />} />
           <Route path="/event-details" element={<EventDetails />} />
           <Route path="/quizes" element={<Quizes />} />
+          <Route path="/result" element={<Result />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/how-to-participate" element={<HowToParticipate />} />
