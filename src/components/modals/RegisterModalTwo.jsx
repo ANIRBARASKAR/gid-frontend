@@ -1,7 +1,7 @@
-import { RxCross2 } from 'react-icons/rx';
+import { RxCross2 } from "react-icons/rx";
 import PropTypes from 'prop-types';
 
-const RegisterModal = ({ onClose }) => {
+const RegisterModalTwo = ({ onClose }) => {
     return (
         <div className="fixed z-10 inset-0 overflow-y-auto mt-24">
             <div className="flex items-end justify-end min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -18,15 +18,20 @@ const RegisterModal = ({ onClose }) => {
                     <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                         <div className="mt-3 text-center sm:mt-0 sm:text-left">
                             <div className='flex justify-between items-center'>
-                                <h3 className="text-xl leading-6 font-semibold text-[#001356]" id="modal-headline">
-                                    Register Your Team
-                                </h3>
+                                <div className="flex items-center gap-4">
+                                    <h3 className="text-xl leading-6 font-semibold text-[#001356]" id="modal-headline">
+                                        Team Name  : xyz          
+                                    </h3>
+                                    <h3 className="text-xl leading-6 font-semibold text-[#001356]" id="modal-headline">Team Leader : xyz</h3>
+                                    <h3 className="text-xl leading-6 font-semibold text-[#001356]" id="modal-headline">Total Team Member : 2</h3>
+                                </div>
                                 <button
                                     onClick={onClose}
                                 >
                                     <RxCross2 className='text-red-600' size={30} />
                                 </button>
                             </div>
+                            <p className="text-[#001356] font-semibold mt-2">Basic Information</p>
                             <div className="mt-2 w-full">
                                 {/* All CONTENT WILL BE HERE . */}
                                 <div className='mt-5'>
@@ -173,7 +178,8 @@ const RegisterModal = ({ onClose }) => {
         </div>
     );
 };
-RegisterModal.propTypes = {
+RegisterModalTwo.propTypes = {
     onClose: PropTypes.func.isRequired,
 }
-export default RegisterModal;
+
+export default RegisterModalTwo;
