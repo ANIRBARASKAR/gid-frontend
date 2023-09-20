@@ -15,7 +15,7 @@ const Quizes = () => {
     return (
         <>
             <div className="bg-[#284B80] py-4">
-                <div className="container mx-auto text-white font-medium flex justify-between">
+                <div className="container mx-auto text-white font-medium flex justify-between px-4 md:px-0">
                     <p className="text-[22px]">Round 1 Quiz</p>
                     <p className="text-[20px]">Time -  00:03:26 </p>
                 </div>
@@ -23,8 +23,8 @@ const Quizes = () => {
             <div className="container mx-auto mt-8 pb-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-3">
-                        <div className="flex gap-4 font-medium">
-                            <p>1</p>
+                        <div className="flex gap-4 font-medium mx-2 md:mx-0">
+                            <p>1)</p>
                             <p className="text-[18px] text-[#284B80]">Lorem ipsum dolor sit amet consectetur. At feugiat duis facilisis leo ut dis id.Lorem ipsum dolor sit amet consectetur. At feugiat duis facilisis leo ut dis id.</p>
                         </div>
                         <div className="text-[18px] ml-8 mt-5">
@@ -49,15 +49,15 @@ const Quizes = () => {
                                 <label htmlFor="">Lorem Ipsum</label>
                             </div>
                         </div>
-                        <div className="flex items-center gap-4 mt-8 font-medium">
-                            <button className="text-[#284B80] px-2 py-1 text-sm border border-[#284B80] rounded-md">SAve & Next</button>
-                            <button className="text-[#284B80] px-2 py-1 text-sm border border-[#284B80] rounded-md">MAek for Review & Next</button>
-                            <button className="text-[#284B80] px-2 py-1 text-sm border border-[#284B80] rounded-md">clear response</button>
+                        <div className="flex items-center gap-4 mt-8 font-medium px-2 md:px-0">
+                            <button className="text-[#284B80] px-2 py-1 text-xs md:text-sm border border-[#284B80] rounded-md">SAve & Next</button>
+                            <button className="text-[#284B80] px-2 py-1 text-xs md:text-sm border border-[#284B80] rounded-md">MAek for Review & Next</button>
+                            <button className="text-[#284B80] px-2 py-1 text-xs md:text-sm border border-[#284B80] rounded-md">clear response</button>
                         </div>
                     </div>
-                    <div className="col-span-1 flex gap-8">
-                        <div className="h-full w-[2px] bg-gray-300"></div>
-                        <div>
+                    <div className="col-span-1 md:flex gap-8">
+                        <div className="w-full h-[1px] md:h-full md:w-[2px] bg-gray-300 ml-4 md:ml-0"></div>
+                        <div className="mt-4 md:mt-0 ml-4 md:ml-0">
                             <div className="grid grid-cols-7 gap-4 font-medium">
                                 <p>1</p>
                                 <p>2</p>
