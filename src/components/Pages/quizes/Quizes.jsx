@@ -1,5 +1,17 @@
+import { useState } from "react";
+import SubmitQuizeModal from "../../modals/SubmitQuizeModal";
+
 
 const Quizes = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleQuizeModalOpen = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleQuizeClose = () => {
+        setIsModalOpen(false);
+    };
     return (
         <>
             <div className="bg-[#284B80] py-4">
@@ -12,7 +24,7 @@ const Quizes = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-3">
                         <div className="flex gap-4 font-medium">
-                            <p>1)</p>
+                            <p>1</p>
                             <p className="text-[18px] text-[#284B80]">Lorem ipsum dolor sit amet consectetur. At feugiat duis facilisis leo ut dis id.Lorem ipsum dolor sit amet consectetur. At feugiat duis facilisis leo ut dis id.</p>
                         </div>
                         <div className="text-[18px] ml-8 mt-5">
@@ -86,9 +98,10 @@ const Quizes = () => {
                     </div>
                 </div>
                 <div className="flex justify-center mt-12">
-                    <button className="bg-[#001356] text-white px-4 py-1 rounded-md" style={{
+                    <button onClick={handleQuizeModalOpen} className="bg-[#001356] text-white px-4 py-1 rounded-md" style={{
                         boxShadow: "0px -4px 4px 0px #000D3D inset"
                     }}>Submit</button>
+                    {isModalOpen && <SubmitQuizeModal onClose={handleQuizeClose} />}
                 </div>
             </div>
         </>
