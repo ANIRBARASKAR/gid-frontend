@@ -10,40 +10,35 @@ const SubmitQuizeModal = ({ onClose }) => {
                 </div>
                 <span className="hidden sm:inline-block sm:align-middle sm:h-screen"></span>
                 &#8203;
-                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full lg:max-w-[50%]"
+                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full lg:max-w-[25%]"
                     role="dialog"
                     aria-modal="true"
                     aria-labelledby="modal-headline"
                 >
                     <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                         <div className="mt-3 text-center sm:mt-0 sm:text-left">
-                            <div className='flex justify-between items-center'>
-                                <h3 className="text-xl leading-6 font-semibold text-[#001356]" id="modal-headline">
+                            <div className='flex justify-end items-center'>
+                                {/* <h3 className="text-xl leading-6 font-semibold text-[#001356]" id="modal-headline">
                                     Join Team
-                                </h3>
-                                <button
+                                </h3> */}
+                                <button className='bg-[#001356] rounded-full'
                                     onClick={onClose}
                                 >
-                                    <RxCross2 className='text-red-600' size={30} />
+                                    <RxCross2 className='text-white' size={15} />
                                 </button>
                             </div>
                             <div className="mt-2 w-full">
                                 {/* All CONTENT WILL BE HERE . */}
                                 <div className='mt-5'>
                                     <form action="">
-                                        <div className='flex justify-between items-center gap-8'>
-                                            <div className='grid grid-cols-4 gap-4'>
-                                                <div className='col-span-3'>
-                                                    <label className='text-[#001356] font-medium' htmlFor="team_name">Team Code:</label> <br />
-                                                    <input className='outline-none border-2 border-[#93A5BF] rounded-md px-2 py-1 w-full' type="text" id="team_name" name="team_name" required placeholder='Enter Title' /> <br /> <br />
-                                                </div>
-                                                <div className='col-span-1 mt-6'>
-                                                    <button className='text-white bg-[#284B80] px-4 py-1 rounded-md'>Join Team</button>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <p className='text-[#001356]'>Your Team code is : <b>abc@123</b></p>
-                                            </div>
+                                        <div>
+                                            <h1 className='text-[#001356] text-[22px] font-medium'>Are You want to submit the Exam ?</h1>
+                                            <p className='text-gray-400 font-medium'>You will not able to recover this exam again !</p>
+                                        </div>
+                                        <div className='flex justify-center'>
+                                            <button className="bg-[#001356] text-white px-4 py-1 rounded-md mt-4" style={{
+                                                boxShadow: "0px -4px 4px 0px #000D3D inset"
+                                            }}>Submit</button>
                                         </div>
                                     </form>
                                 </div>
